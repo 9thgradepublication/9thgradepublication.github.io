@@ -17,3 +17,5 @@ fields:
 - type: text
   name: source
   label: source
+pages:
+- _texts/test.md
