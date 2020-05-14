@@ -1,9 +1,9 @@
 ---
-layout: poem
 title: Delayed till she had ceased to know
+layout: poem
 author: Emily Dickinson
 editor: Alex Gil
-source: "Bartleby.com"
+source: Bartleby.com
 ---
 
 - DELAYED till she had ceased to know,

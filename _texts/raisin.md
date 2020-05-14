@@ -1,10 +1,10 @@
 ---
-layout: drama
 title: A Raisin in the Sun
+layout: drama
 author: Lorraine Hansberry
 editor: Alex Gil
-source: "Hansberry, Lorraine, and Robert Nemiroff. A Raisin in the Sun. Rep Rei edition. New York: Vintage, 2004. Print."
-
+source: 'Hansberry, Lorraine, and Robert Nemiroff. A Raisin in the Sun. Rep Rei edition.
+  New York: Vintage, 2004. Print.'
 ---
 
 (excerpt)

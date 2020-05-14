@@ -1,6 +1,6 @@
 ---
+title: O Captain! My Captain!
 layout: poem
-title: "O Captain! My Captain!"
 author: Walt Whitman
 editor: Alex Gil
 source: Poetry Foundation

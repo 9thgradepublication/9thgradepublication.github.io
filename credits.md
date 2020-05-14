@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Credits
+layout: page
 ---
 
 ### Person | Responsibility

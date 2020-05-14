@@ -1,11 +1,11 @@
 ---
-layout: poem
 title: 'Test '
+layout: poem
 author: Test
 editor: Test
 source: none.com
-
 ---
+
 * DELAYED till she had ceased to know,
 * Delayed till in its vest of snow
 * Her loving bosom lay.

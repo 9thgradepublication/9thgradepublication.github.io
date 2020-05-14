@@ -1,6 +1,6 @@
 ---
-layout: poem
 title: My poem
+layout: poem
 author: Alex Gil
 editor: Alex Gil
 source: My imagination

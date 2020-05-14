@@ -1,6 +1,6 @@
 ---
-
 ---
+
 // Based on a script by Kathie Decora : katydecorah.com/code/lunr-and-jekyll/
 
 // Create the lunr index for the search

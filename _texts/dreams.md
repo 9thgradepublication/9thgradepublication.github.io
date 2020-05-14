@@ -1,6 +1,6 @@
 ---
-layout: poem
 title: Dreams
+layout: poem
 author: Langston Hughes
 editor: Alex Gil
 source: Project Guttenberg
