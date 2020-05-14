@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Text
 hide_body: false
 fields:
@@ -22,3 +19,4 @@ fields:
   label: source
 pages:
 - _texts/test.md
+- _texts/tn.md
