@@ -1,9 +1,9 @@
 # Built with Jekyll 3.6.0
 
 # Setup
-title:               Ed.
-tagline:             'a jekyll theme for minimal editions'
-description:         'Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.'
+title:               Publication
+tagline:             '9th grade publication'
+description:         'lorem ipsum'
 url:                 'https://pixelvoxelboxel.github.io'
 baseurl:             '/ed'
 
