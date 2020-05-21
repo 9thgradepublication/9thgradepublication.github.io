@@ -8,12 +8,13 @@ collections:
   texts:
     title: Texts
     output: true
-  uploads:
-    title: Uploads
-    output: true
   category:
     title: category
     output: true
+  uploads:
+    title: Uploads
+    output: true
+  
 tagline: 9th grade publication
 description: lorem ipsum
 url: https://pixelvoxelboxel.github.io
