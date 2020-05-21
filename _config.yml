@@ -12,6 +12,7 @@ collections:
     title: Uploads
     output: true
   category:
+    title: category
     output: true
 tagline: 9th grade publication
 description: lorem ipsum
