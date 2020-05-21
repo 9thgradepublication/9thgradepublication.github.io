@@ -38,7 +38,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 <p>Posts in category "basic" are:</p>
 
 <ul>
-  {% for text in site.category.poem %}
+  {% for text in site.texts %}
     {% if text.url %}
         <li><a href="{{ text.url }}">{{ text.title }}</a></li>
     {% endif %}
