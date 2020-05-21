@@ -4,7 +4,7 @@ layout: poem
 author: Langston Hughes
 editor: Alex Gil
 source: Project Guttenberg
-category: rumination
+category: poem
 ---
 
 - Hold fast to dreams
