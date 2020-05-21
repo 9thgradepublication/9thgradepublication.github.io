@@ -3,6 +3,7 @@ title: 'Test '
 layout: poem
 author: Test
 editor: Test
+category: poem
 source: none.com
 ---
 
