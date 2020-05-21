@@ -35,10 +35,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   </ul>
 </div>
 
-<p>Posts in category "basic" are:</p>
+<p>Posts in category "poem" are:</p>
 
 <ul>
-  {% for text in site.texts %}
+  {% for text in site.category %}
     {% if text.url %}
         <li><a href="{{ text.url }}">{{ text.title }}</a></li>
     {% endif %}
