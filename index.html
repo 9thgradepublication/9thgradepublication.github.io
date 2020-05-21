@@ -22,10 +22,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 <hr>
 
 <div class="toc">
-  <h2>sample category output: Poems (not really)</h2>
+  <h2>Test: Poems</h2>
   <ul class="texts">
   {% for item in site.texts %}
-  {% if item.category contains "poem" %}
+  {% if item.layout contains "poem" %}
     <li class="text-title">
       <a href="{{ site.baseurl }}{{ item.url }}">
         {{ item.title }}
@@ -36,10 +36,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   
   </ul>
   
-  <h2>sample category output: Rumination Papers (not really)</h2>
+  <h2>Test: Rumination Papers</h2>
   <ul class="texts">
   {% for item in site.texts %}
-  {% if item.category contains "rumination" %}
+  {% if item.layout contains "rumination" %}
     <li class="text-title">
       <a href="{{ site.baseurl }}{{ item.url }}">
         {{ item.title }}
@@ -49,19 +49,30 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   {% endfor %}
   </ul>
 
-</div>
-
-
-<div class="toc">
-  <h2>all texts</h2>
+  <h2>Test: Stories</h2>
   <ul class="texts">
   {% for item in site.texts %}
-
+  {% if item.layout contains "story" %}
     <li class="text-title">
       <a href="{{ site.baseurl }}{{ item.url }}">
         {{ item.title }}
       </a>
     </li>
+  {% endif %}
   {% endfor %}
   </ul>
+
+ <h2>Test: Creative One-Pagers</h2>
+  <ul class="texts">
+  {% for item in site.texts %}
+  {% if item.layout contains "creative" %}
+    <li class="text-title">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </li>
+  {% endif %}
+  {% endfor %}
+  </ul>
+
 </div>
