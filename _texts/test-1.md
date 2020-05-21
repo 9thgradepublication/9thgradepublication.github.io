@@ -4,7 +4,6 @@ title: Testing 123
 author: Thanjila Thahsin
 editor: ''
 source: ''
-category: story
 ---
 # Why words?
 
