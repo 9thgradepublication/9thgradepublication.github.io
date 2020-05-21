@@ -806,11 +806,15 @@ li.prose-indent {
 /* Yellow */
 .theme-base-yellow .sidebar,
 .theme-base-yellow .sidebar-toggle:active {
-  background-color: #f2f28d;
+  background-color: #fffdd0;
 }
 
 .theme-base-yellow .container a,
 .theme-base-yellow .sidebar-toggle,
 .theme-base-yellow .related-posts li a:hover {
-  color: #f2f28d;
+  color: #fffdd0;
+}
+
+.theme-base-yellow p, .theme-base-yellow h1, .theme-base-yellow h2 {
+  color: #8f5536;
 }
