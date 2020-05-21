@@ -1,5 +1,5 @@
 ---
-layout: narrative
+layout: story
 title: Testing 123
 author: Thanjila Thahsin
 editor: ''
