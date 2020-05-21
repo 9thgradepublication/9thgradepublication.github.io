@@ -35,22 +35,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   </ul>
 </div>
 
-<p>Posts in category "poem" are:</p>
-
-<ul>
-  {% for text in site.category %}
-    {% if text.url %}
-        <li><a href="{{ text.url }}">{{ text.title }}</a></li>
-    {% endif %}
+<div class="toc">
+  <h2>sample category output</h2>
+  <ul class="texts">
+  {% for item in site.texts %}
+  {% if itsm.categories contains "poem" %}
+    <li class="text-title">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </li>
   {% endfor %}
-</ul>
+  {% endif %}
+  </ul>
+</div>
 
-<p>Posts in category "poem" are:</p>
-
-<ul>
-  {% for text in site.category.poem %}
-    {% if text.url %}
-        <li><a href="{{ text.url }}">{{ text.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
