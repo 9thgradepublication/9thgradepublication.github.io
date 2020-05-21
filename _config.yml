@@ -9,7 +9,7 @@ collections:
     title: Texts
     output: true
   category:
-    title: category
+    title: Category
     output: true
   uploads:
     title: Uploads
