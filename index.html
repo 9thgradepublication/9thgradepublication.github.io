@@ -44,3 +44,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     {% endif %}
   {% endfor %}
 </ul>
+
+<p>Posts in category "poem" are:</p>
+
+<ul>
+  {% for text in site.category.poem %}
+    {% if text.url %}
+        <li><a href="{{ text.url }}">{{ text.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
