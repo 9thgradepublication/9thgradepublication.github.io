@@ -3,7 +3,6 @@ title: A Raisin in the Sun
 layout: rumination
 author: Lorraine Hansberry
 editor: Alex Gil
-category: rumination
 source: 'Hansberry, Lorraine, and Robert Nemiroff. A Raisin in the Sun. Rep Rei edition.
   New York: Vintage, 2004. Print.'
 ---
