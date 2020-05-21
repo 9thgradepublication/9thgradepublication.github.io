@@ -4,7 +4,7 @@ layout: default
 ---
 
 <div class="introduction">
-  <h1>hi@.</h1>
+  <h1>h@.</h1>
 
 <p>
 
@@ -39,9 +39,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             <h2> Testing: poemahse </h2>
             <ul class= "texts">
                {% for post in site.category.poem %}
-                   {% if post.url %}
-                  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                   {% endif %}
+                  <li>{{ post.title }}</li>
                {% endfor %}
    
             </ul>
