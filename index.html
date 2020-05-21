@@ -39,7 +39,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   <h2>sample categor output</h2>
   <ul class="texts">
   {% for item in site.texts %}
-  {% if item.categories contains "poem" %}
+  {% if item.category contains "poem" %}
     <li class="text-title">
       <a href="{{ site.baseurl }}{{ item.url }}">
         {{ item.title }}
