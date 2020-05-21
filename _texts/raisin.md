@@ -1,6 +1,6 @@
 ---
 title: A Raisin in the Sun
-layout: drama
+layout: rumination
 author: Lorraine Hansberry
 editor: Alex Gil
 category: rumination
