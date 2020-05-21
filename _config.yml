@@ -19,7 +19,7 @@ author:
   name: Test
   url: 
   email: test@gmail.com
-color-scheme:
+color-scheme: yellow
 permalink: "/:title/"
 encoding: utf-8
 markdown: kramdown
