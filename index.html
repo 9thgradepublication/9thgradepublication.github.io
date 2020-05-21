@@ -35,9 +35,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   {% endfor %}
   
   </ul>
-</div>
-
-<div class="toc">
+  
   <h2>sample category output: Rumination Papers (not really)</h2>
   <ul class="texts">
   {% for item in site.texts %}
@@ -49,8 +47,21 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </li>
   {% endif %}
   {% endfor %}
-  
   </ul>
+
 </div>
 
 
+<div class="toc">
+  <h2>all texts</h2>
+  <ul class="texts">
+  {% for item in site.texts %}
+
+    <li class="text-title">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
