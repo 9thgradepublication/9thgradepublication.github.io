@@ -35,12 +35,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   </ul>
 </div>
 
-<div class="toc">
-            <h2> Testing: poemahse </h2>
-            <ul class= "texts">
-               {% for post in site.category.poem %}
-                  <li>{{ post.title }}</li>
-               {% endfor %}
-   
-            </ul>
-</div>
+<p>Posts in category "basic" are:</p>
+
+<ul>
+  {% for text in site.category.poem %}
+    {% if text.url %}
+        <li><a href="{{ text.url }}">{{ text.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
