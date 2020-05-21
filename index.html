@@ -22,21 +22,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 <hr>
 
 <div class="toc">
-  <h2>sample texts</h2>
-  <ul class="texts">
-  {% for item in site.texts %}
-
-    <li class="text-title">
-      <a href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
-      </a>
-    </li>
-  {% endfor %}
-  </ul>
-</div>
-
-<div class="toc">
-  <h2>sample categor output</h2>
+  <h2>sample category output: Poems (not really)</h2>
   <ul class="texts">
   {% for item in site.texts %}
   {% if item.category contains "poem" %}
@@ -50,4 +36,21 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   
   </ul>
 </div>
+
+<div class="toc">
+  <h2>sample category output: Rumination Papers (not really)</h2>
+  <ul class="texts">
+  {% for item in site.texts %}
+  {% if item.category contains "rumination" %}
+    <li class="text-title">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </li>
+  {% endif %}
+  {% endfor %}
+  
+  </ul>
+</div>
+
 
