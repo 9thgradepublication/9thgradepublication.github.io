@@ -3,6 +3,7 @@ title: Narrative of the Life of Frederick Douglass
 layout: narrative
 author: Frederick Douglass
 editor: Alex Gil
+category: poem
 rights: Public Domain
 source: Project Guttenberg
 publication-date: 2016
