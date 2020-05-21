@@ -1,5 +1,5 @@
 ---
-layout: narrative
+layout: story
 title: What if
 author: Thanjila Thahsin
 editor: ''
