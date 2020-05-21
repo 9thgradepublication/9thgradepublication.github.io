@@ -4,6 +4,5 @@ title: TN
 author: TN
 editor: TN
 source: TH
-category: creative
 ---
 # TH
