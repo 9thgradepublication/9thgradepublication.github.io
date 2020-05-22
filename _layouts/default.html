@@ -30,10 +30,11 @@
       </header>
 
       <main class="container content" id="main">
-        <label class="switch">
-        <input type="checkbox" onclick="darkLight()" id="checkBox" >
-        <span class="slider"></span>
-        </label>
+  <input type="checkbox" id="switch">
+  <label for="switch" class="switch-label">
+    <div class="toggle"></div>
+  </label>
+
       {{ content }}
         
       </main>
@@ -96,28 +97,15 @@
 
 <script>
   
-//dark: theme-base-orange
-//light: theme-base-yellow
-$('#body').attr(localStorage.theme);
+$("#switch").on("click", () => {
+  if($("#switch").prop("checked")) {
+      $("#body").removeClass("theme-base-yellow");
+      $("#body").addClass("theme-base-orange");
 
-function darkLight() {
-  /*DARK CLASS*/
-  if (localStorage.theme != 'theme-base-orange') {
-    $('#body').attr('theme-base-orange', true);
-    localStorage.theme = "theme-base-orange";
-     
   } else {
-    $('#body').attr('theme-base-orange', false);
-    localStorage.theme = "theme-base-yellow";
+    $("#body).removeClass("dark");
   }
-}
-
-/*Add 'checked' property to input if background == dark*/
-if ($('body').hasClass('theme-base-orange')) {
-   $( '#checkBox' ).prop( "checked", true )
-} else {
-  $( '#checkBox' ).prop( "checked", false )
-}
+})
 
 
 </script>
