@@ -3,7 +3,9 @@
   (function($) {
   function changeFont(fontSize) {
       return function() {
-         $('html').css('font-size', fontSize += '%');
+        size = $( "html" ).css( "font-size" );
+        if (size <= 200 || size >= 80) {
+         $('html').css('font-size', fontSize + '%');
          localStorage.setItem('fSize', fontSize);
       }
     }
