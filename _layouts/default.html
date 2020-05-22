@@ -101,12 +101,12 @@ $("#switch").on("click", () => {
       $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
       localStorage.theme = "theme-base-orange";
   } else {
-    $(".wrapper").removeClass("theme-base-orange").addClass("theme-base-yellow");
+    $("#body").removeClass("theme-base-orange").addClass("theme-base-yellow");
     localStorage.theme = "";
   }
    
 });
-$(".wrapper").addClass(localStorage.theme);
+$("#body").addClass(localStorage.theme);
 
 </script>
 
