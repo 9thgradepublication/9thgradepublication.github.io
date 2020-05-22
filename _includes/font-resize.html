@@ -4,13 +4,13 @@
   function changeFont(fontSize) {
       return function() {
          $('html').css('font-size', fontSize + '%');
-         sessionStorage.setItem('fSize', fontSize);
+         localStorage.setItem('fSize', fontSize);
       }
     }
 
     var normalFont = changeFont(100),
-    		mediumFont = changeFont(125),
-    		largeFont  = changeFont(145);
+    		mediumFont = changeFont(115),
+    		largeFont  = changeFont(125);
 
     $('smaller').on('click', function(){
       normalFont();
