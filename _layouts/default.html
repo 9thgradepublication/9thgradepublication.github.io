@@ -96,17 +96,17 @@
 
 <script>
 
-$('#body').toggleClass(localStorage.toggled);
+$('#body').className(localStorage.class);
 
 function darkLight() {
   /*DARK CLASS*/
-  if (localStorage.toggled != 'dark') {
-    $('#body').toggleClass('theme-base-orange', true);
-    localStorage.toggled = "theme-base-orange";
+  if (localStorage.class != 'theme-base-orange') {
+    $('#body').className = 'theme-base-orange';
+    localStorage.class = "theme-base-orange";
      
   } else {
-    $('#body').toggleClass('theme-base-orange', false);
-    localStorage.toggled = "";
+    $('#body').className = 'theme-base-orange';
+    localStorage.class = "theme-base-yellow";
   }
 }
 
