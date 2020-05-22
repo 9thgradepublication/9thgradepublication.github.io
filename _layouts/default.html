@@ -2,7 +2,7 @@
 <html lang="en-us">
 
   {% include head.html %}
-
+  {% include mode-switcher.html %}
   <body class="theme-base-{{site.color-scheme}}">
 
     <!-- This if statement decides which sidebar to use -->
@@ -91,6 +91,7 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+    <script src="/assets/js/mode-switcher.js"></script>
 
   </body>
 </html>
