@@ -32,7 +32,7 @@
       <main class="container content" id="main">
           <label class="switch">
     <input type="checkbox" onclick="darkLight()" id="checkBox" >
-    <span class="slider"></span>
+    <span class="slider"  id="theme-toggle"></span>
   </label>
       {{ content }}
       </main>
@@ -95,40 +95,26 @@
 </script>
 
 <script>
-
-function darklight(){
-    $('body').addClass('theme-base-yellow');
-    localStorage.setItem("mode", "dark");
-    }
-
-
-
-function nodark(){
-        $('body').removeClass('theme-base-orange');
-        localStorage.setItem("mode", "light");
+  
+$('#body').toggleClass(localStorage.toggled);
+// wait for the page to load
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+        // if it's light -> go dark
+        if(localStorage.toggled.includes('theme-base-yellow')){
+            $('#body').toggleClass('theme-base-orange');
+            themeToggle.innerText = 'Switch to light mode';
+        } else {
+            // if it's dark -> go light
+            $('body').toggleClass('theme-base-yellow');
+            themeToggle.innerText = 'Switch to dark mode';
+            localStorage.toggled = "theme-base-orange";
         }
-
-  if(localStorage.getItem("mode")=="dark") {
-        darkmode();
-  }
-  else
-  {
-    nodark();
-  }
-
-$('#body').change(function(){   
-
-    if ($(this).prop('checked'))
-    {
-        darkmode();
-    }
-    else
-    {
-        nodark();
-    }
-
-});
-
+        // save the preference to localStorage
+ 
+    })
+})
 </script>
 
   </body>
