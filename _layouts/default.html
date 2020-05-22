@@ -96,20 +96,17 @@
 </script>
 
 <script>
-  
 $("#switch").on("click", () => {
   if($("#switch").prop("checked")) {
-      $("#body").removeClass("theme-base-yellow");
-      $("#body").addClass("theme-base-orange");
-
+      $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
+      localStorage.theme = "theme-base-orange";
   } else {
-    $("#body").removeClass("theme-base-orange");
-      if($("#body").hasClass("theme-base-yellow") == "false") {
-           $("#body").addClass("theme-base-yellow");    
-    }  
+    $(".wrapper").removeClass("theme-base-orange").addClass("theme-base-yellow");
+    localStorage.theme = "";
   }
-})
-
+   
+});
+$(".wrapper").addClass(localStorage.theme);
 
 </script>
 
