@@ -101,6 +101,7 @@ $('#body').toggleClass(localStorage.toggled);
 function darkLight() {
   /*DARK CLASS*/
   if (localStorage.toggled != 'theme-base-orange') {
+    $('#body').removeClass('theme-base-yellow');
     $('#body').toggleClass('theme-base-orange', true);
     localStorage.toggled = "theme-base-orange";
      
