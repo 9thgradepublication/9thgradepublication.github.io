@@ -108,7 +108,7 @@ function darkLight() {
   else {
     $('#body').toggleClass('theme-base-orange', false);
     $('#body').toggleClass('theme-base-yellow', true)
-    $('#body').toggleClass('theme-base-yellow').siblings().removeClass('theme-base-orange');
+    $('#body').removeClass('theme-base-orange');
     $('#body').addClass('theme-base-yellow')
     localStorage.toggled = 'theme-base-yellow';
   }
