@@ -96,6 +96,7 @@
 </script>
 
 <script>
+
 $("#switch").on("click", () => {
   if($("#switch").prop("checked")) {
       $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
@@ -106,7 +107,8 @@ $("#switch").on("click", () => {
   }
    
 });
-$("#body").addClass(localStorage.theme);
+  
+$("#body").addClass(localStorage.theme).siblings().remove();
 
 </script>
 
