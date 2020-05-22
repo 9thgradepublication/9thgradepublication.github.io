@@ -1,29 +1,30 @@
 <a class="smaller" style="cursor: pointer; font-size:small;">A</a> <a class="og" style="cursor: pointer; font-size:medium;">A</a> <a class="bigger" style="cursor: pointer;font-size:large">A</a>
-<script>
-// When + or - buttons are clicked the font size of the h1 is increased/decreased by 2
-// The max is set to 50px for this demo, the min is set by min font in the user's style sheet
+(function($) {
+  function changeFont(fontSize) {
+      return function() {
+         $('html').css('font-size', fontSize + '%');
+         sessionStorage.setItem('fSize', fontSize);
+      }
+    }
 
-function getSize() {
-  size = $( "html" ).css( "font-size" );
-  size = parseInt(size, 10);
-}
+    var normalFont = changeFont(100),
+    		mediumFont = changeFont(125),
+    		largeFont  = changeFont(145);
 
-getSize();
+    $('smaller').on('click', function(){
+      normalFont();
+    });
 
-$( "#bigger" ).on( "click", function() {
+    $('medium').on('click', function(){
+      mediumFont();
+    });
 
-  if ((size + 2) <= 50) {
-    $( "html" ).css( "font-size", "+=2" );
-  }
-});
+    $('bigger').on('click', function(){
+      largeFont();
+    });
 
-$( "#smaller" ).on( "click", function() {
-  if ((size - 2) >= 12) {
-    $( "html" ).css( "font-size", "-=2" );
-  }
- 
-$( "#og").on("click", function() {
-  $("html").css("font-size", "125%");
-};
+    if (localStorage.length !== 0) {
+      $('html').css('font-size', localStorage.getItem('fSize') + '%');
+    }
   
-</script>
+})(jQuery);
