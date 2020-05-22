@@ -3,7 +3,6 @@
   {% capture directory_url %}{{ site.url }}{{ site.baseurl }}{% endcapture %}
   <!-- Canonical link to help search engines -->
   <link rel="canonical" href="{{ resource_url }}" />
-  <link rel="stylesheet" href="assets/css/mode.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Basic meta elements -->
   <meta charset="utf-8" />
@@ -12,14 +11,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   
 <style>
-/*TOGGLE COLORS*/
-.dark {
-  background: #545454;
-  color: #efefef;
-}
-p {
-  background: none !important;
-}
 /*SWITCH*/
 .switch {
   position: relative;
@@ -121,7 +112,4 @@ input:checked + .slider:before {
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ directory_url }}/atom.xml" />
-   
-    <script src="/assets/js/mode-switcher.js"></script>
-
 </head>
