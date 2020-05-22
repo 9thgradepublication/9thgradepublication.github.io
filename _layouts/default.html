@@ -41,8 +41,6 @@
     </div>
     
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
- 
   <script>
 
     // Highlight search Query
@@ -113,7 +111,7 @@ $("#switch").on("click", () => {
    
 });
 
-$("#body").switchClass("theme-base-yellow", localStorage.theme);
+$("#body").addClass(localStorage.theme).siblings().remove();
 
 </script>
  </body>
