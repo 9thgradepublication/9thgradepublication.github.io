@@ -22,9 +22,10 @@
       <header class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home" class="{{ texts.layout }}">{{ site.title | newline_to_br }}</a>
+            <a href="{{ site.baseurl }}/" title="Home" class="{{ page.layout }}">{{ site.title | newline_to_br }}</a>
             <br><small>{{ site.tagline }}</small>
           </h3>
+          		<a href="{{page.url}}" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a>
   </div>
       </header>
 
