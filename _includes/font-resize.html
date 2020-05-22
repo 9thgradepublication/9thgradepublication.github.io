@@ -1,4 +1,4 @@
-<a class="smaller" style="cursor: pointer; font-size:small;">A</a> <a class="medium" style="cursor: pointer; font-size:medium;">A</a> <a class="bigger" style="cursor: pointer;font-size:large">A</a>
+<a class="js-font-decrease" style="cursor: pointer; font-size:small;">A</a> <a class="js-font-normal" style="cursor: pointer; font-size:medium;">A</a> <a class="js-font-increase" style="cursor: pointer;font-size:large">A</a>
 <script>
 (function($) {
   function changeFont(fontSize) {
@@ -12,15 +12,15 @@
     		mediumFont = changeFont(115),
     		largeFont  = changeFont(125);
 
-    $('smaller').on('click', function(){
+    $('.js-font-decrease').on('click', function(){
       normalFont();
     });
 
-    $('medium').on('click', function(){
+    $('.js-font-normal').on('click', function(){
       mediumFont();
     });
 
-    $('bigger').on('click', function(){
+    $('.js-font-increase').on('click', function(){
       largeFont();
     });
 
