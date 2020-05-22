@@ -105,13 +105,14 @@ function darkLight() {
     $('#body').toggleClass('theme-base-orange', true);
     localStorage.toggled = "theme-base-orange";
      
-  } 
-  elif (localStorage.toggled != 'theme-base-yellow' || 'theme-base-orange') {
-     $('#body').addClass('theme-base-yellow');
   }
   else {
     $('#body').toggleClass('theme-base-orange', false);
     localStorage.toggled = 'theme-base-yellow';
+  }
+  
+  if (localStorage.toggled != 'theme-base-orange') && (localStorage.toggled == '') {
+    $('#body').addClass('theme-base-yellow');
   }
 }
 
