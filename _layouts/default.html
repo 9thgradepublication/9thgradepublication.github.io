@@ -42,7 +42,8 @@
     
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
   <script>
-
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+ 
     // Highlight search Query
     var url = window.location.href;
       if (url.lastIndexOf("?q=") > 0) {
@@ -113,6 +114,5 @@ if (localStorage.theme == "") {
 $("#body").switchClass("theme-base-yellow", localStorage.theme);
 
 </script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-  </body>
+ </body>
 </html>
