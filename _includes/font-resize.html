@@ -2,9 +2,9 @@
 <script>
 (function($) {
   function changeFont(fontSize) {
-      size = $( "html" ).css( "font-size" );
+      size = $( "body" ).css( "font-size" );
       return function() {
-         $('html').css('font-size', fontSize);
+         $('body').css('font-size', fontSize);
          localStorage.setItem('fSize', fontSize);
       }
     }
@@ -12,7 +12,7 @@
     var mediumFont = changeFont(125),
 
     $('.js-font-decrease').on('click', function(){
-      $( "html" ).css( "font-size", "-=2" );
+      $( "body" ).css( "font-size", "-=2" );
     });
 
     $('.js-font-normal').on('click', function(){
@@ -20,11 +20,11 @@
     });
 
     $('.js-font-increase').on('click', function(){
-      $( "html" ).css( "font-size", "+=2" );
+      $( "body" ).css( "font-size", "+=2" );
     });
 
     if (localStorage.length !== 0) {
-      $('html').css('font-size', localStorage.getItem('fSize') + '%');
+      $('body').css('font-size', localStorage.getItem('fSize'));
     }
   
 })(jQuery);
