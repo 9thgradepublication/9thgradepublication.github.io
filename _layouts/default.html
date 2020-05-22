@@ -3,7 +3,7 @@
 
   {% include head.html %}
   
-  <body class="theme-base-{{site.color-scheme}}">
+  <body class="theme-base-{{site.color-scheme}}" id="body">
 
     <!-- This if statement decides which sidebar to use -->
     {% if page.toc %}
@@ -96,22 +96,22 @@
 
 <script>
 
-$('#main').toggleClass(localStorage.toggled);
+$('#body').toggleClass(localStorage.toggled);
 
 function darkLight() {
   /*DARK CLASS*/
   if (localStorage.toggled != 'dark') {
-    $('#main, p').toggleClass('dark', true);
-    localStorage.toggled = "dark";
+    $('#body').toggleClass('theme-base-orange', true);
+    localStorage.toggled = "theme-base-orange";
      
   } else {
-    $('#main, p').toggleClass('dark', false);
+    $('#body').toggleClass('theme-base-orange', false);
     localStorage.toggled = "";
   }
 }
 
 /*Add 'checked' property to input if background == dark*/
-if ($('main').hasClass('dark')) {
+if ($('main').hasClass('theme-base-orange')) {
    $( '#checkBox' ).prop( "checked", true )
 } else {
   $( '#checkBox' ).prop( "checked", false )
