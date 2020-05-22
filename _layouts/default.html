@@ -101,19 +101,16 @@ $('#body').toggleClass(localStorage.toggled);
 function darkLight() {
   /*DARK CLASS*/
   if (localStorage.toggled != 'theme-base-orange') {
-    $('#body').removeClass('theme-base-yellow');
-    $('#body').toggleClass('theme-base-orange', true);
+    $('#body').toggleClass('theme-base-orange', true).siblings().removeClass('theme-base-yellow');
     localStorage.toggled = "theme-base-orange";
      
   }
   else {
     $('#body').toggleClass('theme-base-orange', false);
+    $('#body').toggleClass('theme-base-yellow', true).siblings().removeClass('theme-base-orange');
     localStorage.toggled = 'theme-base-yellow';
   }
   
-  if (localStorage.toggled != 'theme-base-orange' && localStorage.toggled == '') {
-    $('#body').addClass('theme-base-yellow');
-  }
 }
 
 /*Add 'checked' property to input if background == dark*/
