@@ -98,20 +98,21 @@
 </script>
 
 <script>
-
-$("#switch").on("click", () => {
-  if($("#switch").prop("checked")) {
-      $("#body").switchClass("theme-base-yellow");
-      localStorage.theme = "theme-base-orange";
-  } else {
-    $("#body").switchClass("theme-base-yellow");
-    localStorage.theme = "theme-base-yellow";
-  }
-    
-});
 if (localStorage.theme == "") {
    $("#body").addClass("theme-base-yellow");
  }
+  
+$("#switch").on("click", () => {
+  if($("#switch").prop("checked")) {
+      $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
+      localStorage.theme = "theme-base-orange";
+  } else {
+    $("#body").removeClass("theme-base-orange").addClass("theme-base-yellow");
+    localStorage.theme = "theme-base-yellow";
+  }
+   
+});
+
 $("#body").switchClass("theme-base-yellow", localStorage.theme);
 
 </script>
