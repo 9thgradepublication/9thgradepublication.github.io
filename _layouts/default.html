@@ -98,10 +98,6 @@
     
 <script>
 var current_theme = $("#body").attr('class');
-if (localStorage.theme == "") {
-   $("#body").addClass("theme-base-yellow");
- }
-  
 $("#switch").on("click", () => {
   if($("#switch").prop("checked")) {
       $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
