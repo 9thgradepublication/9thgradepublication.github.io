@@ -105,14 +105,11 @@ $("#switch").on("click", () => {
     $("#body").removeClass("theme-base-orange").addClass("theme-base-yellow");
     localStorage.theme = "theme-base-yellow";
   }
-  
-  if (localStorage.theme == "") {
-    $("#body").addClass("theme-base-yellow");
-      }
-      
-   
+    
 });
-  
+if (localStorage.theme == "") {
+   $("#body").addClass("theme-base-yellow");
+ }
 $("#body").switchClass("theme-base-yellow", localStorage.theme);
 
 </script>
