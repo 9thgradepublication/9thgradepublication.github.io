@@ -22,11 +22,9 @@
       <header class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title | newline_to_br }}</a>
+            <a href="{{ site.baseurl }}/" title="Home" style="color: {{ texts.layout }}">{{ site.title | newline_to_br }}</a>
             <br><small>{{ site.tagline }}</small>
           </h3>
-        <a href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light”>Dark</a>
-
   </div>
       </header>
 
@@ -69,10 +67,6 @@
           checkbox.checked = false;
         }, false);
       })(document);
-
-document.addEventListener('DOMContentLoaded', (event) => {
-  ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
-}).
     </script>
 
 
