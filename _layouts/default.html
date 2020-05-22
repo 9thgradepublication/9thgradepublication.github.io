@@ -30,16 +30,13 @@
       </header>
 
       <main class="container content" id="main">
-          <label class="switch">
-    <input type="checkbox" id="theme-toggle">
-    <span class="slider"></span>
-  </label>
+        <label class="switch">
+        <input type="checkbox" onclick="darkLight()" id="checkBox" >
+        <span class="slider"></span>
+        </label>
       {{ content }}
       </main>
     </div>
-
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
   <script>
 
     // Highlight search Query
@@ -96,28 +93,29 @@
 
 <script>
   
-
-$('#body').toggleClass(localStorage.toggled);
+//dark: theme-base-orange
+//light: theme-base-yellow
+$('#body').attr(localStorage.theme);
 
 function darkLight() {
   /*DARK CLASS*/
-  //if light, go dark
-  if ($('#body').hasClass('theme-base-yellow')) {
-    $('#body').toggleClass('theme-base-orange');
-    localStorage.toggled = "theme-base-orange";
+  if (localStorage.toggled != 'theme-base-orange') {
+    $('#body').attr('theme-base-orange', true);
+    localStorage.theme = "theme-base-orange";
      
-  } elif ($('#body').hasClass('theme-base-orange')){
-    $('#body').toggleClass('theme-base-yellow');
-    localStorage.toggled = "theme-base-yellow";
+  } else {
+    $('#body').attr('theme-base-orange', false);
+    localStorage.theme = "theme-base-yellow";
   }
 }
 
 /*Add 'checked' property to input if background == dark*/
-if ($('main').hasClass('dark')) {
+if ($('body').hasClass('theme-base-orange')) {
    $( '#checkBox' ).prop( "checked", true )
 } else {
   $( '#checkBox' ).prop( "checked", false )
 }
+
 
 </script>
 
