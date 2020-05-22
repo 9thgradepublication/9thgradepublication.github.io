@@ -103,14 +103,14 @@ $("#switch").on("click", () => {
       localStorage.theme = "theme-base-orange";
   } else {
     $("#body").removeClass("theme-base-orange").addClass("theme-base-yellow");
-    localStorage.theme = "";
+    localStorage.theme = "theme-base-yellow";
   }
    
 });
   
-$("#body").removeClass('theme-base-yellow').addClass(localStorage.theme);
+$("#body").switchClass('theme-base-yellow', localStorage.theme);
 
 </script>
-
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   </body>
 </html>
