@@ -24,8 +24,9 @@
           <h3 class="masthead-title">
             <a href="{{ site.baseurl }}/" title="Home" class="{{ page.layout }}">{{ site.title | newline_to_br }}</a>
             <br><small>{{ site.tagline }}</small>
+            <a href="{{page.url}}" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a>
           </h3>
-          		<a href="{{page.url}}" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a>
+          		
   </div>
       </header>
 
@@ -36,6 +37,7 @@
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
+        <script src="/assets/js/mode-switcher.js"></script>
     <script>
 
     // Highlight search Query
@@ -89,5 +91,6 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+
   </body>
 </html>
