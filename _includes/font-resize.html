@@ -4,17 +4,15 @@
   function changeFont(fontSize) {
       size = $( "html" ).css( "font-size" );
       return function() {
-         $('html').css('font-size', fontSize + '%');
+         $('html').css('font-size', fontSize);
          localStorage.setItem('fSize', fontSize);
       }
     }
 
-    var normalFont = changeFont(100),
-    		mediumFont = changeFont(125),
-    		largeFont  = changeFont(145);
+    var mediumFont = changeFont(125),
 
     $('.js-font-decrease').on('click', function(){
-      size -= normalFont;
+      $( "html" ).css( "font-size", "-=2" );
     });
 
     $('.js-font-normal').on('click', function(){
@@ -22,7 +20,7 @@
     });
 
     $('.js-font-increase').on('click', function(){
-      size += largeFont();
+      $( "html" ).css( "font-size", "+=2" );
     });
 
     if (localStorage.length !== 0) {
