@@ -105,9 +105,12 @@ function darkLight() {
     $('#body').toggleClass('theme-base-orange', true);
     localStorage.toggled = "theme-base-orange";
      
-  } else {
+  } 
+  elif (localStorage.toggled != 'theme-base-yellow' || 'theme-base-orange') {
+     $('#body').addClass('theme-base-yellow');
+  }
+  else {
     $('#body').toggleClass('theme-base-orange', false);
-    $('#body').addClass('theme-base-yellow');
     localStorage.toggled = 'theme-base-yellow';
   }
 }
