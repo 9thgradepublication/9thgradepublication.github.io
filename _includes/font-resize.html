@@ -1,4 +1,4 @@
-<a class="smaller" style="cursor: pointer; font-size:small;">+</a> <a class="og" style="cursor: pointer; font-size:medium;">A</a> <a class="bigger" style="cursor: pointer;font-size:large">A</a>
+<a class="smaller" style="cursor: pointer; font-size:small;">A</a> <a class="og" style="cursor: pointer; font-size:medium;">A</a> <a class="bigger" style="cursor: pointer;font-size:large">A</a>
 <script>
 // When + or - buttons are clicked the font size of the h1 is increased/decreased by 2
 // The max is set to 50px for this demo, the min is set by min font in the user's style sheet
@@ -24,6 +24,6 @@ $( "#smaller" ).on( "click", function() {
  
 $( "#og").on("click", function() {
   $("html").css("font-size", "125%");
-});
+}(jQuery);
   
 </script>
