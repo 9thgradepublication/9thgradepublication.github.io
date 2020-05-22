@@ -96,27 +96,28 @@
 
 <script>
 
-$('#body').toggleClass(localStorage.class);
+$('#body').toggleClass(localStorage.toggled);
 
 function darkLight() {
   /*DARK CLASS*/
-  if (localStorage.class != 'theme-base-orange') {
-    $('#body').hasClass = 'theme-base-orange';
-    localStorage.class = "theme-base-orange";
+  if (localStorage.toggled != 'theme-base-orange') {
+    $('#body').toggleClass('theme-base-orange', true);
+    localStorage.toggled = "theme-base-orange";
      
   } else {
-    $('#body').addClass = 'theme-base-orange';
-    $('#body').removeClass = 'theme-base-yellow';
-    localStorage.class = "theme-base-yellow";
+    $('#body').toggleClass('theme-base-orange', false);
+    localStorage.toggled = "";
   }
 }
 
 /*Add 'checked' property to input if background == dark*/
-if ($('main').hasClass('theme-base-orange')) {
+if ($('body').hasClass('theme-base-orange')) {
    $( '#checkBox' ).prop( "checked", true )
 } else {
   $( '#checkBox' ).prop( "checked", false )
 }
+
+
 </script>
 
   </body>
