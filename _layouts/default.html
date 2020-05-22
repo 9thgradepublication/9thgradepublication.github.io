@@ -24,14 +24,17 @@
           <h3 class="masthead-title">
             <a href="{{ site.baseurl }}/" title="Home" class="{{ page.layout }}">{{ site.title | newline_to_br }}</a>
             <br><small>{{ site.tagline }}</small>
-                <button onclick="dark()">Switch color</button>
-          </h3>
+           </h3>
           		
   </div>
       </header>
 
       <main class="container content" id="main">
-        {{ content }}
+          <label class="switch">
+    <input type="checkbox" onclick="darkLight()" id="checkBox" >
+    <span class="slider"></span>
+  </label>
+      {{ content }}
       </main>
     </div>
 
@@ -90,35 +93,28 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-    <script>
-function dark() {
-document.body.style.backgroundColor = sessionStorage.getItem('bg');
-document.body.style.color = sessionStorage.getItem('cc');
-function darker() {
-     if ( sessionStorage.getItem('bg') === 'rgb(255, 255, 255)') {
 
-            sessionStorage.setItem('bg', 'rgb(6, 23, 37)');
-            sessionStorage.setItem('cc', '#777');
+<script>
 
+$('#main').toggleClass(localStorage.toggled);
 
-     }
-    else if (sessionStorage.getItem('bg') == null || undefined) {
-        sessionStorage.setItem('bg', 'rgb(6, 23, 37)');
-        sessionStorage.setItem('cc', '#777');
+function darkLight() {
+  /*DARK CLASS*/
+  if (localStorage.toggled != 'dark') {
+    $('#main, p').toggleClass('dark', true);
+    localStorage.toggled = "dark";
+     
+  } else {
+    $('#main, p').toggleClass('dark', false);
+    localStorage.toggled = "";
+  }
+}
 
-    }
-    else if( sessionStorage.getItem('bg') === 'rgb(6, 23, 37)') {
-
-        sessionStorage.setItem('bg', 'rgb(255, 255, 255)');
-        sessionStorage.setItem('cc', '#333');
-
-
-    }
-
-document.body.style.backgroundColor = sessionStorage.getItem('bg');
-document.body.style.color = sessionStorage.getItem('cc');
-
-
+/*Add 'checked' property to input if background == dark*/
+if ($('main').hasClass('dark')) {
+   $( '#checkBox' ).prop( "checked", true )
+} else {
+  $( '#checkBox' ).prop( "checked", false )
 }
 </script>
 
