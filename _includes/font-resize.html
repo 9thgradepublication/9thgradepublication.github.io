@@ -1,10 +1,10 @@
-<a class="js-font-decrease">A</span> <a class="js-font-normal">A</a> <a class="js-font-increase">A</a>
+<a class="js-font-decrease" style="cursor: pointer; font-size:small;">A</a> <a class="js-font-normal" style="cursor: pointer; font-size:medium;">A</a> <a class="js-font-increase" style="cursor: pointer;font-size:large">A</a>
 <script>
   (function($) {
   function changeFont(fontSize) {
       return function() {
-         $('html').css('font-size', fontSize + '%');
-         sessionStorage.setItem('fSize', fontSize);
+         $('html').css('font-size', fontSize += '%');
+         localStorage.setItem('fSize', fontSize);
       }
     }
 
