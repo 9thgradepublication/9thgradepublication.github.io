@@ -2,7 +2,7 @@
 <html lang="en-us">
 
   {% include head.html %}
-  {% include mode-switcher.html %}
+  
   <body class="theme-base-{{site.color-scheme}}">
 
     <!-- This if statement decides which sidebar to use -->
@@ -24,8 +24,7 @@
           <h3 class="masthead-title">
             <a href="{{ site.baseurl }}/" title="Home" class="{{ page.layout }}">{{ site.title | newline_to_br }}</a>
             <br><small>{{ site.tagline }}</small>
-            <a href="{{site.baseurl}}{{page.url}}"id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;">moon</a>
-            test
+                <button onclick="dark()">Switch color</button>
           </h3>
           		
   </div>
@@ -91,7 +90,35 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-    <script src="assets/js/mode-switcher.js"></script>
+    <script>
+document.body.style.backgroundColor = sessionStorage.getItem('bg');
+document.body.style.color = sessionStorage.getItem('cc');
+function darker() {
+     if ( sessionStorage.getItem('bg') === 'rgb(255, 255, 255)') {
+
+            sessionStorage.setItem('bg', 'rgb(6, 23, 37)');
+            sessionStorage.setItem('cc', '#777');
+
+
+     }
+    else if (sessionStorage.getItem('bg') == null || undefined) {
+        sessionStorage.setItem('bg', 'rgb(6, 23, 37)');
+        sessionStorage.setItem('cc', '#777');
+
+    }
+    else if( sessionStorage.getItem('bg') === 'rgb(6, 23, 37)') {
+
+        sessionStorage.setItem('bg', 'rgb(255, 255, 255)');
+        sessionStorage.setItem('cc', '#333');
+
+
+    }
+
+document.body.style.backgroundColor = sessionStorage.getItem('bg');
+document.body.style.color = sessionStorage.getItem('cc');
+
+}
+</script>
 
   </body>
 </html>
