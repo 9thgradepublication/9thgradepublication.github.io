@@ -101,10 +101,10 @@ $('#body').toggleClass(localStorage.toggled);
 function darkLight() {
   /*DARK CLASS*/
   if (localStorage.toggled != 'theme-base-orange') {
-    $('#body').toggleClass('theme-base-orange', true).siblings().removeClass('theme-base-yellow');
     localStorage.toggled = "theme-base-orange";
      
   }
+
   else {
     $('#body').toggleClass('theme-base-orange', false);
     $('#body').toggleClass('theme-base-yellow', true)
@@ -112,6 +112,10 @@ function darkLight() {
     $('#body').addClass('theme-base-yellow')
     localStorage.toggled = 'theme-base-yellow';
   }
+  
+  if ($('#body').siblings() == 'theme-base-orange') {
+    $('#body').removeClass('theme-base-orange);
+   }
   
 }
 
