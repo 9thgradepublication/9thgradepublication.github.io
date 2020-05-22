@@ -96,26 +96,29 @@
 
 <script>
   
+
 $('#body').toggleClass(localStorage.toggled);
-// wait for the page to load
-document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('theme-toggle');
-    themeToggle.addEventListener('click', () => {
-        // if it's light -> go dark
-        if(localStorage.toggled.includes('theme-base-yellow')){
-            $('#body').toggleClass('theme-base-orange');
-           // themeToggle.innerText = 'Switch to light mode';
-            localStorage.toggled = "theme-base-orange";
-        } else {
-            // if it's dark -> go light
-            $('body').toggleClass('theme-base-yellow');
-            //themeToggle.innerText = 'Switch to dark mode';
-            localStorage.toggled = "theme-base-yellow";
-        }
-        // save the preference to localStorage
- 
-    })
-})
+
+function darkLight() {
+  /*DARK CLASS*/
+  //if light, go dark
+  if ($('#body').hasClass('theme-base-yellow')) {
+    $('#body').toggleClass('theme-base-orange');
+    localStorage.toggled = "theme-base-orange";
+     
+  } elif ($('#body').hasClass('theme-base-orange')){
+    $('#body').toggleClass('theme-base-yellow');
+    localStorage.toggled = "theme-base-yellow";
+  }
+}
+
+/*Add 'checked' property to input if background == dark*/
+if ($('main').hasClass('dark')) {
+   $( '#checkBox' ).prop( "checked", true )
+} else {
+  $( '#checkBox' ).prop( "checked", false )
+}
+
 </script>
 
   </body>
