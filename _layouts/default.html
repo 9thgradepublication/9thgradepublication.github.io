@@ -31,8 +31,8 @@
 
       <main class="container content" id="main">
           <label class="switch">
-    <input type="checkbox" onclick="darkLight()" id="checkBox" >
-    <span class="slider"  id="theme-toggle"></span>
+    <input type="checkbox" id="theme-toggle">
+    <span class="slider"></span>
   </label>
       {{ content }}
       </main>
@@ -104,12 +104,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // if it's light -> go dark
         if(localStorage.toggled.includes('theme-base-yellow')){
             $('#body').toggleClass('theme-base-orange');
-            themeToggle.innerText = 'Switch to light mode';
+           // themeToggle.innerText = 'Switch to light mode';
+            localStorage.toggled = "theme-base-orange";
         } else {
             // if it's dark -> go light
             $('body').toggleClass('theme-base-yellow');
-            themeToggle.innerText = 'Switch to dark mode';
-            localStorage.toggled = "theme-base-orange";
+            //themeToggle.innerText = 'Switch to dark mode';
+            localStorage.toggled = "theme-base-yellow";
         }
         // save the preference to localStorage
  
