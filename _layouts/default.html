@@ -96,37 +96,38 @@
 
 <script>
 
-$('#body').toggleClass(localStorage.toggled);
+function darklight(){
+    $('body').addClass('theme-base-yellow');
+    localStorage.setItem("mode", "dark");
+    }
 
-function darkLight() {
-  /*DARK CLASS*/
-  if (localStorage.toggled != 'theme-base-orange') {
-    localStorage.toggled = "theme-base-orange";
-     
+
+
+function nodark(){
+        $('body').removeClass('theme-base-orange');
+        localStorage.setItem("mode", "light");
+        }
+
+  if(localStorage.getItem("mode")=="dark") {
+        darkmode();
+  }
+  else
+  {
+    nodark();
   }
 
-  else {
-    $('#body').toggleClass('theme-base-orange', false);
-    $('#body').toggleClass('theme-base-yellow', true)
-    $('#body').removeClass('theme-base-orange');
-    $('#body').addClass('theme-base-yellow')
-    
-    localStorage.toggled = 'theme-base-yellow';
-  }
-  
-  if ($('#body').siblings() == 'theme-base-orange') {
-    $('#body').removeClass('theme-base-orange');
-   }
-  
-}
+$('#body').change(function(){   
 
-/*Add 'checked' property to input if background == dark*/
-if ($('body').hasClass('theme-base-orange')) {
-   $( '#checkBox' ).prop( "checked", true )
-} else {
-  $( '#checkBox' ).prop( "checked", false )
-}
+    if ($(this).prop('checked'))
+    {
+        darkmode();
+    }
+    else
+    {
+        nodark();
+    }
 
+})(jQuery);
 
 </script>
 
