@@ -68,7 +68,12 @@
           checkbox.checked = false;
         }, false);
       })(document);
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
+}).
     </script>
+
 
 <!-- Facebook SDK for JavaScript -->
 <script>
