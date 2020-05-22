@@ -2,6 +2,7 @@
 <script>
 (function($) {
   function changeFont(fontSize) {
+      size = $( "html" ).css( "font-size" );
       return function() {
          $('html').css('font-size', fontSize + '%');
          localStorage.setItem('fSize', fontSize);
@@ -9,11 +10,11 @@
     }
 
     var normalFont = changeFont(100),
-    		mediumFont = changeFont(115),
-    		largeFont  = changeFont(125);
+    		mediumFont = changeFont(125),
+    		largeFont  = changeFont(145);
 
     $('.js-font-decrease').on('click', function(){
-      normalFont();
+      size -= normalFont;
     });
 
     $('.js-font-normal').on('click', function(){
@@ -21,7 +22,7 @@
     });
 
     $('.js-font-increase').on('click', function(){
-      largeFont();
+      size += largeFont();
     });
 
     if (localStorage.length !== 0) {
