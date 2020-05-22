@@ -287,15 +287,12 @@ tbody tr:nth-child(odd) th {
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: .875rem;/* 15px*/
   color: rgba(255,255,255,.6);
   background-color: #202020;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
- -webkit-box-shadow: 12px 8px 0 -6px black;
- -moz-box-shadow: 12px 8px 0 -6px black;
- box-shadow: 12px 8px 0 -6px black;
-  
 }
 
 @media (min-width: 30em) {
