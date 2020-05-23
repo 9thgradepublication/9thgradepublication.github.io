@@ -112,6 +112,8 @@ $("#switch").on("click", () => {
 
 if (typeof localStorage.theme != "undefined") {
 $("#body").removeClass(current_theme).addClass(localStorage.theme);
+}
+elif (typeof localStorage.theme != "undefined"){
 $("#switch").prop("checked", false);
 }
 
