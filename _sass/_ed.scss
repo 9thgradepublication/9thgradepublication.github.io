@@ -700,19 +700,21 @@ li.speakerGroup {
 
   .switch {
   position:fixed;
-	width:50px;
-	height:50px;
-	bottom:40px;
-	right:40px;
+	width:3.125rem;
+	height:3.125rem;
+	bottom:2.5rem;
+	right:2.5rem;
 	color:#FFF;
-	border-radius:40px;
+	border-radius:2.5rem;
 	text-align:center;
 	box-shadow: 2px 2px 3px #999;
 
+	 background-color: #87ceeb;
+
 }
 .btn-float {  
-  margin-bottom: 50px;
-  line-height: 20px;}
+  margin-bottom: 2rem;
+  line-height: 1.2rem;}
 
 .switch input { 
   opacity: 0;
@@ -858,12 +860,10 @@ li.prose-indent {
     transition: background-color 1000ms linear;
 }
 
-.theme-base-yellow .float {
-  background-color: #e0bc5b;
-}
+
 /* Dark */
 
-.theme-base-dark,  .theme-base-dark .float  {
+.theme-base-dark  {
   background-color: #1f1b24;
    -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
