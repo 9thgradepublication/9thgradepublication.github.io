@@ -102,11 +102,9 @@ $("#switch").on("click", () => {
   if($("#switch").prop("checked")) {
       $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
       localStorage.theme = "theme-base-orange";
-      localStorage.setItem($("#switch").prop("checked"), true);
   } else {
     $("#body").removeClass("theme-base-orange").addClass("theme-base-yellow");
     localStorage.theme = "theme-base-yellow";
-    localStorage.setItem($("#switch").prop("checked"), false);
   }
    
 });
@@ -114,8 +112,8 @@ $("#switch").on("click", () => {
 if (typeof localStorage.theme == "string") {
     $("#body").removeClass(current_theme).addClass(localStorage.theme);
 }
-
-//if (localStorage.theme == "theme-base-yellow"){$("#switch").prop("checked", false);}
-//else{$("#switch").prop("checked", true);}</script>
+if (localStorage.theme == "theme-base-yellow" && current_theme == "theme-base-yellow" ) {$("#switch").prop("checked", false);}
+else {$("#switch").prop("checked", true);}
+</script>
  </body>
 </html>
