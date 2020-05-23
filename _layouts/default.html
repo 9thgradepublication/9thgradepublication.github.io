@@ -101,21 +101,17 @@ $("#switch").on("click", () => {
   if($("#switch").prop("checked")) {
       $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
       localStorage.theme = "theme-base-orange";
-      localStorage.checked = "true";
   } else {
     $("#body").removeClass("theme-base-orange").addClass("theme-base-yellow");
     localStorage.theme = "theme-base-yellow";
-    localStorage.checked = "false";
   }
    
 });
 
 $("#body").removeClass(current_theme).addClass(localStorage.theme);
-$("#switch").prop("checked", localStorage.checked);
+if (localStorage.theme == "theme-base-yellow") {$("#switch").prop("checked", false);}
+else
+{$("#switch").prop("checked", true);}
 </script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
  </body>
 </html>
