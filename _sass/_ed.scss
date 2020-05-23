@@ -696,6 +696,30 @@ li.speakerGroup {
   margin-bottom: -1.6em;
 }
 
+/* floating button */
+
+  .switch {
+  position:fixed;
+	width:50px;
+	height:50px;
+	bottom:40px;
+	right:40px;
+	color:#FFF;
+	border-radius:40px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+
+}
+.btn-float {  
+  margin-bottom: 50px;
+  line-height: 20px;}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
 /* To add an attribution, make sure to make a line with the attribution class */
 
 li.attribution {
@@ -813,40 +837,67 @@ li.prose-indent {
 .theme-base-yellow .sidebar,
 .theme-base-yellow .sidebar-toggle:active {
   background-color: #e0bc5b;
+   -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
 
 .theme-base-yellow .container a,
 .theme-base-yellow .sidebar-toggle,
 .theme-base-yellow .related-posts li a:hover {
   color: #e0bc5b;
+   -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
 
 .theme-base-yellow h1, .theme-base-yellow h2, .theme-base-yellow h3 ,.theme-base-yellow h3{
   color: #8f5536;
+   -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
 
+.theme-base-yellow .float {
+  background-color: #e0bc5b;
+}
 /* Dark */
 
-.theme-base-dark  {
+.theme-base-dark,  .theme-base-dark .float  {
   background-color: #1f1b24;
+   -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
 
 .theme-base-dark .sidebar,
 .theme-base-dark .sidebar-toggle:active {
   background-color: #bb86fc;
+   -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
 
 .theme-base-dark .container a,
 .theme-base-dark .sidebar-toggle,
 .theme-base-dark .related-posts li a:hover {
   color: #bb86fc;
+   -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
 
 .theme-base-dark h1, .theme-base-dark h2, .theme-base-dark h3 ,.theme-base-dark h3
 {
   color: #bb86fc !important;
+   -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
-.theme-base-dark p{
-  color: #967bb6 !important;
+.theme-base-dark p {
+  color: #dcd0ff !important;
+   -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
 
