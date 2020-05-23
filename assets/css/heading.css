@@ -5,10 +5,10 @@
   padding-top: 26px;
   padding-bottom: 1rem;
   text-align: center;
+  dispay-style: block;
 }
 
 .heading-title {
-  color: #505050;
   font-family: "Montez", cursive;
   font-size: 1.8rem;
   line-height: .777em;
