@@ -222,15 +222,48 @@ tbody tr:nth-child(odd) th {
 
   Super small header above the content for site name and short description.
 */
-.shadow {
-  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
-  text-align:center;
-  font-family: 'Montez', cursive;
-  font-size: 5em;
+
+.heading {
+  border-bottom: 0;
   margin-bottom: 3rem;
   padding-top: 26px;
   padding-bottom: 1rem;
   text-align: center;
+}
+
+.heading {
+  color: #505050;
+  font-family: $main-font;
+  font-size: 1.8rem;
+  line-height: .777em;
+  margin-top: 2em;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
+}
+
+.heading-title small {
+  color: $text-color;
+  display: none; /* This is an accessibility no-no */
+  font-family: $heading-font;
+  font-size: .88rem;
+  font-weight: normal;
+  letter-spacing: .05rem;
+}
+
+@media (min-width: 320px) {
+  .heading-title {
+    margin-top: 2px;
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 48em) {
+  .heading-title small {
+    display: inline;
+  }
 }
 
 /*
@@ -844,7 +877,7 @@ body.theme-base-yellow {
 /* Dark */
 
 body.theme-base-dark  {
-  background-color: #1f1b24;
+  background-color: #3b3b3b;
    -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
@@ -852,23 +885,23 @@ body.theme-base-dark  {
 
 .theme-base-dark .sidebar,
 .theme-base-dark .sidebar-toggle:active {
-  background-color: #bb86fc;
+  background-color: #8ab9c2;
 
 }
 
 .theme-base-dark .container a,
 .theme-base-dark .sidebar-toggle,
 .theme-base-dark .related-posts li a:hover {
-  color: #bb86fc;
+  color: #8ab9c2;
 }
 
 .theme-base-dark h1, .theme-base-dark h2, .theme-base-dark h3 ,.theme-base-dark h3
 {
-  color: #bb86fc !important;
+  color: #f0eded !important;
 }
 
 .theme-base-dark article, .theme-base-dark div > p  {
-  color: #dcd0ff !important;
+  color: #f0eded !important;
 }
 
 .theme-base-dark label.sidebar-toggle {
