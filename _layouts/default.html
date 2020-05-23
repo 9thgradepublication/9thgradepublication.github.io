@@ -30,9 +30,8 @@
       </header>
 
       <main class="container content" id="main">
-  <input type="checkbox" id="switch">
+        <a id="switch" style="cursor-type:pointer"></a>
   <label for="switch" class="switch-label">
-    <div class="toggle"></div>
   </label>
 
       {{ content }}
@@ -42,7 +41,7 @@
     
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
     
-    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
   <script>
 
     // Highlight search Query
@@ -99,20 +98,25 @@
     <script>
 var current_theme = $("#body").attr('class');
 $("#switch").on("click", () => {
-  if($("#switch").prop("checked")) {
+  if($("#switch").prop("click")) {
       $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
       localStorage.theme = "theme-base-orange";
+      $("#switch").attr("class","fas fa-sun");
+      localStorage.icon = "fas fa-sun";
   } else {
     $("#body").removeClass("theme-base-orange").addClass("theme-base-yellow");
     localStorage.theme = "theme-base-yellow";
+    $("#switch").attr("class","fas fa-moon");
+    localStorage.icon = "fas fa-moon";
   }
    
 });
 
-$("#body").removeClass(current_theme).addClass(localStorage.theme);
+$("#body").attr("class", localStorage.theme);
+$("#switch").attr("class",localStorage.icon);
 
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
