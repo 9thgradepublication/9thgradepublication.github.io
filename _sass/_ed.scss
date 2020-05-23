@@ -842,11 +842,11 @@ li.prose-indent {
   color: #bb86fc;
 }
 
-.theme-base-dark h1, .theme-base-dark h2, .theme-base-dark h3 ,.theme-base-dark h3, .theme-base-dark p
+.theme-base-dark h1, .theme-base-dark h2, .theme-base-dark h3 ,.theme-base-dark h3
 {
-  color: #bb86fc;
+  color: #bb86fc !important;
 }
-.theme-base-dark article{
-  color: #bb86fc;
+.theme-base-dark p{
+  color: #967bb6 !important;
 }
 
