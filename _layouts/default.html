@@ -25,17 +25,18 @@
             <a href="{{ site.baseurl }}/" title="Home" class="{{ page.layout }}">{{ site.title | newline_to_br }}</a>
             <br><small>{{ site.tagline }}</small>
            </h3>
-      		
+      		<label  for="switch" class="switch">
+    <input type="checkbox" id="switch">
+    <div class="slider round" id="checkBox"></div>
+  </label>
   </div>
+  </div>	
 
       </header>
     
 
    <main class="container content” id="main">
-      <label class="switch">
-    <input type="checkbox" onclick="darkLight()" id="checkBox" >
-    <span class="slider"></span>
-  </label>  
+     
   {{ content }}
    </main>    
 
@@ -96,29 +97,28 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 <script>
-
-$('#main').toggleClass(localStorage.toggled);
-
-function darkLight() {
-  /*DARK CLASS*/
-  if (localStorage.toggled != 'dark') {
-    $('#main, p').toggleClass('dark', true);
-    localStorage.toggled = "dark";
-     
+var current_theme = $("#body").attr('class');
+$("#switch").on("click", () => {
+  if($("#switch").prop("checked")) {
+      $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
+      localStorage.theme = "theme-base-orange";
+    //  localStorage.checked = "true";
   } else {
-    $('#main, p').toggleClass('dark', false);
-    localStorage.toggled = "";
+    $("#body").removeClass("theme-base-orange").addClass("theme-base-yellow");
+    localStorage.theme = "theme-base-yellow";
+   // localStorage.checked = "false";
   }
+   
+});
+
+if (typeof localStorage.theme != "string") {
+$("#body").removeClass(current_theme).addClass(localStorage.theme);
+}
+elif (typeof localStorage.theme == "undefined") {
+$("#switch").prop("checked", false);
 }
 
-/*Add 'checked' property to input if background == dark*/
-if ($('main').hasClass('dark')) {
-   $( '#checkBox' ).prop( "checked", true )
-} else {
-  $( '#checkBox' ).prop( "checked", false )
-}
-
-
-</script>
+if (localStorage.theme == "theme-base-yellow") {$("#switch").prop("checked", false);}
+else{$("#switch").prop("checked", true);}</script>
  </body>
 </html>
