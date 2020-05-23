@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montez@1&display=swap');
 .shadow {
-         font-family: 'Fondamento', cursive;
-        font-family: Oswald;
-        background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png);
+        font-family: Montez;
         text-align:center;
         font-size: 1.8rem;
         line-height: .777em;
