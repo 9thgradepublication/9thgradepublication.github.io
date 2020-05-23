@@ -844,12 +844,18 @@ li.prose-indent {
 .theme-base-yellow .sidebar,
 .theme-base-yellow .sidebar-toggle:active {
   background-color: #e0bc5b;
+	   -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
 
 .theme-base-yellow .container a,
 .theme-base-yellow .sidebar-toggle,
 .theme-base-yellow .related-posts li a:hover {
   color: #e0bc5b;
+	   -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
 
 .theme-base-yellow h1, .theme-base-yellow h2, .theme-base-yellow h3 ,.theme-base-yellow h3{
@@ -869,6 +875,9 @@ li.prose-indent {
 .theme-base-dark .sidebar,
 .theme-base-dark .sidebar-toggle:active {
   background-color: #bb86fc;
+	   -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 
 }
 
@@ -876,6 +885,9 @@ li.prose-indent {
 .theme-base-dark .sidebar-toggle,
 .theme-base-dark .related-posts li a:hover {
   color: #bb86fc;
+	   -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
 
 .theme-base-dark h1, .theme-base-dark h2, .theme-base-dark h3 ,.theme-base-dark h3
