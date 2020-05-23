@@ -109,16 +109,22 @@ $("#switch").on("click", () => {
   if($("#switch").prop("checked")) {
       $("#body").addClass("theme-base-dark").removeClass("theme-base-yellow");
       localStorage.theme = "theme-base-dark";
+      $("#checkBox").text("☼")
+      localStorage.text = "☼";
   } else {
     $("#body").removeClass("theme-base-dark").addClass("theme-base-yellow");
     localStorage.theme = "theme-base-yellow";
+    $("#checkBox").text("◐");
+    localStorage.text = "◐";
   }
    
 });
 
 if (typeof localStorage.theme == "string") {
     $("#body").removeClass(current_theme).addClass(localStorage.theme);
+    $("#checkBox").text(localStorage.text)
 }
+
 </script>
  </body>
 </html>
