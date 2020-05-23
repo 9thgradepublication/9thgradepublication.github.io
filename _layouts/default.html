@@ -30,7 +30,7 @@
       </header>
 
       <main class="container content" id="main">
-        <a id="switch" style="cursor-type:pointer"></a>
+        <p id="switch" style="cursor-type:pointer;" class=""fas fa-sun"">Switch Theme</p>
   <label for="switch" class="switch-label">
   </label>
 
@@ -101,18 +101,18 @@ $("#switch").on("click", () => {
       $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
       localStorage.theme = "theme-base-orange";
       $("#switch").attr("class","fas fa-sun");
-      localStorage.icon = "fas fa-sun";
+      localStorage.text = "Light";
   } else {
     $("#body").removeClass("theme-base-orange").addClass("theme-base-yellow");
     localStorage.theme = "theme-base-yellow";
     $("#switch").attr("class","fas fa-moon");
-    localStorage.icon = "fas fa-moon";
+    localStorage.text = "Dark";
   }
    
 });
 
 $("#body").attr("class", localStorage.theme);
-$("#switch").attr("class",localStorage.icon);
+$("#switch").attr("class",localStorage.text);
 
 </script>
 
