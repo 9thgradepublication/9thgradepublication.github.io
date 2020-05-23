@@ -225,6 +225,15 @@ tbody tr:nth-child(odd) th {
 
   Super small header above the content for site name and short description.
 */
+
+.masthead {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 3rem;
+  padding-top: 26px;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
 nav.head {
   position: absolute;
   top: 15px;
@@ -234,6 +243,7 @@ nav.head {
   border: 2px solid #EBECF1;
   border-radius: 30px;
   animation: slide-in 1s ease-out;
+  font-family: $main-font;
 }
 
 nav.ul {
@@ -882,7 +892,7 @@ li.prose-indent {
 }
 
 /* Yellow */
-.theme-base-yellow {
+body.theme-base-yellow {
    -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
@@ -890,18 +900,12 @@ li.prose-indent {
 .theme-base-yellow .sidebar,
 .theme-base-yellow .sidebar-toggle:active {
   background-color: #e0bc5b;
-	   -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .theme-base-yellow .container a,
 .theme-base-yellow .sidebar-toggle,
 .theme-base-yellow .related-posts li a:hover {
   color: #e0bc5b;
-	   -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .theme-base-yellow h1, .theme-base-yellow h2, .theme-base-yellow h3 ,.theme-base-yellow h3{
@@ -911,7 +915,7 @@ li.prose-indent {
 
 /* Dark */
 
-.theme-base-dark  {
+body.theme-base-dark  {
   background-color: #1f1b24;
    -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
@@ -921,9 +925,6 @@ li.prose-indent {
 .theme-base-dark .sidebar,
 .theme-base-dark .sidebar-toggle:active {
   background-color: #bb86fc;
-	   -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 
 }
 
@@ -931,16 +932,13 @@ li.prose-indent {
 .theme-base-dark .sidebar-toggle,
 .theme-base-dark .related-posts li a:hover {
   color: #bb86fc;
-	   -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .theme-base-dark h1, .theme-base-dark h2, .theme-base-dark h3 ,.theme-base-dark h3
 {
   color: #bb86fc !important;
 }
-.theme-base-dark p {
+.theme-base-dark p#body, .theme-base-dark a#body {
   color: #dcd0ff !important;
 }
 
