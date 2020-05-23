@@ -662,8 +662,8 @@ li.speakerGroup {
  .switch {
     
   position: fixed;
-  bottom: 1em;
-  right: 1em;
+  bottom: 3em;
+  right: 2em;
 
 }
 .btn-float {  
@@ -672,7 +672,7 @@ li.speakerGroup {
   height: 2em;
   border-radius: 50%;
   background-color:#E6E6FA; 
-  color: #ffffff;
+  color: black;
   text-align: center;
   line-height: 2;
   cursor: pointer;
@@ -822,19 +822,19 @@ body.theme-base-yellow {
   color: #8f5536;
 }
 
-.theme-based-yellow.poem-color {
+.theme-based-yellow .poem-color {
    color:#704C3A;
 }
 
-.theme-based-yellow.creative-color {
+.theme-based-yellow .creative-color {
    color:#996351;
 }
 
-.theme-based-yellow.story-color { 
+.theme-based-yellow .story-color { 
     color:#9E3628;
 }
 
-.theme-based-yellow.rumination-color {
+.theme-based-yellow .rumination-color {
   color:#9D683E; 
 }
 
@@ -865,7 +865,7 @@ body.theme-base-dark  {
 {
   color: #bb86fc !important;
 }
-.theme-base-dark main > p {
+p.theme-base-dark {
   color: #dcd0ff !important;
 }
 
