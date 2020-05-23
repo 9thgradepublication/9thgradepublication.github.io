@@ -659,20 +659,13 @@ li.speakerGroup {
 }
 
 /* floating dark mode button */
- .switch {
-    
-  position: fixed;
-  bottom: 2em;
-  right: 2em;
-
-}
 .btn-float {  
   display: block;
   width: 2em;
   height: 2em;
   border-radius: 50%;
-  background-color:#E6E6FA; 
-  color: black;
+  background-color: black;
+  color: hsl(0, 0%, 100%);
   text-align: center;
   line-height: 2;
   cursor: pointer;
@@ -683,6 +676,9 @@ li.speakerGroup {
   width: 0;
   height: 0;
 }
+
+
+
 
 
 
