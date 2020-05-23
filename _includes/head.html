@@ -10,31 +10,8 @@
   
   <!-- Enable responsiveness on mobile devices -->
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-<script>
-
-$('#main').toggleClass(localStorage.toggled);
-
-function darkLight() {
-  /*DARK CLASS*/
-  if (localStorage.toggled != 'dark') {
-    $('#main, p').toggleClass('dark', true);
-    localStorage.toggled = "dark";
-     
-  } else {
-    $('#main, p').toggleClass('dark', false);
-    localStorage.toggled = "";
-  }
-}
-
-/*Add 'checked' property to input if background == dark*/
-if ($('main').hasClass('dark')) {
-   $( '#checkBox' ).prop( "checked", true )
-} else {
-  $( '#checkBox' ).prop( "checked", false )
-}
 
 
-</script>
 <style>
 
 /*TOGGLE COLORS*/
