@@ -110,7 +110,7 @@ $("#switch").on("click", () => {
    
 });
 
-if (typeof localStorage.theme != "undefined") {
+if (typeof localStorage.theme != "string") {
 $("#body").removeClass(current_theme).addClass(localStorage.theme);
 }
 elif (typeof localStorage.theme == "undefined") {
