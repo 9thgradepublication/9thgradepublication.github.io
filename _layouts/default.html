@@ -25,16 +25,17 @@
             <a href="{{ site.baseurl }}/" title="Home" class="{{ page.layout }}">{{ site.title | newline_to_br }}</a>
             <br><small>{{ site.tagline }}</small>
            </h3>
-          <label  for="switch" class="switch">
-    <input type="checkbox" id="switch">
-    <span class="slider round" id="checkBox"></span>
-  </label>  		
+      		
   </div>
       </header>
     
 
    <main class="container content" id="main">
-      {{ content }}
+          <label  for="switch" class="switch">
+    <input type="checkbox" id="switch">
+    <span class="slider round" id="checkBox"></span>
+  </label> 
+     {{ content }}
         
     </main>
     </div>
