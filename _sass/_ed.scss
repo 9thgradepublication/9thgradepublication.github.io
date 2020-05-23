@@ -354,7 +354,6 @@ nav.ul {
   background-color: #202020;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
-  border-radius: 0 50px 0 0;
 }
 
 @media (min-width: 30em) {
@@ -938,7 +937,7 @@ body.theme-base-dark  {
 {
   color: #bb86fc !important;
 }
-.theme-base-dark p#body, .theme-base-dark a#body {
+.theme-base-dark p#main {
   color: #dcd0ff !important;
 }
 
