@@ -112,6 +112,7 @@ $("#switch").on("click", () => {
 
 if (typeof localStorage.theme != "undefined") {
 $("#body").removeClass(current_theme).addClass(localStorage.theme);
+$("#switch").prop("checked", false);
 }
 
 if (localStorage.theme == "theme-base-yellow") {$("#switch").prop("checked", false);}
