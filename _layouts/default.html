@@ -31,9 +31,12 @@
       </header>
     
 
-   <main class="container content”>
-      <a style="cursor: pointer" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'bright' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('main').classList.add('dark') : document.querySelector('main').classList.remove('dark');" title="Switch to light or dark theme">🌓 Light|dark mode</a>
-     {{ content }}
+   <main class="container content” id="main">
+      <label class="switch">
+    <input type="checkbox" onclick="darkLight()" id="checkBox" >
+    <span class="slider"></span>
+  </label>  
+  {{ content }}
    </main>    
 
     
