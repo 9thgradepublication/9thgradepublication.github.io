@@ -29,6 +29,8 @@
     <input type="checkbox" id="switch">
     <div class="slider round" id="checkBox"></div>
   </label>
+
+
   </div>
       </header>
     
@@ -96,29 +98,20 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
     <script>
-var current_theme = $("#body").attr('class');
-$("#switch").on("click", () => {
-  if($("#switch").prop("checked")) {
-      $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
-      localStorage.theme = "theme-base-orange";
-    //  localStorage.checked = "true";
-  } else {
-    $("#body").removeClass("theme-base-orange").addClass("theme-base-yellow");
-    localStorage.theme = "theme-base-yellow";
-   // localStorage.checked = "false";
-  }
-   
-});
 
-if (typeof localStorage.theme != "string") {
-$("#body").removeClass(current_theme).addClass(localStorage.theme);
-}
-elif (typeof localStorage.theme == "undefined") {
-$("#switch").prop("checked", false);
-}
+	function toggle_light_mode() {
 
-if (localStorage.theme == "theme-base-yellow") {$("#switch").prop("checked", false);}
-else{$("#switch").prop("checked", true);}
+		var app = document.getElementsByTagName("BODY")[0];
+
+		if (localStorage.lightMode == "dark") {
+			localStorage.lightMode = "light";
+			app.setAttribute("data-light-mode", "light");
+		} else {
+			localStorage.lightMode = "dark";
+			app.setAttribute("data-light-mode", "dark");
+		}
+		console.log("lightMode = " + localStorage.lightMode);
+	}
 </script>
  </body>
 </html>
