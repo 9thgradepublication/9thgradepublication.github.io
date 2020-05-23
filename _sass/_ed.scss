@@ -658,12 +658,11 @@ li.speakerGroup {
 }
 
 /* floating dark mode button */
-
  .switch {
     
   position: fixed;
-  bottom: 3em;
-  right: 2em;
+  bottom: 5em;
+  right: 3em;
 
 }
 .btn-float {  
@@ -865,7 +864,8 @@ body.theme-base-dark  {
 {
   color: #bb86fc !important;
 }
-p.theme-base-dark {
+
+article.theme-base-dark {
   color: #dcd0ff !important;
 }
 
