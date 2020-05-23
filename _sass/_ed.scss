@@ -659,22 +659,25 @@ li.speakerGroup {
 
 /* floating button */
 
-  .switch {
+ .switch {
+    
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
   position:fixed;
-	width:3.125rem;
-	height:3.125rem;
-	bottom:2.5rem;
-	right:2.5rem;
-	color:#FFF;
-	border-radius:2.5rem;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-
-	 background-color: #87ceeb;
 
 }
 .btn-float {  
-  margin-bottom: 2rem;
+  display: block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: hsl(240, 67, 94); 
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  line-height: 2;
+  cursor: pointer;
+  outline: 0;
   line-height: 1.2rem;}
 
 .switch input { 
