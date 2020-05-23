@@ -96,7 +96,22 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-    
+    <script>
+var current_theme = $("#body").attr('class');
+$("#switch").on("click", () => {
+  if($("#switch").prop("checked")) {
+      $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
+      localStorage.theme = "theme-base-orange";
+  } else {
+    $("#body").removeClass("theme-base-orange").addClass("theme-base-yellow");
+    localStorage.theme = "theme-base-yellow";
+  }
+   
+});
+
+$("#body").removeClass(current_theme).addClass(localStorage.theme);
+
+</script>
     {% include darkmode.html %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
