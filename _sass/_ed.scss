@@ -97,7 +97,6 @@ body {
 
 .retainer {
   box-sizing: border-box;
-  background-color:red;
   border-radius:2rem;
  
 }
@@ -112,11 +111,6 @@ input#switch {
 .column {
   float: left;
   width: 50%;
-}
-.row {
-  margin-left:1.3rem;
-  margin-right:4rem;
-  padding:.6rem;
 }
 
 /* Clear floats after the columns */
