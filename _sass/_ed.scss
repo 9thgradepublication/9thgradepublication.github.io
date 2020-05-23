@@ -102,9 +102,12 @@ body {
  
 }
 
-input.switch {
+input#switch {
   display:none;
+  width:0;
+  height:0;
 }
+
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
