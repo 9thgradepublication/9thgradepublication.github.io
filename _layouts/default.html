@@ -98,10 +98,10 @@
 current_theme = $("#body").attr('class');
 $("#switch").on("click", () => {
   if($("#switch").prop("checked")) {
-      $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
-      localStorage.theme = "theme-base-orange";
+      $("#body").addClass("theme-base-dark").removeClass("theme-base-yellow");
+      localStorage.theme = "theme-base-dark";
   } else {
-    $("#body").removeClass("theme-base-orange").addClass("theme-base-yellow");
+    $("#body").removeClass("theme-base-dark").addClass("theme-base-yellow");
     localStorage.theme = "theme-base-yellow";
   }
    
@@ -110,7 +110,7 @@ $("#switch").on("click", () => {
 if (typeof localStorage.theme == "string") {
     $("#body").removeClass(current_theme).addClass(localStorage.theme);
 }
-if (localStorage.theme != "theme-base-orange") {$("#switch").prop("checked", false);}
+if (localStorage.theme != "theme-base-dark") {$("#switch").prop("checked", false);}
 else {$("#switch").prop("checked", true);}
 </script>
  </body>
