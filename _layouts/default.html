@@ -27,12 +27,14 @@
            </h3>
           		
   </div>
-      </header>
-
-      <main class="container content" id="main">
-        <a id="switch" style="cursor-type:pointer;" class="fas fa-sun">Switch Theme</a>
-  <label for="switch" class="switch-label">
+        
+   <label class="switch">
+    <input type="checkbox"  id="checkBox" >
+    <span class="slider round"></span>
   </label>
+      </header>
+      
+
 
       {{ content }}
         
@@ -100,20 +102,24 @@ $("#switch").on("click", () => {
   if($("#switch").prop("click")) {
       $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
       localStorage.theme = "theme-base-orange";
-      $("#switch").attr("class","fas fa-sun");
-      localStorage.text = "Light";
   } else {
     $("#body").removeClass("theme-base-orange").addClass("theme-base-yellow");
     localStorage.theme = "theme-base-yellow";
-    $("#switch").attr("class","fas fa-moon");
-    localStorage.text = "Dark";
   }
    
 });
 
 $("#body").removeClass(current_theme).addClass(localStorage.theme);
-$("#switch").text(localStorage.text);
-
+   
+if ($('#body').hasClass('theme-base-orange')) {
+   $( '#checkBox' ).prop( "checked", true )
+  localStorage.check = "true";
+} else {
+  $( '#checkBox' ).prop( "checked", false )
+  localStorage.check = "false"
+}
+   
+ $( '#checkBox' ).prop( "checked", localStorage.check )
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
