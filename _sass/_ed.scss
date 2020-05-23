@@ -98,10 +98,22 @@ body {
   box-sizing: border-box;
 }
 
+.retainer {
+  box-sizing: border-box;
+  background-color:white;
+  border-radius:2rem;
+ 
+}
+
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
   width: 50%;
+}
+.row {
+  margin-left:1.3rem;
+  margin-right:4rem;
+  padding:.6rem;
 }
 
 /* Clear floats after the columns */
