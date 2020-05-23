@@ -17,7 +17,11 @@ color: #00a0fc;
 }
 
 </style>
-
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector(main').classList.add('dark') : document.querySelector('main').classList.remove('dark')
+});
+</script>
   <title>
     {% if page.title == "Home" %}
       {{ site.title }}
