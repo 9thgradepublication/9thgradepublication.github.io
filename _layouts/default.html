@@ -36,13 +36,14 @@
 </button>
   </div>
       </header>
-    
+    <div id=“main”>
 
-   <main class="container content" id="main">
+   <main class="container content”>
       
      {{ content }}
         
     </main>
+</div>
     </div>
     
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
@@ -104,7 +105,7 @@
 
 	function toggle_light_mode() {
 
-		var app = document.getElementsByTagName("MAIN")[0];
+		var app = document.getElementsById("main”);
 
 		if (localStorage.lightMode == "dark") {
 			localStorage.lightMode = "light";
