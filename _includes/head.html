@@ -18,13 +18,6 @@ color: #00a0fc;
 
 </style>
 
-<script>
-    // Include this script near the top of your html
-    var app = document.getElementsByTagName("BODY")[0];
-    if (localStorage.lightMode == "dark") {
-        app.setAttribute("data-light-mode", "dark");
-    }
-</script>
   <title>
     {% if page.title == "Home" %}
       {{ site.title }}
