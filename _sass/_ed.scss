@@ -787,9 +787,9 @@ li.prose-indent {
 
 /* Yellow */
 body.theme-base-yellow {
-   -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;}
 }
 .theme-base-yellow .sidebar,
 .theme-base-yellow .sidebar-toggle:active {
@@ -811,9 +811,9 @@ body.theme-base-yellow {
 
 body.theme-base-dark  {
   background-color: #3b3b3b;
-   -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;}
 }
 
 .theme-base-dark .sidebar,
