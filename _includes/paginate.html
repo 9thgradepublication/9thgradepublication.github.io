@@ -1,16 +1,15 @@
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-<div class="col">
-  <div>
-    {% if page.previous.url %}
-    <a href="{{site.baseurl}}{{page.previous.url}}">&laquo;&nbsp;{{page.previous.title}}</a>
-    {% endif %}
-  </div>
-  <div class="col">
-    {% if page.next.url %}
-    <a href="{{site.baseurl}}{{page.next.url}}">{{page.next.title}}&nbsp;&raquo;</a>
-    {% endif %}
- 
-    </div>
+        <div class="col-sm-6">
+           {% if page.previous.url %}
+            <a href="{{site.baseurl}}{{page.previous.url}}">&laquo;&nbsp;{{page.previous.title}}</a>
+           {% endif %}
         </div>
-    </div>
+        <div class="col-sm-6">
+            {% if page.next.url %}
+            <a href="{{site.baseurl}}{{page.next.url}}">{{page.next.title}}&nbsp;&raquo;</a>
+            {% endif %}
+ 
+          </div>
+     </div>
+</div>
