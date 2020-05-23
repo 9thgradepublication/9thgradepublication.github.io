@@ -827,6 +827,10 @@ li.prose-indent {
 
 /* Dark */
 
+.theme-base-dark  {
+  background-color: #1f1b24;
+}
+
 .theme-base-dark .sidebar,
 .theme-base-dark .sidebar-toggle:active {
   background-color: #BB86FC;
@@ -842,6 +846,3 @@ li.prose-indent {
   color: #BB86FC;
 }
 
-body.theme-base-dark  {
-  background-color: #1f1b24;
-}
