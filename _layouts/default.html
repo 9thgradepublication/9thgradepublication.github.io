@@ -32,7 +32,7 @@
     
 
    <main class="container content”>
-      <a style="cursor: pointer" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'bright' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('main').classList.add('dark') : document.querySelector('main').classList.remove('dark')" title="Switch to light or dark theme">🌓 Light|dark mode</a>
+      <a style="cursor: pointer" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'bright' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('main').classList.add('dark') : document.querySelector('main').classList.remove('dark');" title="Switch to light or dark theme">🌓 Light|dark mode</a>
      {{ content }}
    </main>    
 
