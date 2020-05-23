@@ -664,7 +664,6 @@ li.speakerGroup {
   position: fixed;
   bottom: 1em;
   right: 1em;
-  position:fixed;
 
 }
 .btn-float {  
@@ -866,7 +865,7 @@ body.theme-base-dark  {
 {
   color: #bb86fc !important;
 }
-.theme-base-dark p#main {
+.theme-base-dark main > p {
   color: #dcd0ff !important;
 }
 
