@@ -659,30 +659,12 @@ li.speakerGroup {
 }
 
 /* floating dark mode button */
-.btn-float {  
-  display: block;
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  background-color: black;
-  color: hsl(0, 0%, 100%);
-  text-align: center;
-  line-height: 2;
-  cursor: pointer;
-  outline: 0;}
 
 .switch input { 
   opacity: 0;
   width: 0;
   height: 0;
 }
-
-
-
-
-
-
-
 
 /* To add an attribution, make sure to make a line with the attribution class */
 
