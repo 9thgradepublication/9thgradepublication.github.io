@@ -112,7 +112,7 @@ $("#switch").on("click", () => {
 if (typeof localStorage.theme == "string") {
     $("#body").removeClass(current_theme).addClass(localStorage.theme);
 }
-if (localStorage.theme == "theme-base-yellow" || current_theme == "theme-base-yellow" ) {$("#switch").prop("checked", false);}
+if (localStorage.theme != "theme-base-orange") {$("#switch").prop("checked", false);}
 else {$("#switch").prop("checked", true);}
 </script>
  </body>
