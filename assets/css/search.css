@@ -30,12 +30,3 @@
   cursor: pointer;
   font-size: 20px;
 }
-
-/*Resize the wrap to see the search bar change!*/
-.wrap{
-  width: 70vw;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
