@@ -111,8 +111,8 @@ $("#switch").on("click", () => {
    
 });
 
-$("#body").attr("class", localStorage.theme);
-$("#switch").attr("class",localStorage.text);
+$("#body").removeClass(current_theme).addClass(localStorage.theme);
+$("#switch").text(localStorage.text);
 
 </script>
 
