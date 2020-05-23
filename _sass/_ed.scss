@@ -222,9 +222,14 @@ tbody tr:nth-child(odd) th {
 
   Super small header above the content for site name and short description.
 */
+.shadow {
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  text-align:center;
+  font-family: 'Montez', cursive;
+  font-size: 3em;
+}
 
 .masthead {
-  border-bottom: 1px solid #eee;
   margin-bottom: 3rem;
   padding-top: 26px;
   padding-bottom: 1rem;
