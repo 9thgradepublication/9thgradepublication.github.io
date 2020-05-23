@@ -824,3 +824,24 @@ li.prose-indent {
 .theme-base-yellow h1, .theme-base-yellow h2, .theme-base-yellow h3 ,.theme-base-yellow h3{
   color: #8f5536;
 }
+
+/* Dark */
+
+.theme-base-dark .sidebar,
+.theme-base-dark .sidebar-toggle:active {
+  background-color: #363636;
+}
+
+.theme-base-dark .container a,
+.theme-base-dark .sidebar-toggle,
+.theme-base-dark .related-posts li a:hover {
+  color: #363636;
+}
+
+.theme-base-dark h1, .theme-base-dark h2, .theme-base-dark h3 ,.theme-base-dark h3, .theme-base-dark p{
+  color: #363636;
+}
+
+.theme-base-dark body {
+  background-color: #1f1b24;
+}
