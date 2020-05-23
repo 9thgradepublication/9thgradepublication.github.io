@@ -97,7 +97,7 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 <script>
-var current_theme = $("#body").attr('class');
+current_theme = $("#body").attr('class');
 $("#switch").on("click", () => {
   if($("#switch").prop("checked")) {
       $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
@@ -112,7 +112,7 @@ $("#switch").on("click", () => {
 if (typeof localStorage.theme == "string") {
     $("#body").removeClass(current_theme).addClass(localStorage.theme);
 }
-if (localStorage.theme == "theme-base-yellow" && current_theme == "theme-base-yellow" ) {$("#switch").prop("checked", false);}
+if (localStorage.theme == "theme-base-yellow" || current_theme == "theme-base-yellow" ) {$("#switch").prop("checked", false);}
 else {$("#switch").prop("checked", true);}
 </script>
  </body>
