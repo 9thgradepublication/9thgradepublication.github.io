@@ -25,15 +25,23 @@ button:hover {
     opacity:.5;
 }
 
-body[data-light-mode="dark"] {
+main[data-light-mode="dark"] {
     background-color: #000;
     color: #eee;
 }
-body[data-light-mode="dark"] button {
+main[data-light-mode="dark"] button {
     background-color: #fff;
     color: #000;
 }
 </style>
+
+<script>
+    // Include this script near the top of your html
+    var app = document.getElementsByTagName("BODY")[0];
+    if (localStorage.lightMode == "dark") {
+        app.setAttribute("data-light-mode", "dark");
+    }
+</script>
   <title>
     {% if page.title == "Home" %}
       {{ site.title }}
