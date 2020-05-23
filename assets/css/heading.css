@@ -1,15 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Neuton|Oswald');
+html {background-color:black;}
 .shadow {
-text-shadow: -10px 10px 0px #00e6e6,
-                 -20px 20px 0px #01cccc,
-                 -30px 30px 0px #00bdbd;
-  font-family: "Montez", cursive;
-  font-size: 1.8rem;
-  line-height: .777em;
-  margin-top: 2em;
-  margin-bottom: 0;
-  margin-right: 0;
-  margin-left: 0;
-  text-align: center;
-}
+   font-family: Montez;
+        font-family: Oswald;
+        background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+        text-align:center;
+        background-size: 100% 50px;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-animation: stripes 2s linear infinite;
+        animation: stripes 2s linear infinite;
+        font-size: 100px;
+  	    text-shadow: 0 0 10px rgba(255,255,255,.5);
+        font-size: 1.8rem;
+        line-height: .777em;
+        margin-top: 2em;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+
+      }
+      @-webkit-keyframes stripes {
+        100% {
+          background-position: 0 -50px;
+        }
+      }
 
