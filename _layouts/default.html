@@ -24,16 +24,16 @@
           <h2 class="masthead-title">
             <a href="{{ site.baseurl }}/" title="Home" class="{{ page.layout }}">{{ site.title | newline_to_br }}</a>
          </h2>
-      		<label  for="switch" class="switch">
-    <input type="checkbox" id="switch">
-    <div class="slider round" id="checkBox"></div>
-  </label>
+      
   </div>	
       </header>
     
 
    <main class="container content” id="main">
-     
+     <label  for="switch" class="switch">
+    <input type="checkbox" id="switch">
+    <div id="checkBox" style="font-size:1.5rem;">◐</div>
+  </label> 
   {{ content }}
    </main>    
  </div>
@@ -109,8 +109,6 @@ $("#switch").on("click", () => {
 if (typeof localStorage.theme == "string") {
     $("#body").removeClass(current_theme).addClass(localStorage.theme);
 }
-if (localStorage.theme != "theme-base-dark") {$("#switch").prop("checked", false);}
-else {$("#switch").prop("checked", true);}
 </script>
  </body>
 </html>
