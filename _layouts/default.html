@@ -102,11 +102,11 @@ $("#switch").on("click", () => {
   if($("#switch").prop("checked")) {
       $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
       localStorage.theme = "theme-base-orange";
-      localStorage.setItem($("#switch").prop("checked", true));
+      localStorage.setItem($("#switch").prop("checked"), true);
   } else {
     $("#body").removeClass("theme-base-orange").addClass("theme-base-yellow");
     localStorage.theme = "theme-base-yellow";
-    localStorage.setItem($("#switch").prop("checked", false));
+    localStorage.setItem($("#switch").prop("checked"), false);
   }
    
 });
