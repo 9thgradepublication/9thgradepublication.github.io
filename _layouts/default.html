@@ -28,17 +28,17 @@
           		
   </div>
         
-   <label class="switch">
-    <input type="checkbox"  id="checkBox" >
+   <label for="switch" class="switch">
+  <input type="checkbox" id="switch">
     <span class="slider round"></span>
   </label>
       </header>
       
 
-
+   <main class="container content" id="main">
       {{ content }}
         
-      </main>
+    </main>
     </div>
     
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
@@ -102,22 +102,16 @@ $("#switch").on("click", () => {
   if($("#switch").prop("click")) {
       $("#body").addClass("theme-base-orange").removeClass("theme-base-yellow");
       localStorage.theme = "theme-base-orange";
+      localStorage.check = "true";
   } else {
     $("#body").removeClass("theme-base-orange").addClass("theme-base-yellow");
     localStorage.theme = "theme-base-yellow";
+     localStorage.check = "false";
   }
    
 });
 
 $("#body").removeClass(current_theme).addClass(localStorage.theme);
-   
-if ($('#body').hasClass('theme-base-orange')) {
-   $( '#checkBox' ).prop( "checked", true )
-  localStorage.check = "true";
-} else {
-  $( '#checkBox' ).prop( "checked", false )
-  localStorage.check = "false"
-}
    
  $( '#checkBox' ).prop( "checked", localStorage.check )
 </script>
