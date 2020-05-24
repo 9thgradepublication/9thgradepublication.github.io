@@ -18,6 +18,29 @@
       Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS
       collisions with our real content.
     -->
+<script>
+current_theme = $("#body").attr('class');
+$("#switch").on("click", () => {
+  if($("#switch").prop("checked")) {
+      $("#body").addClass("theme-base-dark").removeClass("theme-base-yellow");
+      localStorage.theme = "theme-base-dark";
+      $("#checkText").text("Go Light ⭐")
+      localStorage.text = "Go Light ⭐";
+  } else {
+    $("#body").removeClass("theme-base-dark").addClass("theme-base-yellow");
+    localStorage.theme = "theme-base-yellow";
+    $("#checkText").text("Go Dark 🌑");
+    localStorage.text = "Go Dark 🌑";
+  }
+   
+});
+
+if (typeof localStorage.theme == "string") {
+    $("#body").removeClass(current_theme).addClass(localStorage.theme);
+    $("#checkText").text(localStorage.text)
+}
+
+</script>
 <div class="wrap">
   <header class="heading">
         <h2>
@@ -103,28 +126,6 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-<script>
-current_theme = $("#body").attr('class');
-$("#switch").on("click", () => {
-  if($("#switch").prop("checked")) {
-      $("#body").addClass("theme-base-dark").removeClass("theme-base-yellow");
-      localStorage.theme = "theme-base-dark";
-      $("#checkText").text("Go Light ⭐")
-      localStorage.text = "Go Light ⭐";
-  } else {
-    $("#body").removeClass("theme-base-dark").addClass("theme-base-yellow");
-    localStorage.theme = "theme-base-yellow";
-    $("#checkText").text("Go Dark 🌑");
-    localStorage.text = "Go Dark 🌑";
-  }
-   
-});
 
-if (typeof localStorage.theme == "string") {
-    $("#body").removeClass(current_theme).addClass(localStorage.theme);
-    $("#checkText").text(localStorage.text)
-}
-
-</script>
  </body>
 </html>
