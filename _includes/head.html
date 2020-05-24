@@ -46,8 +46,8 @@
 {% endif %}
 
 <script>
-if (typeof localStorage.theme == "string") {
-    $("#body").removeClass(current_theme).addClass(localStorage.theme);
+if (localStorage.theme == "theme-base-black") {
+    $("#body").removeClass(“theme-base-yellow”).addClass(localStorage.theme);
     $("#checkText").text(localStorage.text)
 }
 
