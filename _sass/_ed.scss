@@ -259,7 +259,6 @@ tbody tr:nth-child(odd) th {
 /* Style and "hide" the sidebar */
 .sidebar {
   position: fixed;
-  top: 0;
   bottom: 0;
   left: -14rem;
   width: 14rem;
@@ -338,9 +337,8 @@ a.sidebar-nav-item:focus {
 
 /* Style the `label` that we use to target the `.sidebar-checkbox` */
 .sidebar-toggle {
-  position: absolute;
-  
-  top:  .8rem;
+  position: fixed;
+  top:  0;
   left: 1rem;
   display: block;
   padding: .25rem .75rem;
