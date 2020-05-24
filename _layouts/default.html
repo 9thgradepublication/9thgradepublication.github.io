@@ -37,7 +37,7 @@
 						     
   <label  for="switch" class="switch">
     <input type="checkbox" id="switch">
-				      <div id="checkBox" style="font-size:1.3rem;"><p id="checkText" style="font-size:1.2rem;">Go Dark 🌑</p></div>
+				      <div id="checkBox" style="font-size:1.3rem;"><p id="checkText" style="font-size:1.2rem;">Dark 🌑</p></div>
   </label>  
 					      
 </div>
@@ -55,13 +55,13 @@ $("#switch").on("click", () => {
   if($("#switch").prop("checked")) {
       $("#body").addClass("theme-base-dark").removeClass("theme-base-yellow");
       localStorage.theme = "theme-base-dark";
-      $("#checkText").text("Go Light ⭐")
-      localStorage.text = "Go Light ⭐";
+      $("#checkText").text("Light ⭐")
+      localStorage.text = "Light ⭐";
   } else {
     $("#body").removeClass("theme-base-dark").addClass("theme-base-yellow");
     localStorage.theme = "theme-base-yellow";
-    $("#checkText").text("Go Dark 🌑");
-    localStorage.text = "Go Dark 🌑";
+    $("#checkText").text("Dark 🌑");
+    localStorage.text = "Dark 🌑";
   }
    
 });
