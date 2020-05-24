@@ -1,13 +1,14 @@
 ---
 title: Search
 layout: page
----
-<link rel="stylesheet" href="{{site.baseurl}}/assets/css/search.css">
-
-  <form id="site_search class="search-container">
-    <input id="search" type="text" id="search-bar" placeholder="What can I help you with today?">
-    <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
-  </form>
+---                                                                                                   
+                                                                                                                    
+<div id="site_search" class="input-group mb-3">
+  <input id="search" type="text" class="form-control" placeholder="Search texts..." aria-label="Search texts...." aria-describedby="search-bar">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">Search</button>
+  </div>
+</div>
 
 <div id="results"></div>
 <ul id="search_results"></ul>
@@ -16,3 +17,4 @@ layout: page
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="{{site.baseurl}}/assets/js/search.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
