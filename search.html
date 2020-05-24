@@ -3,12 +3,9 @@ title: Search
 layout: page
 ---                                                                                                   
 <link rel="stylesheet" href="{{site.baseurl}}/assets/css/search.css">                                                                                                                    
-<div id="site_search" class="input-group mb-3">
-  <input id="search" type="text" class="form-control" placeholder="Search texts..." aria-label="Search texts...." aria-describedby="search-bar">
-  <div class="input-group-append">
-    <button class="btn btn-outline-secondary" type="button">Search</button>
-  </div>
-</div>
+<form id="site_search">
+  <input  id="search" class="search" name="search" placeholder="Search..">
+</form>
 
 <div id="results"></div>
 <ul id="search_results"></ul>
