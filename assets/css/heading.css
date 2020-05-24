@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
 .heading {
+  display: table;
   border-bottom: 0;
   margin-bottom: 3rem;
   padding-top: 26px;
@@ -10,6 +11,7 @@
 }
 
 .heading-title {
+  display: table-cell;
   font-family: "Montez", cursive;
   font-size: 2.3rem;
   line-height: .777em;
