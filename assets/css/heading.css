@@ -12,6 +12,7 @@
 
 .heading-title {
   display: table-cell;
+  vertical-align: middle;
   font-family: "Montez", cursive;
   font-size: 2.3rem;
   line-height: .777em;
@@ -22,6 +23,10 @@
   text-align: center;
 }
 
+.heading-title h1 {
+  margin: 10px;
+  display: inline-block;  
+}
 
 @media (min-width: 320px) {
   .heading-title {
