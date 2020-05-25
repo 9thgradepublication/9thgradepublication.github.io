@@ -761,7 +761,7 @@ body.theme-base-dark  {
 
 .theme-base-dark h1, .theme-base-dark h2, .theme-base-dark h3 ,.theme-base-dark h3, .theme-base-dark h4, .theme-base-dark h5, .theme-base-dark h6
 {
-  color: #8ab9c2 !important;
+  color: #8ab9c2;
 }
 
 .theme-base-dark article, .theme-base-dark div > p  {
@@ -787,19 +787,19 @@ body.theme-base-dark  {
 }
 
 /* Layout specific -- Dark */
-.theme-base-dark .creative-color, .theme-base-dark .creative-color header > h2 > a, .theme-base-dark .text-title.creative-color > h1 {
+.theme-base-dark .creative-color, .theme-base-dark .creative-color header > h2 > a, .theme-base-dark h1.text-title.creative-color {
    color: #586994;
 }
 
-.theme-base-dark .poem-color, .theme-base-dark .poem-color header > h2 > a, .theme-base-dark .text-title.poem-color > h1 {
+.theme-base-dark .poem-color, .theme-base-dark .poem-color header > h2 > a, .theme-base-dark h1.text-title.poem-color {
     color: #E7ECEF;
 }
 
-.theme-base-dark .rumination-color, .theme-base-dark .rumination-color header > h2 > a, .theme-base-dark .text-title.rumination-color > h1  {
+.theme-base-dark .rumination-color, .theme-base-dark .rumination-color header > h2 > a, .theme-base-dark h1.text-title.rumination-color {
      color: #A1B5D8;
 }
 
-.theme-base-dark .story-color, .theme-base-dark .story-color header > h2 > a, .theme-base-dark .text-title.story-color > h1 {
+.theme-base-dark .story-color, .theme-base-dark .story-color header > h2 > a, .theme-base-dark h1.text-title.story-color {
    color: #6665DD;
 }
 
