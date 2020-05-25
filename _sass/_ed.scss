@@ -720,6 +720,23 @@ body.theme-base-yellow {
 .theme-base-yellow header > h2 > a{
   color:#e0bc5b;
 }
+/*Layout specific styles -- Light*/
+.theme-base-yellow .creative-color, .creative-color header > h2 > a {
+   color: #FFC971;
+}
+
+.theme-base-yellow .poem-color, .poem-color header > h2 > a {
+    color: #F18805;
+}
+
+.theme-base-yellow .rumination-color, .rumination-color header > h2 > a {
+     color: #CC5803;
+}
+
+.theme-base-yellow .story-color, .story-color header > h2 > a{
+   color: #F0A202;
+}
+
 
 /* Dark */
 
@@ -769,36 +786,25 @@ body.theme-base-dark  {
   background-image:         linear-gradient(to bottom, #fff, #fff 20%, #3b3b3b 20%, #3b3b3b 40%, #fff 40%, #fff 60%, #3b3b3b 60%, #3b3b3b 80%, #fff 80%, #fff 100%);
 }
 
-/*Layout specific styles -- Light*/
-.theme-base-yellow .creative-color, .creative-color header > h2 > a {
-   color: #FFC971;
-}
-
-.theme-base-yellow .poem-color, .poem-color header > h2 > a {
-    color: #F18805;
-}
-
-.theme-base-yellow .rumination-color, .rumination-color header > h2 > a {
-     color: #CC5803;
-}
-
-.theme-base-yellow .story-color, .story-color header > h2 > a{
-   color: #F0A202;
-}
-
 /* Layout specific -- Dark */
-.theme-base-dark .creative-color, .theme-base-dark .creative-color header > h2 > a {
+.theme-base-dark .creative-color, .theme-base-dark .creative-color header > h2 > a, 
+.theme-base-dark h1.text-title.creative-color {
    color: #586994;
 }
 
-.theme-base-dark .poem-color, .theme-base-dark .poem-color header > h2 > a {
+.theme-base-dark .poem-color, .theme-base-dark .poem-color header > h2 > a, 
+.theme-base-dark h1.text-title.poem-color {
     color: #738290;
 }
 
-.theme-base-dark .rumination-color, .theme-base-dark .rumination-color header > h2 > a {
+.theme-base-dark .rumination-color, .theme-base-dark .rumination-color header > h2 > a, 
+.theme-base-dark h1.text-title.rumination-color {
      color: #A1B5D8;
 }
 
-.theme-base-dark .story-color, .theme-base-dark .story-color header > h2 > a{
+.theme-base-dark .story-color, .theme-base-dark .story-color header > h2 > a, 
+.theme-base-dark h1.text-title.story-color, {
    color: #6665DD;
 }
+
+
