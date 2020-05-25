@@ -4,7 +4,7 @@ layout: default
 ---
 
 <div class="introduction">
-  <h1>ttesting Site.</h1>
+  <h1>Testing Site.</h1>
 <p>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -21,8 +21,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 <hr>
 
 <div class="toc">
-  <h1> Table Of Contents </h1>
-  <h2>Test: Poems</h2>
+  <h1>Poems</h1>
   <ul class="texts">
   {% for item in site.texts %}
   {% if item.layout contains "poem" %}
@@ -36,7 +35,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   
   </ul>
   
-  <h2>Test: Rumination Papers</h2>
+  <h1>Rumination Papers</h1>
   <ul class="texts">
   {% for item in site.texts %}
   {% if item.layout contains "rumination" %}
@@ -49,7 +48,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   {% endfor %}
   </ul>
 
-  <h2>Test: Stories</h2>
+  <h1>Stories</h1>
   <ul class="texts">
   {% for item in site.texts %}
   {% if item.layout contains "story" %}
@@ -62,7 +61,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   {% endfor %}
   </ul>
 
- <h2>Test: Creative One-Pagers</h2>
+ <h1>Creative One-Pagers</h1>
   <ul class="texts">
   {% for item in site.texts %}
   {% if item.layout contains "creative" %}
