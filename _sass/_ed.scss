@@ -769,7 +769,7 @@ body.theme-base-dark  {
   background-image:         linear-gradient(to bottom, #fff, #fff 20%, #3b3b3b 20%, #3b3b3b 40%, #fff 40%, #fff 60%, #3b3b3b 60%, #3b3b3b 80%, #fff 80%, #fff 100%);
 }
 
-/*Layout specific styles */
+/*Layout specific styles -- Light*/
 .theme-base-yellow .creative-color, .creative-color header > h2 > a {
    color: #FFC971;
 }
@@ -784,4 +784,21 @@ body.theme-base-dark  {
 
 .theme-base-yellow .story-color, .story-color header > h2 > a{
    color: #F0A202;
+}
+
+/* Layout specific -- Dark */
+.theme-base-dark .creative-color, .theme-base-dark .creative-color header > h2 > a {
+   color: #586994;
+}
+
+.theme-base-yellow .poem-color, .theme-base-dark .poem-color header > h2 > a {
+    color: #738290;
+}
+
+.theme-base-yellow .rumination-color, .theme-base-dark .rumination-color header > h2 > a {
+     color: #A1B5D8;
+}
+
+.theme-base-yellow .story-color, .theme-base-dark .story-color header > h2 > a{
+   color: #6665DD;
 }
