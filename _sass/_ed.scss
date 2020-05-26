@@ -803,4 +803,33 @@ body.theme-base-dark  {
    color: #7ff5ba;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.heading {
+  border-bottom: 0;
+  margin-bottom: 3rem;
+  padding-top: 26px;
+  padding-bottom: 1rem;
+  text-align: center;
+  dispay-style: block;
+}
 
+.heading-title {
+  font-family: 'Lobster', cursive;
+  font-size: 2.3rem;
+  line-height: .777em;
+  margin-top: 2em;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
+}
+
+
+@media (min-width: 320px) {
+  .heading-title {
+    margin-top: 2px;
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+}
+}
