@@ -5,6 +5,7 @@ fields:
 - type: text
   name: layout
   label: layout
+  description: 'options: creative, rumination, poem, or story'
 - type: text
   name: title
   label: title
@@ -14,9 +15,11 @@ fields:
 - type: text
   name: editor
   label: editor
+  description: the copy editor
 - type: text
   name: source
   label: source
+  description: the class the submission is from
 pages:
 - _texts/test-1.md
 - _texts/test.md
