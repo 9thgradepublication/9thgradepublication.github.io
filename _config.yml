@@ -1,3 +1,5 @@
+
+  
 ---
 title: Publication
 timezone: UTC
@@ -11,15 +13,16 @@ collections:
   uploads:
     title: Uploads
     output: true
-  
 tagline: 9th grade publication
 description: lorem ipsum
-url: https://pixelvoxelboxel.github.io
-baseurl: "/ed"
+url: https://9thgradepublication.github.io
+disqus: 
+  shortname: https-9thgradepublication-github-io
+baseurl: "/"
 author:
-  name: Test
+  name: Ninth Grade Class
   url: 
-  email: test@gmail.com
+  email: ninthgradepublication@gmail.com
 color-scheme: yellow
 permalink: "/:title/"
 encoding: utf-8
@@ -41,3 +44,4 @@ exclude:
 - backstop_data
 - backstop.json
 remote_theme: minicomp/ed
+# Disqus Comments
