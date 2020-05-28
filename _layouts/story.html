@@ -8,3 +8,6 @@ layout: default
   <p> {{ content }} </p>
   <p class="byline stor-colory" style="font-style:italic">Source: {{ page.source }}</p>
 </article>
+
+{% include disqus_comments.html %}
+{% include paginate.html %}
