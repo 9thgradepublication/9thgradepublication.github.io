@@ -1,12 +1,12 @@
 ---
-layout: poem
+layout: story
 title: "“(Me) and You”"
 author: Rebecca F.
 editor: Thanjila T.
 source: ''
 
 ---
-* {:.indent-2}I knew you were going to leave me. It was inevitable. All the signs were there for the longest time though I thought they would be mended by time if I turned a blind eye. If maybe, I just stayed stupidly devoted then everything would go back to normal. But blind devotion can’t cure everything.
+{:.indent-2}I knew you were going to leave me. It was inevitable. All the signs were there for the longest time though I thought they would be mended by time if I turned a blind eye. If maybe, I just stayed stupidly devoted then everything would go back to normal. But blind devotion can’t cure everything.
 
 Or rather, my love wasn’t enough. How truly dedicated is a person who allows their marriage to fall through right in front of their eyes and constantly feels unsatisfied?
 
