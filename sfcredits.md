@@ -1,7 +1,6 @@
 ---
 title: Credits
 layout: page
-published: false
 
 ---
 ### Ms. BC | Organizer
