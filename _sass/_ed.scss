@@ -514,7 +514,8 @@ div.toc {
 /*
   Poem styles
   If you want your lines not to wrap on small screens, add the rule "white-space: nowrap;"; If you
-  want you want to remove the hanging indent, reset the padding-left to 0 and erase text-indent
+  want you want to remove the hanging 
+, reset the padding-left to 0 and erase text-indent
 */
 
 .poem ul,
@@ -528,7 +529,6 @@ ul.poetry {
 
 
 /* This snippet helps us reset the margin for all spans with the indent- class */
-span[class^='indent-'],
 span[class^='indent-'] {
   margin: 0;/* reset browsers default margin styles*/
 }
