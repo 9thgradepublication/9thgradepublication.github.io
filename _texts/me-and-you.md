@@ -1,5 +1,5 @@
 ---
-layout: story
+layout: poem
 title: "“(Me) and You”"
 author: Rebecca F.
 editor: Thanjila T.
