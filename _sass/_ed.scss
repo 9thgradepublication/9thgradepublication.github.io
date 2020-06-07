@@ -528,8 +528,8 @@ ul.poetry {
 
 
 /* This snippet helps us reset the margin for all spans with the indent- class */
-.poem span[class^='indent-'],
-.poetry span[class^='indent-'] {
+span[class^='indent-'],
+span[class^='indent-'] {
   margin: 0;/* reset browsers default margin styles*/
 }
 
