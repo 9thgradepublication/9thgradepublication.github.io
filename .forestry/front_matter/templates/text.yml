@@ -20,3 +20,5 @@ fields:
   name: source
   label: source
   description: the class the submission is from
+pages:
+- _texts/me-and-you.md
