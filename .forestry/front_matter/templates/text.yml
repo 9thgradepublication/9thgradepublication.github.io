@@ -21,6 +21,4 @@ fields:
   label: source
   description: the class the submission is from
 pages:
-- _texts/test-1.md
 - _texts/test.md
-- _texts/tn.md
