@@ -9,6 +9,5 @@ editor: Not Thanjila
 
 ###### the end is near
 
-	A
-    A
-   A
+- 	A
+- A
