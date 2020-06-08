@@ -881,11 +881,10 @@ hr {
     currentColor 75%);
   background-size: 10px 10px;
   width: 48vw;
-  color: #000000;
 }
 
-.theme-base-dark #dashed.dashed  {color:#ffffff !important;}
-
+.light_hr  {color:#ffffff !important;}
+.dark_hr  {color: #000000 !important;}
 
 progress {
   /* Positioning */
