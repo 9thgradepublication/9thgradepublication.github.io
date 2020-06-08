@@ -83,7 +83,7 @@ $("#switch").on("click", () => {
 
 if (typeof localStorage.theme == "string") {
     $("#body").removeClass(current_theme).addClass(localStorage.theme);
-    $("#checkText").text(localStorage.text)
+    $("#checkText").text(localStorage.text);
     $("#dashed").removeClass(current_hr).addClass(localStorage.hr);
 }
 
