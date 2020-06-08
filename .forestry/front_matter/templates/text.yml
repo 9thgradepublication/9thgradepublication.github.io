@@ -17,5 +17,6 @@ fields:
   label: editor
   description: the copy editor
 pages:
+- _texts/a-frame-change.md
 - _texts/me-and-you.md
 - _texts/test-creative-pager.md
