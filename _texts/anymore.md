@@ -15,7 +15,6 @@ editor: JoAnna B.
 * The feeling of your warm hands
 * in the winter,
 * like holding a cup of hot chocolate while watching movies.
-
 * One scorching hot summer day,
 * we were at the beach.
 * The sand sizzling under our feet,
@@ -24,7 +23,6 @@ editor: JoAnna B.
 * You scooped up a little turtle stuck inside,
 * which was surrounded by dozens of seagulls,
 * flying like vultures overhead.
-
 * You took the turtle over to me.
 * You told me to feel it,
 * with an ever so delicate touch.
