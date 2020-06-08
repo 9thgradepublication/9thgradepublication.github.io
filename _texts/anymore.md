@@ -15,6 +15,7 @@ editor: JoAnna B.
 * The feeling of your warm hands
 * in the winter,
 * like holding a cup of hot chocolate while watching movies.
+
 * One scorching hot summer day,
 * we were at the beach.
 * The sand sizzling under our feet,
