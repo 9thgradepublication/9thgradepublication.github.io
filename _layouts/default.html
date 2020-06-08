@@ -31,7 +31,7 @@
 {% endif %}
         <h2>
             <a href="{{ site.baseurl }}/" title="Home"  class="heading-title {{ page.layout }}-color">{{ site.title }}</a>
-         		<hr class="dashed" id="dashed">
+         		<hr class="dashed light_hr" id="dashed">
 	  </h2>
 	  
   </header>
@@ -63,17 +63,20 @@
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
   <script>
 current_theme = $("#body").attr('class');
+current_hr = $("#dashed").attr('class');
 $("#switch").on("click", () => {
   if($("#switch").prop("checked")) {
       $("#body").addClass("theme-base-dark").removeClass("theme-base-yellow");
       localStorage.theme = "theme-base-dark";
       $("#checkText").text("Light ⭐")
-      localStorage.text = "Light ⭐";
+      localStorage.text = "Light ⭐
+      localStorage.hr = "light_hr";
   } else {
     $("#body").removeClass("theme-base-dark").addClass("theme-base-yellow");
     localStorage.theme = "theme-base-yellow";
     $("#checkText").text("Dark 🌑");
     localStorage.text = "Dark 🌑";
+    localStorage.hr = "dark_hr";	 
   }
    
 });
@@ -81,6 +84,7 @@ $("#switch").on("click", () => {
 if (typeof localStorage.theme == "string") {
     $("#body").removeClass(current_theme).addClass(localStorage.theme);
     $("#checkText").text(localStorage.text)
+    $("#dashed").removeClass(current_hr).addClass(localStorage.hr);
 }
 
 </script>
