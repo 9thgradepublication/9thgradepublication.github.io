@@ -17,7 +17,7 @@ published: false
 * The rippling waves of hair
 * Spooling gracefully around you
 * As you curled in a corner
-* A curtain hiding mysteries, fuelling fleeting curiosity
+* A curtain hiding mysteries, fueling fleeting curiosity
 * In the reborn hours of dawn
 * 
 * Yet now
