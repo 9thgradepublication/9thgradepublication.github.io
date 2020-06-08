@@ -18,5 +18,6 @@ fields:
   description: the copy editor
 pages:
 - _texts/a-frame-change.md
+- _texts/anymore.md
 - _texts/me-and-you.md
 - _texts/test-creative-pager.md
