@@ -3,7 +3,6 @@ layout: poem
 title: A Frame Change
 author: Maisha I.
 editor: Jacqueline L.
-published: false
 
 ---
 * I vaguely recall
