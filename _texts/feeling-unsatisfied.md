@@ -12,7 +12,7 @@ editor: Thanjila T.
 * Until the deadline arrives
 * And everything is last-minute
 
-<ins>* **_Feeling unsatisfied_** </ins>
+* <ins> **_Feeling unsatisfied_** </ins>
 * When a difficult question lies before us
 * Gauging whether the correct response is truly the right answer
 * How others will react
