@@ -22,7 +22,8 @@
   Update the foundational and global aspects of the page.
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
 
 * {
   -webkit-box-sizing: border-box;
@@ -36,7 +37,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-size:100%;
-  background-color:#efefef
+  background-color:#efefef;
 }
 
 html {
@@ -56,18 +57,13 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+  
 }
 
 .content {
   margin-bottom: 4rem;
 }
 
-@media (max-width: 38em) {
-  main {
-    padding-left:1rem;
-    padding-right:.1rem;
-  }
-}
 
 /*
   Wrapper
@@ -78,6 +74,7 @@ body {
 .wrap {
   position: relative;
   width: 100%;
+// height:100vh;
 }
 
 
@@ -87,7 +84,7 @@ body {
 */
 
 .container {
-  max-width: 75vw;
+  max-width: 32rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
@@ -127,7 +124,7 @@ input#switch {
 }
 
 /* Links */
-a, .text-title a {
+a, .font-special a {
   color: $link-color;
   text-decoration: none;
 }
@@ -150,8 +147,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1,
-h1.text-title {
+h1.font-special {
   font-size: 1.4rem;
+}
+
+h1.font-special {
+ font-family: 'Montaga', serif;
 }
 
 h2 {
@@ -173,6 +174,7 @@ h3 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  
 }
 
 /* Lists */
@@ -185,15 +187,6 @@ ul, ol {
   margin-bottom: 1rem;
 }
 
-
-/* Horizontal ruler */
-hr {
-  position: relative;
-  margin: 1.5rem 0;
-  border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
-}
 
 /* Search highlighting */
 mark {
@@ -268,8 +261,7 @@ tbody tr:nth-child(odd) th {
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
-  font-family: 'Zilla Slab', serif;
-  font-size: .875rem;/* 15px*/
+  font-size: 1.2rem;
   color: rgba(255,255,255,.6);
   background-color: #202020;
   -webkit-transition: all .3s ease-in-out;
@@ -379,11 +371,6 @@ a.sidebar-nav-item:focus {
   background-image:         linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
 }
 
-@media (min-width: 30.1em) {
-  .sidebar-toggle {
-    position: fixed;
-  }
-}
 
 @media print {
   .sidebar-toggle {
@@ -514,13 +501,12 @@ div.toc {
 /*
   Poem styles
   If you want your lines not to wrap on small screens, add the rule "white-space: nowrap;"; If you
-  want you want to remove the hanging 
-, reset the padding-left to 0 and erase text-indent
+  want you want to remove the hanging indent, reset the padding-left to 0 and erase text-indent
 */
 
 .poem ul,
 .poetry ul,
-ul.poetry {
+ul.poetry, article > ul, article > li {
   list-style: none;
   list-style-type: none;
   padding-left: 1rem;
@@ -528,10 +514,14 @@ ul.poetry {
 }
 
 
-/* This snippet helps us reset the margin for all spans with the indent- class */
+/* This snippet helps us reset the margin for all spans with the indent- class 
+span[class^='indent-'],
 p[class^='indent-'] {
-  margin: 0;/* reset browsers default margin styles*/
+  margin: 0;
 }
+
+*/
+
 
 
 /*
@@ -723,27 +713,27 @@ body.theme-base-yellow {
   color:#e0bc5b;
 }
 /*Layout specific styles -- Light*/
-.theme-base-yellow .creative-color, .creative-color header > h2 > a {
-   color: #FFC971;
+.theme-base-yellow .creative-color, .creative-color header > h2 > a, a.creative-color.js-font-normal, a.creative-color.js-font-increase, a.creative-color.js-font-decrease {
+   color: #E4D6A7;
 }
 
-.theme-base-yellow .poem-color, .poem-color header > h2 > a {
-    color: #F18805;
+.theme-base-yellow .poem-color, .poem-color header > h2 > a, a.poem-color.js-font-normal, a.poem-color.js-font-increase, a.poem-color.js-font-decrease{
+    color: #A5643B;
 }
 
-.theme-base-yellow .rumination-color, .rumination-color header > h2 > a {
-     color: #CC5803;
+.theme-base-yellow .rumination-color, .rumination-color header > h2 > a, a.rumination-color.js-font-normal, a.rumination-color.js-font-increase, a.rumination-color.js-font-decrease {
+     color: #A97E46;
 }
 
-.theme-base-yellow .story-color, .story-color header > h2 > a{
-   color: #F0A202;
+.theme-base-yellow .story-color, .story-color header > h2 > a, a.story-color.js-font-normal, a.story-color.js-font-increase, a.story-color.js-font-decrease{
+   color: #9E3628;
 }
 
 
 /* Dark */
 
 body.theme-base-dark  {
-  background-color: #3b3b3b;
+  background-color: #242424;
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
     transition: background-color 500ms linear;
@@ -751,19 +741,19 @@ body.theme-base-dark  {
 
 .theme-base-dark .sidebar,
 .theme-base-dark .sidebar-toggle:active {
-  background-color: #8ab9c2;
+  background-color: #91ddeb;
 
 }
 
 .theme-base-dark .container a,
 .theme-base-dark .sidebar-toggle,
 .theme-base-dark .related-posts li a:hover {
-  color: #8ab9c2;
+  color: #91ddeb;
 }
 
 .theme-base-dark h1, .theme-base-dark h2, .theme-base-dark h3 ,.theme-base-dark h3, .theme-base-dark h4, .theme-base-dark h5, .theme-base-dark h6
 {
-  color: #8ab9c2;
+  color: #91ddeb;
 }
 
 .theme-base-dark article, .theme-base-dark div > p  {
@@ -771,7 +761,7 @@ body.theme-base-dark  {
 }
 
 .theme-base-dark label.sidebar-toggle {
-   background-color: #3b3b3b;
+   background-color: #242424;
 }
 
 .theme-base-dark header > h2 > a{
@@ -782,28 +772,33 @@ body.theme-base-dark  {
   width: 1rem;
   height: .75rem;
   content: "";
-  background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #3b3b3b 20%, #3b3b3b 40%, #fff 40%, #fff 60%, #3b3b3b 60%, #3b3b3b 80%, #fff 80%, #fff 100%);
-  background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #3b3b3b 20%, #3b3b3b 40%, #fff 40%, #fff 60%, #3b3b3b 60%, #3b3b3b 80%, #fff 80%, #fff 100%);
-  background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #3b3b3b 20%, #3b3b3b 40%, #fff 40%, #fff 60%, #3b3b3b 60%, #3b3b3b 80%, #fff 80%, #fff 100%);
-  background-image:         linear-gradient(to bottom, #fff, #fff 20%, #3b3b3b 20%, #3b3b3b 40%, #fff 40%, #fff 60%, #3b3b3b 60%, #3b3b3b 80%, #fff 80%, #fff 100%);
+  background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #242424 20%, #242424 40%, #fff 40%, #fff 60%, #242424 60%, #242424 80%, #fff 80%, #fff 100%);
+  background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #242424 20%, #242424 40%, #fff 40%, #fff 60%, #242424 60%, #242424 80%, #fff 80%, #fff 100%);
+  background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #242424 20%, #242424 40%, #fff 40%, #fff 60%, #242424 60%, #242424 80%, #fff 80%, #fff 100%);
+  background-image:         linear-gradient(to bottom, #fff, #fff 20%, #242424 20%, #242424 40%, #fff 40%, #fff 60%, #242424 60%, #242424 80%, #fff 80%, #fff 100%);
 }
 
 /* Layout specific -- Dark */
-.theme-base-dark .creative-color, .theme-base-dark .creative-color header > h2 > a, .theme-base-dark h1.text-title.creative-color {
+.theme-base-dark .creative-color, .theme-base-dark .creative-color header > h2 > a, .theme-base-dark h1.text-title.creative-color,
+.theme-base-dark  a.creative-color.js-font-normal, .theme-base-dark a.creative-color.js-font-increase,.theme-base-dark a.creative-color.js-font-decrease{
    color: #c7d0ff;
 }
 
-.theme-base-dark .poem-color, .theme-base-dark .poem-color header > h2 > a, .theme-base-dark h1.text-title.poem-color {
+.theme-base-dark .poem-color, .theme-base-dark .poem-color header > h2 > a, .theme-base-dark h1.text-title.poem-color,
+.theme-base-dark a.poem-color.js-font-normal, .theme-base-dark a.poem-color.js-font-increase, .theme-base-dark a.poem-color.js-font-decrease{
     color: #94ffea;
 }
 
-.theme-base-dark .rumination-color, .theme-base-dark .rumination-color header > h2 > a, .theme-base-dark h1.text-title.rumination-color {
+.theme-base-dark .rumination-color, .theme-base-dark .rumination-color header > h2 > a, .theme-base-dark h1.text-title.rumination-color,
+.theme-base-dark a.rumination-color.js-font-normal, .theme-base-dark a.rumination-color.js-font-increase, .theme-base-dark a.rumination-color.js-font-decrease {
      color: #8fbeff;
 }
 
-.theme-base-dark .story-color, .theme-base-dark .story-color header > h2 > a, .theme-base-dark h1.text-title.story-color {
+.theme-base-dark .story-color, .theme-base-dark .story-color header > h2 > a, .theme-base-dark h1.text-title.story-color,
+.theme-base-dark a.story-color.js-font-normal, .theme-base-dark a.story-color.js-font-increase, .theme-base-dark a.story-color.js-font-decrease{
    color: #7ff5ba;
 }
+
 
 .heading {
   border-bottom: 0;
@@ -815,17 +810,21 @@ body.theme-base-dark  {
 }
 
 .heading-title {
-  font-family: 'Lobster', cursive;
-  font-size: 2.3rem;
+  font-family: 'Abril Fatface', cursive;
+   text-transform: uppercase;
+  font-size: 2.1rem;
   line-height: .777em;
   margin-top: 2em;
   margin-bottom: 0;
   margin-right: 0;
   margin-left: 0;
   text-align: center;
+  letter-spacing:.25rem;
 }
 
-
+a.heading-title:hover {
+	text-decoration:none;
+}
 @media (min-width: 320px) {
   .heading-title {
     margin-top: 2px;
@@ -834,6 +833,178 @@ body.theme-base-dark  {
   }
 }
 
-.theme-base-dark .iframe {
-  background-color:white;
+hr {
+  border: 0;
+  margin: 1.35em auto;
+  max-width: 100%;
+  background-position: 50%;
+  box-sizing: border-box;
+}
+
+.bookends {
+  position: relative;
+  border-width: 5px;
+  border-color: hsl(0, 0%, 50%) transparent;
+  height: 11px;
+  border-style: double;
+  width: 20%;
+}
+.bookends:before,
+.bookends:after {
+  position: absolute;
+  bottom: -3.536px;
+  width: 7.071px;
+  height: 7.071px;
+  display: block;
+  border-width: 0 7.071px 7.071px 0;
+  border-color: hsl(0, 0%, 50%);
+  border-style: double;
+  box-sizing: border-box;
+}
+.bookends:before {
+  transform: translateZ(0) rotate(-45deg);
+  left: -21px;
+}
+.bookends:after {
+  transform: translateZ(0) rotate(135deg);
+  right: -21px;
+}
+.dashed {
+  height: 10px;
+  background-image: linear-gradient(-45deg,
+    transparent,
+    transparent 25%,
+    currentColor 25%,
+    currentColor 50%,
+    transparent 50%,
+    transparent 75%,
+    currentColor 75%);
+  background-size: 10px 10px;
+  width: 48vw;
+  color: #000000;
+}
+
+.theme-base-dark #dashed.dashed  {color:#ffffff !important;}
+
+
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  /* Dimensions */
+  width: 100%;
+  height: .25em;
+
+  /* Reset the apperance */  
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* For Firefox/IE10+ */
+  background-color: transparent;
+
+  /* For IE10+, color of the progress bar */
+  color: #e0bc5b;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+.flat::-webkit-progress-value {
+  background-color: #e0bc5b;
+}
+
+.flat::-moz-progress-bar {
+  background-color: #e0bc5b;
+}
+
+.single::-webkit-progress-value {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(left, transparent, #e0bc5b);
+}
+
+.single::-moz-progress-bar {
+  background-color: transparent;
+  background-image: -moz-linear-gradient(left, transparent, #e0bc5b);
+}
+
+.multiple::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	                  -webkit-linear-gradient(left, green, #e0bc5b);
+}
+
+.multiple::-moz-progress-bar {
+  background-image: -moz-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	                  -moz-linear-gradient(left, green, #e0bc5b);
+}
+
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .25em;
+  display: block;
+}
+
+.progress-bar {
+  background-color: #e0bc5b;
+  width: 50%;
+  display: block;
+  height: inherit;
+}
+
+.theme-base-dark .progress {
+	color: #91ddeb;
+}
+
+.theme-base-dark .progress-bar {
+	background-color: #91ddeb;
+}
+
+.theme-base-dark .flat::-webkit-progress-value {
+  background-color: #91ddeb;
+}
+
+.theme-base-dark .flat::-moz-progress-bar {
+  background-color: #91ddeb;
+}
+
+.theme-base-dark .single::-webkit-progress-value {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(left, transparent, #91ddeb);
+}
+
+.theme-base-dark .single::-moz-progress-bar {
+  background-color: transparent;
+  background-image: -moz-linear-gradient(left, transparent, #91ddeb);
+}
+
+.theme-base-dark .multiple::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	                  -webkit-linear-gradient(left, green, #91ddeb);
+}
+
+.theme-base-dark .multiple::-moz-progress-bar {
+  background-image: -moz-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	                  -moz-linear-gradient(left, green, #91ddeb);
 }
