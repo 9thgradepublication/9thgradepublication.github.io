@@ -9,5 +9,6 @@ editor: Not Thanjila
 
 ###### the end is near
 
--{:.indent-3} A.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-- 					A
+\-{:.indent-3} A.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+-	A
