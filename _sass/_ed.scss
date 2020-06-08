@@ -874,7 +874,8 @@ hr {
   transform: translateZ(0) rotate(135deg);
   right: -21px;
 }
-.dashed {
+
+.light_hr  {color:#ffffff !important;
   height: 10px;
   background-image: linear-gradient(-45deg,
     transparent,
@@ -885,11 +886,19 @@ hr {
     transparent 75%,
     currentColor 75%);
   background-size: 10px 10px;
-  width: 48vw;
-}
-
-.light_hr  {color:#ffffff !important;}
-.dark_hr  {color: #000000 !important;}
+  width: 48vw;}
+.dark_hr  {color: #000000 !important;
+  height: 10px;
+  background-image: linear-gradient(-45deg,
+    transparent,
+    transparent 25%,
+    currentColor 25%,
+    currentColor 50%,
+    transparent 50%,
+    transparent 75%,
+    currentColor 75%);
+  background-size: 10px 10px;
+  width: 48vw;}
 
 progress {
   /* Positioning */
