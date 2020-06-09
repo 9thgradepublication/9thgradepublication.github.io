@@ -32,4 +32,4 @@ editor: Jacqueline L.
 * Now covered just partially
 * I whisper,
 * Just as anxiously
-* {:.indent-6}“What happened?”
+* “What happened?”
