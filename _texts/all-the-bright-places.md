@@ -1,6 +1,6 @@
 ---
 layout: creative
-title: All the Bright Places
+title: '"All the Bright Places"'
 author: Prita C.
 editor: Jacqueline L.
 
