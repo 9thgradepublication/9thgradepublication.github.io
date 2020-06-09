@@ -1,6 +1,6 @@
 ---
 layout: creative
-title: '"The Hate U Give"'
+title: The Hate U Give One-Pager
 author: Aaliyah R.
 editor: JoAnna B.
 
