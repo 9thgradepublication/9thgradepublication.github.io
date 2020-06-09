@@ -25,12 +25,12 @@ editor: Hazel E.
 * I knew to you I could always confide
 * Gravity once defied me
 * But you’ve helped retrieve me
-*
-* 
-* 
-* 
-* 
-*  
-*
+
+* &nbsp
+* &nbsp
+* &nbsp
+* &nbsp
+* &nbsp
+
 * And now I’m standing
 * However, it’s on a planet of our own this time
