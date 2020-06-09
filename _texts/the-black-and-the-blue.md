@@ -1,6 +1,6 @@
 ---
 layout: creative
-title: '"The Black and the Blue"'
+title: The Black and the Blue One-Pager
 author: Hazel E.
 editor: Devan N.
 
