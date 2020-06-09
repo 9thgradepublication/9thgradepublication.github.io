@@ -1,6 +1,6 @@
 ---
 layout: creative
-title: Eden West
+title: '"Eden West"'
 author: Wasi G.
 editor: JoAnna B.
 
