@@ -5,7 +5,7 @@ author: Isabel N.
 editor: Rebecca & Ms.BC
 
 ---
-		“What would you like fixed today?” the robotic female voice asked, its tone so cheery that Tiana almost forgot why she was there. She glanced to her side - she was surrounded by nothing but white walls, illuminated by even brighter, miniscule lights that climbed the corners of the small room and scaled the ceiling. 
+	   “What would you like fixed today?” the robotic female voice asked, its tone so cheery that Tiana almost forgot why she was there. She glanced to her side - she was surrounded by nothing but white walls, illuminated by even brighter, miniscule lights that climbed the corners of the small room and scaled the ceiling. 
         
     	“What would you like fixed today?”
         
@@ -18,10 +18,10 @@ editor: Rebecca & Ms.BC
         
     	She didn’t know what would happen to her if she didn’t follow their instructions, but she didn’t want to find out. There were stories about people who rebelled. Whether or not those rumors were true, they were gruesome enough that Tiana would heed them.
         
-    Reaching into her pocket, Tiana pulled out the small piece of paper, where her surgeries were typed out. Scanning them before she read them aloud, she sighed at the words written. Everything she liked about herself - her brown, hooded eyes, her full lips, her dark skin - was ordered to be changed. 
-    “What would you like fixed today?” 
+    	Reaching into her pocket, Tiana pulled out the small piece of paper, where her surgeries were typed out. Scanning them before she read them aloud, she sighed at the words written. Everything she liked about herself - her brown, hooded eyes, her full lips, her dark skin - was ordered to be changed. 
+    	“What would you like fixed today?” 
     
-    Tiana took one last look at her reflection, and read out the words on the paper. 
+    	Tiana took one last look at her reflection, and read out the words on the paper. 
 
 \+++++++++++++++++++++++
 
