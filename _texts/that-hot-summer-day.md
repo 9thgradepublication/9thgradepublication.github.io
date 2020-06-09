@@ -19,7 +19,6 @@ editor: Thanjila, Hazel, Ms.BC
 * Just playing ball
 
 * That day, started a dynasty
-
 * Every weekend
 * Every day off
 * Every snow day
