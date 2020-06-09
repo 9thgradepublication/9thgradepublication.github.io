@@ -1,6 +1,6 @@
 ---
 layout: creative
-title: The Hate U Give
+title: '"The Hate U Give"'
 author: Aaliyah R.
 editor: JoAnna B.
 
