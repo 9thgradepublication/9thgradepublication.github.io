@@ -28,19 +28,6 @@ We've put together this publication to showcase the awesome works of Ms. Buecker
   {% endfor %}
   
   </ul>
-  
-  <h1>Rumination Papers</h1>
-  <ul class="texts">
-  {% for item in site.texts %}
-  {% if item.layout contains "other" %}
-    <li class="text-title">
-      <a href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
-      </a>
-    </li>
-  {% endif %}
-  {% endfor %}
-  </ul>
 
   <h1>Stories</h1>
   <ul class="texts">
@@ -55,7 +42,7 @@ We've put together this publication to showcase the awesome works of Ms. Buecker
   {% endfor %}
   </ul>
 
- <h1>Creative One-Pagers</h1>
+ <h1>Books We've Read</h1>
   <ul class="texts">
   {% for item in site.texts %}
   {% if item.layout contains "creative" %}
