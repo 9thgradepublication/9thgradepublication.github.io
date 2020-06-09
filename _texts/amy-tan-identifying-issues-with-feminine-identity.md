@@ -1,5 +1,5 @@
 ---
-layout: rumination
+layout: creative
 title: Amy Tan Identifying Issues with Feminine Identity
 author: Priyam S.
 editor: Hattie W.
