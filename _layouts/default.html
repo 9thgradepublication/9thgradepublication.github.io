@@ -31,7 +31,7 @@
 {% endif %}
         <h2>
             <a href="{{ site.baseurl }}/" title="Home"  class="heading-title {{ page.layout }}-color">{{ site.title }}</a>
-         		<hr id="dashed" class="light_hr">
+         		<hr id="dashed" class="dashed">
 	  </h2>
 	  
   </header>
@@ -70,13 +70,11 @@ $("#switch").on("click", () => {
       localStorage.theme = "theme-base-dark";
       $("#checkText").text("Light ⭐");
       localStorage.text = "Light ⭐";
-      localStorage.hr = "light_hr";
   } else {
     $("#body").removeClass("theme-base-dark").addClass("theme-base-yellow");
     localStorage.theme = "theme-base-yellow";
     $("#checkText").text("Dark 🌑");
-    localStorage.text = "Dark 🌑";
-    localStorage.hr = "dark_hr";	 
+    localStorage.text = "Dark 🌑"; 
   }
    
 });
@@ -84,7 +82,6 @@ $("#switch").on("click", () => {
 if (typeof localStorage.theme == "string") {
     $("#body").removeClass(current_theme).addClass(localStorage.theme);
     $("#checkText").text(localStorage.text);
-    $("#dashed").removeClass(current_hr).addClass(localStorage.hr);
 }
 
 </script>
