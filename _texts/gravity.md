@@ -3,7 +3,6 @@ layout: poem
 title: Gravity
 author: Hattie W.
 editor: Hazel E.
-published: false
 
 ---
 * I was once isolated on a jam-packed planet
