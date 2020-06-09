@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<article class="narrative">
+  <h1 class="text-title other-color">{{ page.title }}</h1>
+  <p class="byline other-color">by {{ page.author }}</p>
+  <p> {{ content }} </p>
+</article>
+
+
+{% include paginate.html %}
+{% include disqus_comments.html %}
