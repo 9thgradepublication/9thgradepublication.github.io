@@ -1,6 +1,6 @@
 ---
 layout: creative
-title: '"Still Life with Tornado"'
+title: Still Life with Tornado One-Pager
 author: Eric G.
 editor: JoAnna B.
 

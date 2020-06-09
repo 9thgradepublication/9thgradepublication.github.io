@@ -1,6 +1,6 @@
 ---
 layout: creative
-title: '"Eden West"'
+title: Eden West One-Pager
 author: Wasi G.
 editor: JoAnna B.
 
