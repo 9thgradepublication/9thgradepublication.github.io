@@ -88,7 +88,7 @@ They went home to Mo’s house, where his family was waiting for them with dinne
 
 “Wow! Boy, are we lucky then!” Mo fittingly replied.
 
-They ate dinner then sat down in the living room and talked. Something caught Crooks’ eye. “That picture... I know it, the people. When was it taken?” He curiously enquired.
+They ate dinner then sat down in the living room and talked. Something caught Crooks’ eye. “That picture... I know it, the people. When was it taken?” He curiously inquired.
 
 “Oh that. It was taken years back, when…” Mo paused. “That picture was taken back when Anna was only 4 years old. We were all still together then, us and my son, Dillon. With all the commotion all over the place with WW1, we...”
 
