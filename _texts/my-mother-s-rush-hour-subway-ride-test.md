@@ -5,58 +5,76 @@ author: Roberto Q.
 editor: Devan N.
 
 ---
-Knowing the bus was not an option,
+    Knowing the bus was not an option,
 
-she ignited her run at **Kingsbridge Rd** ,
+    she ignited her run at Kingsbridge Rd ,
 
-packed like a sardine on the 4 train.
+    packed like a sardine on the 4 train.
 
-She _accelerated_ downtown
+    
 
-towards dreams towards hope
+    She accelerated downtown
 
-She flew on the _express_ track,
+    towards dreams towards hope
 
-letting not one local station delay her
+    
 
-At -**59 St-Lexington Av**-,
+    She flew on the express track,
 
-a vacant local train loomed near her.
+    letting not one local station delay her
 
-But she never left her spot.
+    
 
-And despite twisted tracks and dilapidated signals,
+    At -59 St-Lexington Av-,
 
-she made it to -**Fulton St**-
+    a vacant local train loomed near her.
 
-just in time to switch to the A.
+    But she never left her spot.
 
-And despite vandals who tried to stop her,
+    
 
-she remained scratchless.
+    And despite twisted tracks and dilapidated signals,
 
-Many of her friends gave up.
+    she made it to -Fulton St-
 
-I saw them.
+    just in time to switch to the A.
 
-Their expired motors, cracked windows, and dusty metal
+    
 
-They never got past -**Euclid Av**-.
+         And despite vandals who tried to stop her,
 
-My mother pushed through that wall
+               she remained scratchless.
 
-And despite track fires, sick passengers and power outages,
+    
 
-She arrived at -**Rockaway Blvd**- on time
+                      Many of her friends gave up.
 
-There I was,
+                                I saw them.
 
-sitting on the platform.
+                                   Their expired motors, cracked windows, and dusty metal
 
-I would embark on her journey.
+                                                                                 They never got past -Euclid Av-.
 
-And despite rain, snow, sleet and hail,
+    		                                                                  My mother pushed through that wall
 
-she guided me to -**Howard Beach-JFK Airport**-,
+                                                                
 
-so that I could have the chance to go anywhere
+                                                      And despite track fires, sick passengers and power outages,
+
+                                                                                    She arrived at -Rockaway Blvd- on time
+
+    
+
+                                                                                                                                  There I was,
+
+                                                                                                                sitting on the platform.
+
+                                                                                                     I would embark on her journey.
+
+    
+
+                                                                                         And despite rain, snow, sleet and hail,
+
+                                                                        she guided me to -Howard Beach-JFK Airport-,
+
+                                                                         so that I could have the chance to go anywhere
