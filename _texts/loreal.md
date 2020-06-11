@@ -22,11 +22,11 @@ editor: Devan N.
 * unfamiliar with how to spell M-O-T-H-E-R
 * only able to proudly spell her name
 
-###### 
+
 
 ### **what is that word?**
 
-###### 
+
 
 * Unable to read
 * Unable to comprehend letters she’s seeing on the page and
