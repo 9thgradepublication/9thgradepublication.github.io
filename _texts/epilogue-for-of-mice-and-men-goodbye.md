@@ -81,8 +81,8 @@ editor: Jacqueline L.
     
     	The rest of the men woke up to see Curley and Slim by the door. Going up to see what happened, they were handed that same piece of paper.
     
-    	*For the past few months on this ranch I have realised a lot. I needed to get over Lennie. I new that I couldn’t keep running away from the guilt I feeled sense that day. I promised him. Many times. And the way his eyes shined every time I tell him about our dream land makes me hurt inside. I new it was impossible and I still think that. But I still got ta fight for it. I want to fulfil his last dream. In writting this letter I want to say that by the time you all read this I already left. I will be off to my next adventure where I will find peace and a better life. I will be living off the fatta the land one day hopefully soon. Thank you for the time that I have been here.*
+    	For the past few months on this ranch I have realised a lot. I needed to get over Lennie. I new that I couldn’t keep running away from the guilt I feeled sense that day. I promised him. Many times. And the way his eyes shined every time I tell him about our dream land makes me hurt inside. I new it was impossible and I still think that. But I still got ta fight for it. I want to fulfil his last dream. In writting this letter I want to say that by the time you all read this I already left. I will be off to my next adventure where I will find peace and a better life. I will be living off the fatta the land one day hopefully soon. Thank you for the time that I have been here.
     
     	Yours truly,
     
-    	###George Milton
+    	George Milton
