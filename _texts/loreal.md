@@ -1,6 +1,6 @@
 ---
 layout: poem
-title: LOREAL
+title: L-O-R-E-A-L
 author: Hazel E.
 editor: Devan N.
 
