@@ -19,7 +19,7 @@ editor: Devan N.
 * unfamiliar with how to spell M-O-T-H-E-R
 * only able to proudly spell her name
 
-##### **what is that word?**
+### **what is that word?**
 
 * Unable to read
 * Unable to comprehend letters she’s seeing on the page and
@@ -41,7 +41,7 @@ editor: Devan N.
 * filled with others, ready to compare
 * filled with one too many people ready to judge
 
-##### **Can you help me spell this?**
+### **Can you help me spell this?**
 
 * A confused look plastered on her face,
 * a face I see all too often
