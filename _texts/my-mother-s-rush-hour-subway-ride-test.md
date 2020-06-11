@@ -5,7 +5,7 @@ author: Roberto Q.
 editor: Devan N.
 
 ---
-	Knowing the bus was not an option,
+    Knowing the bus was not an option,
     
     she ignited her run at **Kingsbridge Rd** ,
     
@@ -45,7 +45,7 @@ editor: Devan N.
     
                she remained scratchless.
     
-    
+     
     
                       Many of her friends gave up.
     
