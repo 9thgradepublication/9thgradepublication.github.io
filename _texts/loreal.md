@@ -5,80 +5,56 @@ author: Hazel E.
 editor: Devan N.
 
 ---
-For six years, she grew up -
+* For six years, she grew up -
 
-Grew up
+* Grew up
+* tugged between parents
+* Grew up
+* surrounded by different men,
+* which one does she call D-A-D?
+* Grew up, with no siblings
+* Always given a screen to gaze at
 
-tugged between parents
+* no attention to a book. a page. a word.
 
-Grew up
+* The age of six, unfamiliar
+* with how to spell C-A-T
+* unfamiliar with how to spell M-O-T-H-E-R
+* only able to proudly spell her name
 
-surrounded by different men,
+* **what is that word?**
 
-which one does she call D-A-D?
+* Unable to read
+* Unable to comprehend letters she’s seeing on the page and
 
-Grew up, with no siblings
+* make out words from them.
+* L-O-G-I-C-A-L-L-Y **talented**,
+* M-O-R-A-L-L-Y **gifted**,
+* P-H-Y-S-I-C-A-L-L-Y **skilled**..
 
-Always given a screen to gaze at
+* yet
 
-no attention to a book. a page. a word.
+* **LITERARILY LIMITED**
+* So what would you label that?
 
-The age of six, unfamiliar
+* Illiterate? Dyslexic? Or simply just -
+* Behind?
 
-with how to spell C-A-T
+* And why is she labeled that?
+* Must she
+* be labeled by the effect of the actions,
+* of the people who brought her into this already wretched world.
 
-unfamiliar with how to spell M-O-T-H-E-R
+* This already wretched world:
+* filled with kids, ready to laugh at her
+* filled with others, ready to compare
+* filled with one too many people ready to judge
 
-only able to proudly spell her name
+* Can you help me spell this?
+* A confused look plastered on her face,
+* a face I see all too often
 
-what is that word?
+* So, when you hear “_Loreal_,” you may think of your favorite French personal care company L’Oréal
+* Yet, I think of a smart girl, put back
 
-Unable to read
-
-Unable to comprehend letters she’s seeing on the page and
-
-make out words from them.
-
-L-O-G-I-C-A-L-L-Y talented,
-
-M-O-R-A-L-L-Y gifted,
-
-P-H-Y-S-I-C-A-L-L-Y skilled..
-
-yet
-
-**LITERARILY LIMITED**
-
-So what would you label that?
-
-Illiterate? Dyslexic? Or simply just -
-
-Behind?
-
-And why is she labeled that?
-
-Must she
-
-be labeled by the effect of the actions,
-
-of the people who brought her into this already wretched world.
-
-This already wretched world:
-
-filled with kids, ready to laugh at her
-
-filled with others, ready to compare
-
-filled with one too many people ready to judge
-
-Can you help me spell this?
-
-A confused look plastered on her face,
-
-a face I see all too often
-
-So, when you hear “_Loreal_,” you may think of your favorite French personal care company L’Oréal
-
-Yet, I think of a smart girl, put back
-
-by her own parents’ hands.
+* by her own parents’ hands.
