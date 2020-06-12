@@ -5,7 +5,7 @@ author: Yutong L.
 editor: Jacqueline L.
 
 ---
-The old, rectangular bunkhouse stood unbothered on the hard ground under the large gray clouds gathering up above it. The door, crooked with time, allowed wind gushing little by little, until the door creaked open, and that’s when a man slammed it shut. Through the windows, an old man lay motionless on a bed. Three men gathered around the big square table at the center of the room; in their hands were what appeared to be playing cards. A lizard skidded across the floor as another one peeked out of a bush. The first one ran and ran; the second one chased and chased, never seeming to catch up with it. The leaves on the surrounding trees rustled with noise. Even the little bushes made crisp sounds as the lizards entered and exited through them.
+    The old, rectangular bunkhouse stood unbothered on the hard ground under the large gray clouds gathering up above it. The door, crooked with time, allowed wind gushing little by little, until the door creaked open, and that’s when a man slammed it shut. Through the windows, an old man lay motionless on a bed. Three men gathered around the big square table at the center of the room; in their hands were what appeared to be playing cards. A lizard skidded across the floor as another one peeked out of a bush. The first one ran and ran; the second one chased and chased, never seeming to catch up with it. The leaves on the surrounding trees rustled with noise. Even the little bushes made crisp sounds as the lizards entered and exited through them.
     
     	Two men walked on the rocky path to the wooden door. One of them carrying the other around the shoulders. Slim stumbled as George gave up his weight on him. His lips, red as blood, mumbled something that shuffled with the loud wind. Slim sighed and looked at the 3-yards length still in front of them.
     
@@ -80,9 +80,9 @@ The old, rectangular bunkhouse stood unbothered on the hard ground under the lar
     	Curley woke up to the breeze of wind that swept through his bare arms. He walked to the stove at the other side of the room and poured himself some water to rinse out the taste the whiskey left in his mouth last night. He walked over to the center table and sat down. He just remembered details from last night when he spotted a piece of paper with writings on it. Out of curiosity, he took it in his hand and read it. Half way through it, he frowned, then smiled at the paper. He woke Slim up from his sleep and without a word showed him the paper he discovered. Finishing reading the words, he swept the room with his eyes. George was nowhere to be seen. His bunk was empty as if he never came in here to get a job in the summer. The apple box that acted like a shelf was empty as well. He walked to the door and looked out at the quiet, lifeless piece of land covered in snow. A trail of footprints can be seen as they led from the bunkhouse towards the woods.
     
     	The rest of the men woke up to see Curley and Slim by the door. Going up to see what happened, they were handed that same piece of paper.
-    
-   *For the past few months on this ranch I have realised a lot. I needed to get over Lennie. I new that I couldn’t keep running away from the guilt I feeled sense that day. I promised him. Many times. And the way his eyes shined every time I tell him about our dream land makes me hurt inside. I new it was impossible and I still think that. But I still got ta fight for it. I want to fulfil his last dream. In writting this letter I want to say that by the time you all read this I already left. I will be off to my next adventure where I will find peace and a better life. I will be living off the fatta the land one day hopefully soon. Thank you for the time that I have been here.
-    
-   *Yours truly,
-    
-   *George Milton
+
+        _For the past few months on this ranch I have realised a lot. I needed to get over Lennie. I new that I couldn’t keep running away from the guilt I feeled sense that day. I promised him. Many times. And the way his eyes shined every time I tell him about our dream land makes me hurt inside. I new it was impossible and I still think that. But I still got ta fight for it. I want to fulfil his last dream. In writting this letter I want to say that by the time you all read this I already left. I will be off to my next adventure where I will find peace and a better life. I will be living off the fatta the land one day hopefully soon. Thank you for the time that I have been here._
+
+_Yours truly,_
+
+_George Milton_
