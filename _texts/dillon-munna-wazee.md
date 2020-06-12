@@ -3,7 +3,6 @@ layout: story
 title: Dillon Munna Wazee
 author: Prianka R.
 editor: Maria P.
-published: false
 
 ---
 		It was a dark and stormy night on the ranch, the clouds bawling, with the nauseating smell of ozone lingering in the air. The tears of the clouds drenching the famished animals from the barn roof. These animals, punishing, and scouring the area for any source of food or water they can find.
