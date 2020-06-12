@@ -1,6 +1,6 @@
 ---
 layout: story
-title: 'Epilogue for Of Mice and Men: Goodbye'
+title: 'Epilogue for Of Mice and Men: Goodbye (Ghost Chapter)'
 author: Yutong L.
 editor: Jacqueline L.
 
