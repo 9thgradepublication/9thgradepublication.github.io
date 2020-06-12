@@ -5,11 +5,11 @@ author: Prianka R.
 editor: Maria P.
 
 ---
-		It was a dark and stormy night on the ranch, the clouds bawling, with the nauseating smell of ozone lingering in the air. The tears of the clouds drenching the famished animals from the barn roof. These animals, punishing, and scouring the area for any source of food or water they can find.
+It was a dark and stormy night on the ranch, the clouds bawling, with the nauseating smell of ozone lingering in the air. The tears of the clouds drenching the famished animals from the barn roof. These animals, punishing, and scouring the area for any source of food or water they can find.
 
 		Deep down in this land of sorrow and sentiments was Crooks, a lonely stable-buck grieving Lennie’s death-the one person he found a friend in.
 
-		During his grievance, isolated with his thoughts from all these years of being a stable-buck, he wondered to himself “_In all my years on this ranch, there has been nothing but sorrow and loneliness for me. No one has ever cared for me here, and when I finally found a fren’, he dun’ got hisself shot. One day they’ll do the same thing to me. Maybe....”_ He started to think about his family, the only people who he knew would care for him. He was getting old anyways and might never see his family again, “..._if they’re still back in LA, then maybe I can find them. I could be sittin’ down eatin’ dinner with ‘em this time next year, it’s... May 14. How wonderful! But could I?”_
+		During his grievance, isolated with his thoughts from all these years of being a stable-buck, he wondered to himself “In all my years on this ranch, there has been nothing but sorrow and loneliness for me. No one has ever cared for me here, and when I finally found a fren’, he dun’ got hisself shot. One day they’ll do the same thing to me. Maybe....” He started to think about his family, the only people who he knew would care for him. He was getting old anyways and might never see his family again, “...if they’re still back in LA, then maybe I can find them. I could be sittin’ down eatin’ dinner with ‘em this time next year, it’s... May 14. How wonderful! But could I?”
 
 		He pondered about this for a while and finally decided that he was going to leave the ranch and reunite with his family once again. Elated he exclaimed, “My siste's must’ve grown so big by now, and oh how father will be glad to see me again!” A tear rolled down his cheek just at the thought of this dream.
 
