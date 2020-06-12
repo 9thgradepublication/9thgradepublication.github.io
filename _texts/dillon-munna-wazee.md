@@ -1,6 +1,6 @@
 ---
 layout: story
-title: Dillon Munna Wazee
+title: Dillon Munna Wazee (Ghost Chapter)
 author: Prianka R.
 editor: Maria P.
 
