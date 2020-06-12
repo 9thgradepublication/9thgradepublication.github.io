@@ -13,9 +13,7 @@ It was a dark and stormy night on the ranch, the clouds bawling, with the nausea
 
 		He pondered about this for a while and finally decided that he was going to leave the ranch and reunite with his family once again. Elated he exclaimed, “My siste's must’ve grown so big by now, and oh how father will be glad to see me again!” A tear rolled down his cheek just at the thought of this dream.
 
-		Crooks began to plot his journey, then realized, “_How will I get there? I’m over here in Soldedad, so…”_ Crooks checks his map, _“that’s over 200 miles away from Los Angeles! I’m a cripple and even gettin’ a bus around here would be a miracle. No, this plan could never work.”_
-
-		He decided that this would be too hard, impossible for him to accomplish by himself, and he can’t tell anyone who might help him even if he could before he gets into trouble. Crooks then has an epiphany: “_If I get my back fixed, traveling this distance will be easier, and it would be a better me to show my family. But money?... It’ll cost about..say 500 bucks? So if I maybe stay on the ranch and continue to work, and possibly take on extra work, I can get the money in 10 months or less. After a shorter than a day-long surgery, I can be on my way!”_
+		He decided that this would be too hard, impossible for him to accomplish by himself, and he can’t tell anyone who might help him even if he could before he gets into trouble. Crooks then has an epiphany: “If I get my back fixed, traveling this distance will be easier, and it would be a better me to show my family. But money?... It’ll cost about..say 500 bucks? So if I maybe stay on the ranch and continue to work, and possibly take on extra work, I can get the money in 10 months or less. After a shorter than a day-long surgery, I can be on my way!”
 
 		After months of hard work and determination, Crooks finally raised enough money to perform surgery on his back by March 1st. Unfortunately for his dream, recovery took longer than he would’ve thought. Unfortunately for him, recovery took 6 months under hospital care before he could continue his dream. After these 6 months, Crooks was back on track to finding his family.
 
@@ -49,7 +47,7 @@ It was a dark and stormy night on the ranch, the clouds bawling, with the nausea
 
 		“No, thank you.”
 
-		“Okay, but if there’s anything I can do to help, just ask.” The nice lady closed the door and Dill sat on the doorstep and thought to himself, “_They only moved a year ago. They couldn’t have moved far, they’re probably somewhere nearby. I’ll have to stay in town for a while, but where?”_
+		“Okay, but if there’s anything I can do to help, just ask.” The nice lady closed the door and Dill sat on the doorstep and thought to himself, “They only moved a year ago. They couldn’t have moved far, they’re probably somewhere nearby. I’ll have to stay in town for a while, but where?”
 
 		He remembered the kind woman’s words. Dill knocked on the door. The nice lady once again opened the door kindly to him. He explained his situation to her and asked if he could stay with her until he finds his family. She then responded, “Of course! Make yourself at home.”
 
