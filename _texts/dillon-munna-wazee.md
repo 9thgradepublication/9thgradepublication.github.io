@@ -100,12 +100,12 @@ published: false
 
 		The family was aghast and listening, frozen in their previous actions. Crooks clenched his fingers tightly around the cutlery, as he continued to sob. Taking a deep breath, he continued, “They kept me as a stable-buck on a ranch in Soledad for years. I had a crooked back, so they would call me Crooks. I’ve only tried coming to LA after getting operated on my back to find my family. And I’ve finally found you after 8 years.” Crooks crying happy tears hugged his family after so many years.
 
-“Welcome home son. We’ve missed you very much, more than you think. Not a day has passed where I haven’t thought about you-how you’re doing, where you are, what you’re doing, who you’re with. Are you okay? How’s your back? What happened? Where have you been? Oh, I love you so much son.” His mother lovingly cried while hugging him tighter than ever.
+		“Welcome home son. We’ve missed you very much, more than you think. Not a day has passed where I haven’t thought about you-how you’re doing, where you are, what you’re doing, who you’re with. Are you okay? How’s your back? What happened? Where have you been? Oh, I love you so much son.” His mother lovingly cried while hugging him tighter than ever.
 
-“Oh, brother are you okay? I’ve missed you very much, us playing together, you teasing me, calling me Anna-Wanna” Anna laughed.
+		“Oh, brother are you okay? I’ve missed you very much, us playing together, you teasing me, calling me Anna-Wanna” Anna laughed.
 
-“Welcome home son, we’re glad you’re back. I love you.” Crook’s father replied.
+		“Welcome home son, we’re glad you’re back. I love you.” Crook’s father replied.
 
-“I... I love you guys too. I’ve missed you, and I’ve been so lonely.” Dillon was so delighted he was speechless. He was glad he finally reunited with his family. He cared about them, and they cared about him too!
+		“I... I love you guys too. I’ve missed you, and I’ve been so lonely.” Dillon was so delighted he was speechless. He was glad he finally reunited with his family. He cared about them, and they cared about him too!
 
-From then on, Dillon began to live with his family, as one big happy family.
+		From then on, Dillon began to live with his family, as one big happy family.
