@@ -5,7 +5,7 @@ author: Prianka R.
 editor: Maria P.
 
 ---
-It was a dark and stormy night on the ranch, the clouds bawling, with the nauseating smell of ozone lingering in the air. The tears of the clouds drenching the famished animals from the barn roof. These animals, punishing, and scouring the area for any source of food or water they can find.
+		It was a dark and stormy night on the ranch, the clouds bawling, with the nauseating smell of ozone lingering in the air. The tears of the clouds drenching the famished animals from the barn roof. These animals, punishing, and scouring the area for any source of food or water they can find.
 
 		Deep down in this land of sorrow and sentiments was Crooks, a lonely stable-buck grieving Lennie’s death-the one person he found a friend in.
 
