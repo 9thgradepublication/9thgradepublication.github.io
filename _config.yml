@@ -17,9 +17,7 @@ url: https://9thgradepublication.github.io
 disqus: 
   shortname: https-9thgradepublication-github-io
 algolia:
-   application_id: 4J0U97A72O
    index_name: publicatio_NAME
-   search_only_api_key: ec4a4288dae783c6d00acd2b23a60361
 baseurl: "/"
 author:
   name: Ninth Grade Class
