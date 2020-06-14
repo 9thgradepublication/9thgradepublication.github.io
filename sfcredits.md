@@ -5,36 +5,20 @@ layout: page
 ---
 ### Ms. Bueckert-Chan | Advisor
 
-### Prianka R. | Founding Contributor | Design Editor | Outreach Editor
+### Prianka R. | Founding Contributor, Design Editor, and Outreach Editor
 
-### Thanjila T. | Founding Contributor, Design Editor and Copy Editor
+### Thanjila T. | Founding Contributor, Design Editor, and Copy Editor
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in scelerisque tellus, eu pulvinar nibh. Nullam a nibh tellus. Nam eget lobortis ipsum. Etiam a risus est. Fusce consectetur justo eros, in porta odio consectetur ac. Aliquam in tempus eros. Cras sed elit non massa tempus pharetra. In hac habitasse platea dictumst. Vestibulum cursus volutpat lectus, vel tristique elit consectetur et. In nibh nisi, convallis sit amet lobortis eget, rhoncus placerat orci. Fusce iaculis commodo ex vitae efficitur. Sed consectetur faucibus maximus. Proin fringilla purus et erat vestibulum aliquet non ut nibh. Sed bibendum ul
+### Rebecca F. | Founding Contributor, Design Team, and Copy Editor
 
-### Rebecca F. | Design Team
+### Roberto Q. | Founding Contributor, and Copy Editor
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in scelerisque tellus, eu pulvinar nibh. Nullam a nibh tellus. Nam eget lobortis ipsum. Etiam a risus est. Fusce consectetur justo eros, in porta odio consectetur ac. Aliquam in tempus eros. Cras sed elit non massa tempus pharetra. In hac habitasse platea dictumst. Vestibulum cursus volutpat lectus, vel tristique elit consectetur et. In nibh nisi, convallis sit amet lobortis eget, rhoncus placerat orci. Fusce iaculis commodo ex vitae efficitur. Sed consectetur faucibus maximus. Proin fringilla purus et erat vestibulum aliquet non ut nibh. Sed bibendum ul
+### Maria P. | Founding Contributor, and Copy Editor
 
-### Roberto Q. | Copy Editor
+### Hazel E. | Founding Contributor, Outreach Editor, and Copy Editor
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in scelerisque tellus, eu pulvinar nibh. Nullam a nibh tellus. Nam eget lobortis ipsum. Etiam a risus est. Fusce consectetur justo eros, in porta odio consectetur ac. Aliquam in tempus eros. Cras sed elit non massa tempus pharetra. In hac habitasse platea dictumst. Vestibulum cursus volutpat lectus, vel tristique elit consectetur et. In nibh nisi, convallis sit amet lobortis eget, rhoncus placerat orci. Fusce iaculis commodo ex vitae efficitur. Sed consectetur faucibus maximus. Proin fringilla purus et erat vestibulum aliquet non ut nibh. Sed bibendum ul
+### Hattie W. | Founding Contributor, Outreach Editor, and Copy Editor
 
-### Maria P. | Copy Editor
+### Devan N. | Founding Contributor, and Copy Editor
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in scelerisque tellus, eu pulvinar nibh. Nullam a nibh tellus. Nam eget lobortis ipsum. Etiam a risus est. Fusce consectetur justo eros, in porta odio consectetur ac. Aliquam in tempus eros. Cras sed elit non massa tempus pharetra. In hac habitasse platea dictumst. Vestibulum cursus volutpat lectus, vel tristique elit consectetur et. In nibh nisi, convallis sit amet lobortis eget, rhoncus placerat orci. Fusce iaculis commodo ex vitae efficitur. Sed consectetur faucibus maximus. Proin fringilla purus et erat vestibulum aliquet non ut nibh. Sed bibendum ul
-
-### Hazel E. | Outreach Editor
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in scelerisque tellus, eu pulvinar nibh. Nullam a nibh tellus. Nam eget lobortis ipsum. Etiam a risus est. Fusce consectetur justo eros, in porta odio consectetur ac. Aliquam in tempus eros. Cras sed elit non massa tempus pharetra. In hac habitasse platea dictumst. Vestibulum cursus volutpat lectus, vel tristique elit consectetur et. In nibh nisi, convallis sit amet lobortis eget, rhoncus placerat orci. Fusce iaculis commodo ex vitae efficitur. Sed consectetur faucibus maximus. Proin fringilla purus et erat vestibulum aliquet non ut nibh. Sed bibendum ul
-
-### Hattie W. | Outreach Editor
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in scelerisque tellus, eu pulvinar nibh. Nullam a nibh tellus. Nam eget lobortis ipsum. Etiam a risus est. Fusce consectetur justo eros, in porta odio consectetur ac. Aliquam in tempus eros. Cras sed elit non massa tempus pharetra. In hac habitasse platea dictumst. Vestibulum cursus volutpat lectus, vel tristique elit consectetur et. In nibh nisi, convallis sit amet lobortis eget, rhoncus placerat orci. Fusce iaculis commodo ex vitae efficitur. Sed consectetur faucibus maximus. Proin fringilla purus et erat vestibulum aliquet non ut nibh. Sed bibendum ul
-
-### Devan N. | Outreach Editor
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in scelerisque tellus, eu pulvinar nibh. Nullam a nibh tellus. Nam eget lobortis ipsum. Etiam a risus est. Fusce consectetur justo eros, in porta odio consectetur ac. Aliquam in tempus eros. Cras sed elit non massa tempus pharetra. In hac habitasse platea dictumst. Vestibulum cursus volutpat lectus, vel tristique elit consectetur et. In nibh nisi, convallis sit amet lobortis eget, rhoncus placerat orci. Fusce iaculis commodo ex vitae efficitur. Sed consectetur faucibus maximus. Proin fringilla purus et erat vestibulum aliquet non ut nibh. Sed bibendum ul
-
-### Jacqueline L. | Managing Editor
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in scelerisque tellus, eu pulvinar nibh. Nullam a nibh tellus. Nam eget lobortis ipsum. Etiam a risus est. Fusce consectetur justo eros, in porta odio consectetur ac. Aliquam in tempus eros. Cras sed elit non massa tempus pharetra. In hac habitasse platea dictumst. Vestibulum cursus volutpat lectus, vel tristique elit consectetur et. In nibh nisi, convallis sit amet lobortis eget, rhoncus placerat orci. Fusce iaculis commodo ex vitae efficitur. Sed consectetur faucibus maximus. Proin fringilla purus et erat vestibulum aliquet non ut nibh. Sed bibendum ul
+### Jacqueline L. | Founding Contributor, Managing Editor, and Copy Editor
