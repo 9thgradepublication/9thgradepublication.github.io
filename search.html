@@ -17,31 +17,4 @@ layout: page
 
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.1"></script>
 
-<script>
-  const search = instantsearch({
-    // TODO: enter our own algolia credentials here
-    appId: 'latency',
-    apiKey: 'ec4a4288dae783c6d00acd2b23a60361',
-    indexName: 'publication_NAME',
-    routing: true
-  });
-
-  search.addWidget(
-    instantsearch.widgets.searchBox({
-      container: '#search-box',
-      placeholder: 'Search for texts'
-    })
-  );
-
-  search.addWidget(
-    instantsearch.widgets.hits({
-      container: '#hits',
-      templates: {
-        empty: 'No results',
-        item: '<em>Hit {{objectID}}</em>: {{{_highlightResult.name.value}}}'
-      }
-    })
-  );
-
-  search.start();
-</script>
+{% include algolia.html %}
