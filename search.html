@@ -5,15 +5,7 @@ layout: page
   <div id="search-box"></div>
 
   <div class="post-list" id="hits">
-    {% for post in site.texts %}
-      <div class="post-item">
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h2>
-      </div>
-    {% endfor %}
+  
   </div>
 
   {% include algolia.html %}
