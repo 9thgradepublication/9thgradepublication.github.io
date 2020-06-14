@@ -1,9 +1,8 @@
 ---
-layout: ''
-title: ''
-author: ''
-editor: ''
-published: false
+layout: poem
+title: My Mother's Rush Hour Subway Ride
+author: Roberto Q.
+editor: Devan N.
 
 ---
-![](/uploads/not-my-poem-delete.png)
+![](/uploads/my-mother-s-rush-hour-subway-ride-by-roberto-q.png)![](/uploads/not-my-poem-delete.png)
