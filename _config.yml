@@ -19,6 +19,7 @@ disqus:
 algolia:
    application_id: 4J0U97A72O
    index_name: publicatio_NAME
+   files_to_exclude: [index.html, sfcredits.md, 404.html, search.html]
 baseurl: "/"
 author:
   name: Ninth Grade Class
