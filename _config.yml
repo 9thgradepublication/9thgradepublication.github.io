@@ -17,6 +17,7 @@ url: https://9thgradepublication.github.io
 disqus: 
   shortname: https-9thgradepublication-github-io
 algolia:
+   application_id: 4J0U97A72O
    index_name: publicatio_NAME
 baseurl: "/"
 author:
