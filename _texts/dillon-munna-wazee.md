@@ -105,4 +105,4 @@ editor: Maria P.
     
     	“I... I love you guys too. I’ve missed you, and I’ve been so lonely.” Dillon was so delighted he was speechless. He was glad he finally reunited with his family. He cared about them, and they cared about him too!
     
-    	From then on, Dillon began to live with his family, as one big happy family.
+    	From then on, Dillon began to live with his family, and they lived happily ever after.
