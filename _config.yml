@@ -17,7 +17,7 @@ url: https://9thgradepublication.github.io
 disqus: 
   shortname: https-9thgradepublication-github-io
 algolia:
-  application_id: your_application_id
+  application_id: 4J0U97A72O
   index_name:     publication # You can replace that with whatever name you want
 baseurl: "/"
 author:
