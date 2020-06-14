@@ -23,13 +23,10 @@ const hitTemplate = function(hit) {
     }).join(' > ')
   }
 
-  const content = hit._highlightResult.html.value;
-
   return `
     <div class="post-item">
          <h2><a class="post-link" href="${url}">${title}</a></h2>
       {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
-      <div class="post-snippet">${content}</div>
     </div>
   `;
 }
