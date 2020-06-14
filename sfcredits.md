@@ -22,3 +22,5 @@ layout: page
 ### **Thanjila T.** | Founding Contributor, Design Editor, and Copy Editor
 
 ### **Hattie W.** | Founding Contributor, Outreach Editor, and Copy Editor
+
+![](/uploads/signed-final.png)
