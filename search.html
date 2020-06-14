@@ -2,16 +2,20 @@
 title: Search
 layout: page
 ---
-<div id=="search-box">
-  <!-- SearchBox widget will appear here -->
-</div>
+  <div id="search-box"></div>
 
-<div id="hits">
-  <!-- Hits widget will appear here -->
-</div>
+  <div class="post-list" id="hits">
+    {% for post in site.posts %}
+      <div class="post-item">
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h2>
 
-<!-- algolia search -->
+        <div class="post-snippet">{{ post.excerpt }}</div>
+      </div>
+    {% endfor %}
+  </div>
 
-<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.1"></script>
-
-{% include algolia.html %}
+  {% include algolia.html %}
