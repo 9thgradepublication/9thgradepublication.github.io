@@ -1,22 +1,38 @@
 ---
 title: Search
 layout: page
----                                                                                                   
+---      
+---
+layout: default
+---
 
-<XML>
-<CustomSearchEngine keywords="climate &quot;global warming&quot; &quot;greenhouse gases&quot;"
-                    language="en"
-                    encoding="UTF-8">
-  <Title>RealClimate</Title>
-  <Description>Science behind global warming and climate change.</Description>
-  <Context>
-    <BackgroundLabels>
-      <Label name="_cse_hwbuiarvsbo" mode="FILTER"/>
-      <Label name="_cse_exclude_hwbuiarvsbo" mode="ELIMINATE"/>
-    </BackgroundLabels>
-  </Context>
-  <LookAndFeel nonprofit="false"/>
-  <ImageSearchSettings enable="true" layout="1" />
-</CustomSearchEngine>
-</XML>
-<script async src="https://cse.google.com/cse.js?cx=009301389004443255059:so3jugmqyqw"></script>
+<div class="home">
+
+  {{ content }}
+
+  <h1 class="page-heading">Posts</h1>
+
+  <div id="search-searchbar"></div>
+
+  <div class="post-list" id="search-hits">
+    {% for post in site.texts %}
+      <div class="post-item">
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h2>
+
+        <div class="post-snippet">{{ post.excerpt }}</div>
+      </div>
+    {% endfor %}
+  </div>
+
+  {% include algolia.html %}
+
+  <p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></p>
+
+</div>
