@@ -3,6 +3,9 @@ title: Credits
 layout: page
 
 ---
+
+![](/uploads/signed-final.png)
+
 ### **Ms. Bueckert-Chan** | Advisor
 
 ### **Hazel E.** | Founding Contributor, Outreach Editor, and Copy Editor
@@ -22,5 +25,3 @@ layout: page
 ### **Thanjila T.** | Founding Contributor, Design Editor, and Copy Editor
 
 ### **Hattie W.** | Founding Contributor, Outreach Editor, and Copy Editor
-
-![](/uploads/signed-final.png)
