@@ -14,14 +14,14 @@ const search = instantsearch({
 // Adding searchbar and results widgets
 search.addWidget(
   instantsearch.widgets.searchBox({
-    container: '#search-searchbar',
+    container: '#search-box',
     placeholder: 'Search into posts...',
     poweredBy: true // This is required if you're on the free Community plan
   })
 );
 search.addWidget(
   instantsearch.widgets.hits({
-    container: '#search-hits'
+    container: '#hits'
   })
 );
 
