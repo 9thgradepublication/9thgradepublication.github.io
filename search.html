@@ -1,11 +1,13 @@
 ---
 title: Search
 layout: page
----      
-
-{% include algolia.html %}
+---
 
 <div class="home">
+
+  {{ content }}
+
+  <h1 class="page-heading">Posts</h1>
 
   <div id="search-searchbar"></div>
 
@@ -20,8 +22,10 @@ layout: page
             {{ post.title | escape }}
           </a>
         </h2>
+
       </div>
     {% endfor %}
   </div>
 
+  {% include algolia.html %}
 </div>
