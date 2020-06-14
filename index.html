@@ -25,10 +25,13 @@ Ms. Bueckert-Chan, Hazel E., Rebecca F., Jacqueline L., Devan N., Maria P., Robe
 </div>
 
 <hr>
-
-<div class="toc">
-  <h1>Poems</h1>
-  <ul class="texts">
+<details>
+  <summary>
+    Poems
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+   <ul class="texts">
   {% for item in site.texts %}
   {% if item.layout contains "poem" %}
     <li class="text-title">
@@ -38,11 +41,17 @@ Ms. Bueckert-Chan, Hazel E., Rebecca F., Jacqueline L., Devan N., Maria P., Robe
     </li>
   {% endif %}
   {% endfor %}
-  
   </ul>
 
-  <h1>Stories</h1>
-  <ul class="texts">
+</details> 
+	
+<details>
+  <summary>
+    Stories
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+   <ul class="texts">
   {% for item in site.texts %}
   {% if item.layout contains "story" %}
     <li class="text-title">
@@ -54,8 +63,15 @@ Ms. Bueckert-Chan, Hazel E., Rebecca F., Jacqueline L., Devan N., Maria P., Robe
   {% endfor %}
   </ul>
 
- <h1>Books We've Read</h1>
-  <ul class="texts">
+</details> 
+
+<details>
+  <summary>
+    Books We've Read
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+   <ul class="texts">
   {% for item in site.texts %}
   {% if item.layout contains "creative" %}
     <li class="text-title">
@@ -66,5 +82,8 @@ Ms. Bueckert-Chan, Hazel E., Rebecca F., Jacqueline L., Devan N., Maria P., Robe
   {% endif %}
   {% endfor %}
   </ul>
+
+</details> 
+
 
 </div>
