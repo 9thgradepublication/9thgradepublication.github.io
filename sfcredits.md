@@ -5,7 +5,7 @@ layout: page
 ---
 ### Ms. Bueckert-Chan | Advisor
 
-### Prianka R. l Founding Contributor l Design Editor l Outreach Editor
+### Prianka R. | Founding Contributor | Design Editor | Outreach Editor
 
 ### Thanjila T. | Founding Contributor, Design Editor and Copy Editor
 
