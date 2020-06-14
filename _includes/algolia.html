@@ -7,16 +7,13 @@
 const search = instantsearch({
   appId: '{{ site.algolia.application_id }}',
   apiKey: 'ec4a4288dae783c6d00acd2b23a60361',
-  indexName: '{{ site.algolia.index_name }}'
-});
-
-const search = instantsearch({
-  searchFunction(helper) {
+  indexName: '{{ site.algolia.index_name }}',
+    searchFunction(helper) {
     const container = document.querySelector('#hits');
     container.style.display = helper.state.query === '' ? 'none' : '';
 
     helper.search();
-  }
+    }
 });
 
 const hitTemplate = function(hit) {
