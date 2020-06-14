@@ -22,3 +22,5 @@ layout: page
 ### Devan N. | Founding Contributor, and Copy Editor
 
 ### Jacqueline L. | Founding Contributor, Managing Editor, and Copy Editor
+
+  
