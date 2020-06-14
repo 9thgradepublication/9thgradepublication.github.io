@@ -2,26 +2,46 @@
 title: Search
 layout: page
 ---
-<div class="home">
-  <h1 class="page-heading">Posts</h1>
+<div id=="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
 
-  <div id="search-searchbar"></div>
+<div id="hits">
+  <!-- Hits widget will appear here -->
+</div>
 
-  <div class="post-list" id="search-hits">
-    {% for post in site.texts %}
-      <div class="post-item">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+<!-- algolia search -->
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h2>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.1/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.1/dist/instantsearch-theme-algolia.min.css">
 
-      </div>
-    {% endfor %}
-  </div>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.1"></script>
 
-  {% include algolia.html %}
-  </dov>
+<script>
+  const search = instantsearch({
+    // TODO: enter our own algolia credentials here
+    appId: 'latency',
+    apiKey: 'ec4a4288dae783c6d00acd2b23a60361',
+    indexName: 'publication_NAME',
+    routing: true
+  });
+
+  search.addWidget(
+    instantsearch.widgets.searchBox({
+      container: '#search-box',
+      placeholder: 'Search for texts'
+    })
+  );
+
+  search.addWidget(
+    instantsearch.widgets.hits({
+      container: '#hits',
+      templates: {
+        empty: 'No results',
+        item: '<em>Hit {{objectID}}</em>: {{{_highlightResult.name.value}}}'
+      }
+    })
+  );
+
+  search.start();
+</script>
