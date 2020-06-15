@@ -1,0 +1,1095 @@
+/* Ed: the minimal edition theme.
+ * ___________________
+ * \_   _____/\______ \
+ *  |    __)_  |    |  \
+ *  |        \ |    `   \
+ * /_______  //_______  /
+ *         \/         \/
+ * Designed, built, and released under an MIT license by @elotroalex and brill friends. See credits
+ * for more info.
+ * Based on the Poole and Lanyon theme by @mdo. Learn more at
+ * https://github.com/minicomp/ed.
+*/
+
+/*
+  To apply a different color scheme to the whole scroll down to the themes section instructions at
+  the very bottom of this file
+*/
+
+
+/*
+  General
+  Update the foundational and global aspects of the page.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size:100%;
+  background-color:#efefef;
+}
+
+html {
+  font-family: $main-font;
+  font-size: 1em; /* 16px; specify in ems to support text resizing in all browsers */
+  line-height: 1.5;
+}
+
+@media (min-width: 38em) {
+  html {
+    font-size: $regular-font-size;
+  }
+}
+
+body {
+  color: $text-color;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+  
+}
+
+.content {
+  margin-bottom: 4rem;
+}
+
+embed {
+	width: 50vw;
+	height:50vh;
+}
+/*
+  Wrapper
+  The wrapper is used to position site content when the sidebar is toggled. We use an outter wrap to
+  position the sidebar without interferring with the regular page content.
+*/
+
+.wrap {
+  position: relative;
+  width: 100%;
+// height:100vh;
+}
+
+
+/*
+  Container
+  Center the page content.
+*/
+
+.container {
+  max-width: 32rem;
+  padding-left:  1rem;
+  padding-right: 1rem;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+@media (min-width: 56em) {
+  .container {
+    max-width: 38rem;
+  }
+}
+
+
+.retainer {
+  box-sizing: border-box;
+  border-radius:2rem;
+ 
+}
+
+input#switch {
+  display:none;
+  width:0rem;
+  height:0rem;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Links */
+a, .font-special a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+/* `:focus` is linked to `:hover` for basic accessibility */
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  margin-bottom: .5rem;
+  font-weight: normal;
+  color: $heading-color;
+  letter-spacing: -.025rem;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h1.font-special {
+  font-size: 1.4rem;
+}
+
+h1.font-special {
+ font-family: 'Montaga', serif;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+h3, h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+}
+
+
+/* Body text */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  
+}
+
+/* Lists */
+ul {
+  list-style: square;
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
+/* Search highlighting */
+mark {
+  color: white;
+  background-color: $link-color;
+}
+
+/* Quotes */
+blockquote {
+  padding: 0rem 1.5rem 0rem 2rem;
+  margin: 0 0 20px 0;
+  color: $text-color;
+  border-left: none;
+  font-style: italic;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 30em) {
+  blockquote {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
+  }
+}
+
+/* Images */
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 5px;
+}
+
+/* Tables */
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid #e5e5e5;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}
+
+/*
+  Sidebar
+  The sidebar is the drawer, the item we are toggling with our handy hamburger button in the corner
+  of the page.
+  This particular sidebar implementation was inspired by Chris Coyier's "Offcanvas Menu with CSS
+  Target" article, and the checkbox variation from the comments by a reader. It modifies both
+  implementations to continue using the checkbox (no change in URL means no polluted browser
+  history), but this uses `position` for the menu to avoid some potential content reflow issues.
+  Source: http://css-tricks.com/off-canvas-menu-with-css-target/#comment-207504
+*/
+
+/* Style and "hide" the sidebar */
+.sidebar {
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: -14rem;
+  width: 14rem;
+  visibility: hidden;
+  overflow-y: auto;
+  font-size: 1.2rem;
+  color: rgba(255,255,255,.6);
+  background-color: #202020;
+  -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+
+@media (min-width: 30em) {
+  .sidebar {
+    font-size: .75rem;/* 14px */
+  }
+}
+
+/* Sidebar content */
+.sidebar {
+  background-color: $link-color;
+}
+
+.sidebar a, .sidebar a:hover {
+  font-weight: normal;
+  color: #ffff;
+}
+
+.sidebar-item {
+  padding: 1rem;
+}
+
+.sidebar-item p:last-child {
+  margin-bottom: 0;
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  border-color:transparent;
+}
+
+.sidebar-nav-item {
+  display: block;
+  padding: .5rem 1rem;
+  border-color: transparent;
+}
+
+a.sidebar-nav-item-toc {
+  color: rgba(255,255,255,.8);
+}
+
+.sidebar-nav-item.active,
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: none;
+  background-color: rgba(255,255,255,.1);
+  border-color: transparent;
+}
+
+@media (min-width: 48em) {
+  .sidebar-item {
+    padding: 1.5rem;
+  }
+
+  .sidebar-nav-item {
+    padding-left:  1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
+.sidebar-checkbox {
+  display: none;
+}
+
+/* Style the `label` that we use to target the `.sidebar-checkbox` */
+.sidebar-toggle {
+  position: absolute;
+  top: .8rem;
+  left: 1rem;
+  display: block;
+  padding: .25rem .75rem;
+  color: #505050;
+  background-color: #fff;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+.sidebar-toggle:before {
+  display: inline-block;
+  width: 1rem;
+  height: .75rem;
+  content: "";
+  background-image: -webkit-linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
+  background-image:    -moz-linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
+  background-image:     -ms-linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
+  background-image:         linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
+}
+
+.sidebar-toggle:active,
+#sidebar-checkbox:focus ~ .sidebar-toggle,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  color: #fff;
+  background-color: #555;
+}
+
+.sidebar-toggle:active:before,
+#sidebar-checkbox:focus ~ .sidebar-toggle:before,
+#sidebar-checkbox:checked ~ .sidebar-toggle:before {
+  background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
+  background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
+  background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
+  background-image:         linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
+}
+
+
+@media print {
+  .sidebar-toggle {
+    display: none;
+  }
+}
+
+
+/*
+  Slide effect
+  Handle the sliding effects of the sidebar and content in one spot, separate from the default
+  styles.
+  As a heads-up, we don't use `transform: translate3d()` here because, when mixed with
+  `position: fixed;` for the sidebar toggle, it creates a new containing block. Put simply, the
+  fixed sidebar toggle behaves like `position: absolute;` when transformed.
+  Read more about it at http://meyerweb.com/eric/thoughts/2011/09/12/.
+*/
+
+.wrap,
+.sidebar,
+.sidebar-toggle {
+  -webkit-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.wrap,
+.sidebar-toggle {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+          transition: transform .3s ease-in-out;
+}
+
+#sidebar-checkbox:checked + .sidebar {
+  z-index: 10;
+  visibility: visible;
+}
+
+#sidebar-checkbox:checked ~ .sidebar,
+#sidebar-checkbox:checked ~ .wrap,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  -webkit-transform: translateX(14rem);
+      -ms-transform: translateX(14rem);
+          transform: translateX(14rem);
+}
+
+
+/*
+  Reverse layout
+  Flip the orientation of the page by placing the `.sidebar` and sidebar toggle on the right side.
+*/
+
+.layout-reverse .sidebar {
+  left: auto;
+  right: -14rem;
+}
+
+.layout-reverse .sidebar-toggle {
+  left: auto;
+  right: 1rem;
+}
+
+.layout-reverse #sidebar-checkbox:checked ~ .sidebar,
+.layout-reverse #sidebar-checkbox:checked ~ .wrap,
+.layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle {
+  -webkit-transform: translateX(-14rem);
+      -ms-transform: translateX(-14rem);
+          transform: translateX(-14rem);
+}
+
+
+/*
+  Overlay sidebar
+  Make the sidebar content overlay the viewport content instead of pushing it aside when toggled.
+*/
+
+.sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar-toggle {
+  box-shadow: 0 0 0 .25rem #fff;
+}
+
+.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
+  box-shadow: .25rem 0 .5rem rgba(0,0,0,.1);
+}
+
+/* Only one tweak for a reverse layout*/
+.layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
+  box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
+}
+
+
+/*
+ ED special layouts
+*/
+
+p.centered {
+  text-align: center;
+}
+
+p.larger {
+  font-size: 1.6rem;
+}
+
+p.large {
+  font-size: 1.4rem
+}
+
+p.small {
+  font-size: 0.8rem;
+}
+
+div.poem,
+.poem,
+div.narrative,
+.narrative {
+  margin-bottom: 5rem;
+}
+
+div.toc {
+  margin-bottom: 4rem;
+}
+
+
+/*
+  Poem styles
+  If you want your lines not to wrap on small screens, add the rule "white-space: nowrap;"; If you
+  want you want to remove the hanging indent, reset the padding-left to 0 and erase text-indent
+*/
+
+.poem ul,
+.poetry ul,
+ul.poetry, article > ul, article > li {
+  list-style: none;
+  list-style-type: none;
+  padding-left: 1rem;
+  text-indent: -1rem;
+}
+
+
+/* This snippet helps us reset the margin for all spans with the indent- class 
+span[class^='indent-'],
+p[class^='indent-'] {
+  margin: 0;
+}
+
+*/
+
+
+
+/*
+  To set line indentation for poetry wrap the line in a span with a class="indent-x" attribute.
+  The x is represents a rem (root em) value
+*/
+
+.indent-1 {
+  padding-left: 1rem;
+}
+
+.indent-2 {
+  padding-left: 2rem;
+}
+
+.indent-3 {
+  padding-left: 3rem;
+}
+
+.indent-4 {
+  padding-left: 4rem;
+}
+
+.indent-5 {
+  padding-left: 5rem;
+}
+
+.indent-6 {
+  padding-left: 6rem;
+}
+
+.indent-7 {
+  padding-left: 7rem;
+}
+
+.indent-8 {
+  padding-left: 8rem;
+}
+
+.indent-9 {
+  padding-left: 9rem;
+}
+
+.indent-10 {
+  padding-left: 10rem;
+}
+
+.poem .byline,
+.poetry .byline {
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: 0;
+  margin-top: -.5rem;
+}
+
+/* Footnotes styles */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+.footnotes {
+  line-height: 1.2rem;
+  font-size: 0.9rem;
+  letter-spacing: .01rem;
+}
+
+.footnotes .foot-block {
+  display: inline-block;
+  padding: 0 4rem 0 2rem;
+  margin-bottom: .8rem;
+  font-style: italic;
+}
+
+a.footnote {
+  padding-left: .1rem;
+  font-size: .66rem;
+}
+
+/*Bibliography styles */
+ol.bibliography {
+  list-style-type:none;
+  padding-left: 1rem;
+  text-indent: -1rem;
+}
+
+/* Diplomatic editions */
+ins,
+.add {
+  color:#288828;
+  font-style: italic;
+}
+
+del,
+.delete {
+  text-decoration: line-through;
+  color: #AA3232;
+}
+
+u,
+.underline {
+  text-decoration: underline;
+}
+
+
+/*
+  Line layouts for prose-poetry and theater
+  To use these layouts you need to add the classes to your markdown or HTML lines.
+  (ex. "- {:.centered} hello!")
+*/
+
+li.centered {
+  text-align: center;
+}
+
+li.speaker,
+li.speakerGroup {
+  text-align: center;
+  padding-top: 1.2em;
+}
+
+li.speakerGroup {
+  margin-bottom: -1.6em;
+}
+
+/* floating dark mode button */
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* To add an attribution, make sure to make a line with the attribution class */
+
+li.attribution {
+  text-align: right;
+  list-style: none;
+  padding: 0rem 1.5rem 0rem 2rem;
+  margin: 0 0 20px 0;
+  color: #454545;
+}
+
+li.prose {
+  list-style-position: inside;
+  margin-left: -1em;
+  text-indent: 0;
+}
+
+li.prose-indent {
+  text-indent: 2rem;
+}
+
+
+/*
+  Themes
+  Applies custom color schemes by adding the appropriate class to the `body`. Based on colors from
+  Base16: http://chriskempson.com/projects/base16/
+*/
+
+/* Yellow */
+body.theme-base-yellow {
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+.theme-base-yellow .sidebar, .theme-base-yellow .sidebar-toggle:active {
+  background-color: #e0bc5b;
+}
+
+.theme-base-yellow .container a,
+.theme-base-yellow .sidebar-toggle,
+.theme-base-yellow .related-posts li a:hover {
+  color: #e0bc5b;
+}
+
+.theme-base-yellow h1, .theme-base-yellow h2, .theme-base-yellow h3 ,.theme-base-yellow h4,.theme-base-yellow h5,.theme-base-yellow h6{
+  color: #e0bc5b;
+}
+
+.theme-base-yellow header > h2 > a{
+  color:#e0bc5b;
+}
+/*Layout specific styles -- Light*/
+.theme-base-yellow .creative-color, .creative-color header > h2 > a, a.creative-color.js-font-normal, a.creative-color.js-font-increase, a.creative-color.js-font-decrease {
+   color: #E4D6A7;
+}
+
+.theme-base-yellow .poem-color, .poem-color header > h2 > a, a.poem-color.js-font-normal, a.poem-color.js-font-increase, a.poem-color.js-font-decrease{
+    color: #A5643B;
+}
+.theme-base-yellow .story-color, .story-color header > h2 > a, a.story-color.js-font-normal, a.story-color.js-font-increase, a.story-color.js-font-decrease{
+   color: #9E3628;
+}
+
+
+/* Dark */
+
+body.theme-base-dark  {
+  background-color: #242424;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+.theme-base-dark .sidebar,
+.theme-base-dark .sidebar-toggle:active {
+  background-color: #649CB9;
+
+}
+
+.theme-base-dark .container a,
+.theme-base-dark .sidebar-toggle,
+.theme-base-dark .related-posts li a:hover {
+  color: #649CB9;
+}
+
+.theme-base-dark h1, .theme-base-dark h2, .theme-base-dark h3 ,.theme-base-dark h3, .theme-base-dark h4, .theme-base-dark h5, .theme-base-dark h6
+{
+  color: #649CB9;
+}
+
+.theme-base-dark article, .theme-base-dark div > p, .theme-base-dark i  {
+  color: #e3e3e3 !important;
+}
+
+.theme-base-dark label.sidebar-toggle {
+   background-color: #242424;
+}
+
+.theme-base-dark header > h2 > a{
+  color: #649CB9;
+}
+.theme-base-dark label.sidebar-toggle:before {
+  display: inline-block;
+  width: 1rem;
+  height: .75rem;
+  content: "";
+  background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #242424 20%, #242424 40%, #fff 40%, #fff 60%, #242424 60%, #242424 80%, #fff 80%, #fff 100%);
+  background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #242424 20%, #242424 40%, #fff 40%, #fff 60%, #242424 60%, #242424 80%, #fff 80%, #fff 100%);
+  background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #242424 20%, #242424 40%, #fff 40%, #fff 60%, #242424 60%, #242424 80%, #fff 80%, #fff 100%);
+  background-image:         linear-gradient(to bottom, #fff, #fff 20%, #242424 20%, #242424 40%, #fff 40%, #fff 60%, #242424 60%, #242424 80%, #fff 80%, #fff 100%);
+}
+
+/* Layout specific -- Dark */
+.theme-base-dark .creative-color, .theme-base-dark .creative-color header > h2 > a, .theme-base-dark h1.text-title.creative-color,
+.theme-base-dark  a.creative-color.js-font-normal, .theme-base-dark a.creative-color.js-font-increase,.theme-base-dark a.creative-color.js-font-decrease{
+   color: #B6E2D6;
+}
+
+.theme-base-dark .poem-color, .theme-base-dark .poem-color header > h2 > a, .theme-base-dark h1.text-title.poem-color,
+.theme-base-dark a.poem-color.js-font-normal, .theme-base-dark a.poem-color.js-font-increase, .theme-base-dark a.poem-color.js-font-decrease{
+    color: #A1D2CE;
+}
+
+.theme-base-dark .story-color, .theme-base-dark .story-color header > h2 > a, .theme-base-dark h1.text-title.story-color,
+.theme-base-dark a.story-color.js-font-normal, .theme-base-dark a.story-color.js-font-increase, .theme-base-dark a.story-color.js-font-decrease{
+   color: #A7DDEB;
+}
+
+.theme-base-dark ins {color: #ffffff !important;}
+.heading {
+  border-bottom: 0;
+  margin-bottom: 3rem;
+  padding-top: 26px;
+  padding-bottom: 1rem;
+  text-align: center;
+  dispay-style: block;
+}
+
+.heading-title {
+  font-family: 'Abril Fatface', cursive;
+   text-transform: uppercase;
+  font-size: 2.1rem;
+  line-height: .777em;
+  margin-top: 2em;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
+  letter-spacing:.25rem;
+}
+
+a.heading-title:hover {
+	text-decoration:none;
+}
+@media (min-width: 320px) {
+  .heading-title {
+    margin-top: 2px;
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+}
+
+hr {
+  border: 0;
+  margin: 1.35em auto;
+  max-width: 100%;
+  background-position: 50%;
+  box-sizing: border-box;
+}
+
+.bookends {
+  position: relative;
+  border-width: 5px;
+  border-color: hsl(0, 0%, 50%) transparent;
+  height: 11px;
+  border-style: double;
+  width: 20%;
+}
+.bookends:before,
+.bookends:after {
+  position: absolute;
+  bottom: -3.536px;
+  width: 7.071px;
+  height: 7.071px;
+  display: block;
+  border-width: 0 7.071px 7.071px 0;
+  border-color: hsl(0, 0%, 50%);
+  border-style: double;
+  box-sizing: border-box;
+}
+.bookends:before {
+  transform: translateZ(0) rotate(-45deg);
+  left: -21px;
+}
+.bookends:after {
+  transform: translateZ(0) rotate(135deg);
+  right: -21px;
+}
+
+.dashed  {
+  color: #a3a3a3;
+  height: 10px;
+  background-image: linear-gradient(-45deg,
+    transparent,
+    transparent 25%,
+    currentColor 25%,
+    currentColor 50%,
+    transparent 50%,
+    transparent 75%,
+    currentColor 75%);
+  background-size: 10px 10px;
+  width: 48vw;}
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  /* Dimensions */
+  width: 100%;
+  height: .25em;
+
+  /* Reset the apperance */  
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* For Firefox/IE10+ */
+  background-color: transparent;
+
+  /* For IE10+, color of the progress bar */
+  color: #e0bc5b;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+.flat::-webkit-progress-value {
+  background-color: #e0bc5b;
+}
+
+.flat::-moz-progress-bar {
+  background-color: #e0bc5b;
+}
+
+.single::-webkit-progress-value {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(left, transparent, #e0bc5b);
+}
+
+.single::-moz-progress-bar {
+  background-color: transparent;
+  background-image: -moz-linear-gradient(left, transparent, #e0bc5b);
+}
+
+.multiple::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	                  -webkit-linear-gradient(left, green, #e0bc5b);
+}
+
+.multiple::-moz-progress-bar {
+  background-image: -moz-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	                  -moz-linear-gradient(left, green, #e0bc5b);
+}
+
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .25em;
+  display: block;
+}
+
+.progress-bar {
+  background-color: #e0bc5b;
+  width: 50%;
+  display: block;
+  height: inherit;
+}
+
+.theme-base-dark .progress {
+	color: #91ddeb;
+}
+
+.theme-base-dark .progress-bar {
+	background-color: #91ddeb;
+}
+
+.theme-base-dark .flat::-webkit-progress-value {
+  background-color: #91ddeb;
+}
+
+.theme-base-dark .flat::-moz-progress-bar {
+  background-color: #91ddeb;
+}
+
+.theme-base-dark .single::-webkit-progress-value {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(left, transparent, #91ddeb);
+}
+
+.theme-base-dark .single::-moz-progress-bar {
+  background-color: transparent;
+  background-image: -moz-linear-gradient(left, transparent, #91ddeb);
+}
+
+.theme-base-dark .multiple::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	                  -webkit-linear-gradient(left, green, #91ddeb);
+}
+
+.theme-base-dark .multiple::-moz-progress-bar {
+  background-image: -moz-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	                  -moz-linear-gradient(left, green, #91ddeb);
+}
+
+$text: #7288a2;
+$gray: #4d5974;
+$lightgray: #e5e5e5;
+$blue: #03b5d2;
+
+
+.accordion {
+  .accordion-item {
+    border-bottom: 1px solid $lightgray;
+    button[aria-expanded='true'] {
+      border-bottom: 1px solid $blue;
+    }
+  }
+  button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: $text;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+    &:hover, &:focus {
+      cursor: pointer;
+      color: $blue;
+      &::after {
+        cursor: pointer;
+        color: $blue;
+        border: 1px solid $blue;
+      }
+    }
+    .accordion-title {
+      padding: 1em 1.5em 1em 0;
+    }
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 22px;
+      height: 22px;
+      border: 1px solid;
+      border-radius: 22px;
+      &::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+      }
+    }
+  }
+  button[aria-expanded='true'] {
+    color: $blue;
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    + .accordion-content {
+      opacity: 1;
+      max-height: 9em;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+    }
+  }
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    li {
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 2em 0;
+    }
+  }
+}
