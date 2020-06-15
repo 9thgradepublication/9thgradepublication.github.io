@@ -138,177 +138,198 @@ $theease: overshot;
 // }
 // --------------------
 
-.svgs {
-	display: none;
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+$primaryColor    : #6283e6;
+$secondaryColor  : #edbd64;
+$tertiaryColor   : #a360e6;
+
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
-.main {
-	display: flex;
-	width: 100vw;
-	min-height: 100vh;
+html, body
+{
+	width:100%;
+	height:100%;
+	position:relative;
+	overflow-x: hidden;
 }
 
-.wrap {
-	width: 100%;
-	transition: all $time;
-	background-color: clr(cp, 1);
-	background-image: linear-gradient(
-				to bottom right,
-				clr(t) 0%,
-				rgba(clr(cp, 8), .125) 100%
-	);
-	display: flex;
-	justify-content: space-around;
-	padding: 5em 3em;
-	transform-origin: center 25vh;
-	box-shadow: 0 0 10em 1em rgba(clr(s), .25);
-	
+.container
+{
+	max-width:100%;
+	height:100%;
+	background-color:#1D1F20;
+	z-index:2;
+	position:relative;
+	left:0;
 }
 
-.menu-button {
-	&::-webkit-details-marker {
-		display: none;
-	}
-	list-style: none;
-	color: clr(w);
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 1;
-	transition: right $time*.5 ease($theease),
-					background $time/3 ease($theease);
-	
-	&:after {
-		content: '';
-		width: 100vw;
-		height: 100vh;
-		position: absolute;
-		right: 0;
-		top: 0;
-		z-index: -1;
-		background-color: rgba(clr(s), .5);
-		opacity: 0;
-		pointer-events: none;
-		transition: opacity $time ease($theease);
-	}
-	
-	.icon {
-		border-radius: 0 0 0 0;
-		width: 3em;
-		height: 3em;
-		padding: 0.5em;
-		position: relative;
-		z-index: 1;
-		color: clr(cp, 8);
-		overflow: hidden;
-		// box-shadow: inset 0 0 0 0 clr(cp, 2);
-		background-image: radial-gradient(
-			circle at center,
-			clr(cp, 2),
-			clr(cp, 2) 50%,
-			clr(t) 50.1%,
-			clr(t)
-			);
-		background-repeat: no-repeat;
-		background-size: 0%;
-		background-position: 50% 50%;
-		transition: transform $time ease($theease),
-						 border-radius $time ease($theease),
-						 background-size $time ease($theease);
-			
-		
-		use {
-			transition: opacity $time ease($theease);
-		}
-		[open] {
-			opacity: 0;
-		}
-		[closed] {
-			opacity: 1;
-		}
-	}
+.off-canvas
+{
+	width:600px;
+	height:100%;
+	z-index:2;
+	background-color:#fff;
+	position:absolute;
+	left:0px;
+	top:0;
 }
 
-
-.menu-list {
-	width: 250px;
-	max-width: 0;
-	height: 100vh;
-	background-color: clr(cp, 2);
-	padding: 1em 2em;
-	overflow: hidden;
-	transition: all $time;
-	box-shadow: -1em 0 2em rgba(clr(s), .25);
-	animation: reveal $time ease($theease) 1 reverse;
-	font-size: 1.25em;
-	
-	.item {
-		white-space: nowrap;
-		line-height: 1.3;
-		
-		&.title {
-			font-size: 1.3em;
-			color: clr(cp, 3);
-			margin-bottom: .5em;
-		}
-	}
+.menu-wrapper
+{
+	position:absolute;
+	left:0px;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:5;
+	background-color:#ccc;
 }
 
-.menu {
-	position: fixed;
-	right: 0;
-	z-index: 10;
-	
-	&[open] {
-		
-		+ .sect {
-			transform: translateX(-10%) scale(.75);
-			// width: 75vw;
-			pointer-events: none;
-			user-select: none;
-			
-		}
-		
-		.menu-list {
-			animation: reveal $time ease($theease) 1 forwards;
-		}
-		
-		.menu-button {
-			right: 250px; 
-			transition: right $time*.8,
-							background $time/3 ease($theease);
-			
-		&:after {
-			opacity: 1;
-			pointer-events: all;
-		}
-			
-			.icon {
-				transform: rotate(180deg);
-				// box-shadow: inset 0 0 0 1.5em clr(cp, 2);
-				background-size: 300%;
-				border-radius: 0 1em 0 0;
-				transition: transform $time ease($theease),
-								 border-radius $time ease($theease),
-								 background-size $time/2 $time/2 ease($theease);
-				
-				[open] {
-					opacity: 1;
-				}
-				[closed] {
-					opacity: 0;
-				}
-			}
-		}
-	}
+.primary-nav, .secondary-nav, .tertiary-nav
+{
+	width:33.33%;
+	height:100%;
+	float:left;
+	position:relative;
 }
 
-@keyframes reveal {
-	to {
-		max-width: 250px;
-	}
+.primary-nav
+{
+	background-color:$primaryColor;
+}
+.secondary-nav
+{
+	background-color:$secondaryColor;
+}
+.tertiary-nav
+{
+	background-color:$tertiaryColor;
 }
 
+.nav-content
+{
+	width:100%;
+	display:inline-block;
+	padding:20px;
+}
+
+.nav-content a
+{
+	text-decoration:none;
+	color:#fff;	
+}
+
+.nav-content p.top-level
+{
+	font-weight:600;
+	font-size:1.3em;
+	font-family: 'PT Sans';
+}
+
+.nav-content ul
+{
+	padding:0;
+	list-style-type:none;
+}
+
+.nav-content ul li a
+{
+	padding-bottom:8px;
+	width:100%;
+	display:inline-block;
+}
+
+.primary-nav p.seemore
+{
+	width:100%;
+	display:inline-block;
+	padding:15px;
+	margin:0;
+	background-color:#1D1F20;
+	color:#fff;
+	position:absolute;
+	bottom:5%;
+	cursor:pointer;
+}
+
+/* MENU TRIGGER */
+
+.nav-wrapper 
+{ 
+	position: absolute; 
+	left:15px; 
+	top: 15px; 
+	width:35px; 
+	height: 26px; 
+	cursor: pointer; 
+	display: inline-block;
+	z-index: 12;
+	box-sizing:content-box; -moz-box-sizing:content-box;
+	padding: 10px; 
+}
+
+#nav-trigger-anim  {position: absolute; top: 20px;   }
+#nav-trigger-anim  span, #nav-trigger-anim  span:before, #nav-trigger-anim  span:after {
+	border-radius: 2px;
+	height: 5px;
+	width: 35px;
+	background-color:#fff; 
+	position: absolute;
+	display: inline-block;
+	content: '';
+	z-index: 3;
+	cursor: pointer;
+}
+
+#nav-trigger-anim span:before {
+	top: -10px;
+	width:30px;
+	left:2.5px;
+}
+#nav-trigger-anim span:after {
+	bottom: -10px;
+	width:30px;
+	left:2.5px;
+}
+
+#nav-trigger-anim span, #nav-trigger-anim span:before, #nav-trigger-anim span:after {
+	transition: all 500ms ease-in-out;
+}
+
+#nav-trigger-anim.active span {
+	background-color: transparent;
+}
+
+#nav-trigger-anim.active span:before, #nav-trigger-anim.active span:after {
+  top: 0;
+}
+
+#nav-trigger-anim.active span:before {
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg) ;
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg) ;
+}
+
+#nav-trigger-anim.active span:after {
+  transform: translateY(-10px) rotate(-45deg);
+  -moz-transform: translateY(-10px) rotate(-45deg);
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+  -o-transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-10px) rotate(-45deg);
+  top: 10px;
+}
 
 
 /*
@@ -473,17 +494,6 @@ tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
-
-/*
-  Sidebar
-  The sidebar is the drawer, the item we are toggling with our handy hamburger button in the corner
-  of the page.
-  This particular sidebar implementation was inspired by Chris Coyier's "Offcanvas Menu with CSS
-  Target" article, and the checkbox variation from the comments by a reader. It modifies both
-  implementations to continue using the checkbox (no change in URL means no polluted browser
-  history), but this uses `position` for the menu to avoid some potential content reflow issues.
-  Source: http://css-tricks.com/off-canvas-menu-with-css-target/#comment-207504
-*/
 
 
 /*
