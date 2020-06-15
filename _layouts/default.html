@@ -6,11 +6,9 @@
   <body class="theme-base-{{site.color-scheme}}" id="body">
 
     <!-- This if statement decides which sidebar to use -->
-    {% if page.toc %}
-    {% include sidebar-toc.html %}
-    {% else %}
+
     {% include sidebar.html %}
-    {% endif %}
+
 
 
 
@@ -18,7 +16,7 @@
       Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS
       collisions with our real content.
     -->
-<div class="offcanvas-wrap" {% if page.title == "Search" %} style="height:100vh" {% endif %}>
+<div class="wrap" {% if page.title == "Search" %} style="height:100vh" {% endif %}>
 	
 	
   <header class="heading">
