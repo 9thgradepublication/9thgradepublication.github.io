@@ -260,9 +260,9 @@ tbody tr:nth-child(odd) th {
   Source: http://css-tricks.com/off-canvas-menu-with-css-target/#comment-207504
 */
 .offcanvas-nav {
-position:absolute;
-  margin-top:0;
+position: fixed;
   top:0;
+  bottom: 0;
   background-color: #eee;
   transition: .3s;
   overflow: hidden;
@@ -304,8 +304,10 @@ position:absolute;
 }
 
 .offcanvas-toggle {
+  position: absolute;
+  top: .8rem;
+  left: 1rem;
   display: block;
-  cursor: pointer;
   border: 0;
   background: transparent;
 }
