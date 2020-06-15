@@ -30,50 +30,12 @@ Ms. Bueckert-Chan, Hazel E., Rebecca F., Jacqueline L., Devan N., Maria P., Robe
   <li class="accordion-list__item">
     <div class="accordion-item false">
       <div class="accordion-item__line">
-        <h3 class="accordion-item__title">Lorem ipsum dolor sit amet</h3>
+        <h2>Poems</h2>
         <span class="accordion-item__icon"></span>
       </div>
       <div class="accordion-item__inner">
         <div class="accordion-item__content">
-          <p class="accordion-item__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-      </div>
-    </div>
-  </li>
-  <li class="accordion-list__item">
-    <div class="accordion-item false">
-      <div class="accordion-item__line">
-        <h3 class="accordion-item__title">Lorem ipsum dolor sit amet</h3>
-        <span class="accordion-item__icon"></span>
-      </div>
-      <div class="accordion-item__inner">
-        <div class="accordion-item__content">
-          <p class="accordion-item__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-      </div>
-    </div>
-  </li>
-  <li class="accordion-list__item">
-    <div class="accordion-item false">
-      <div class="accordion-item__line">
-        <h3 class="accordion-item__title">Lorem ipsum dolor sit amet</h3>
-        <span class="accordion-item__icon"></span>
-      </div>
-      <div class="accordion-item__inner">
-        <div class="accordion-item__content">
-          <p class="accordion-item__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-      </div>
-    </div>
-  </li>
-
-</ul>
-<div class="accordion">
-	<div class="accordion-item">
-      <button id="accordion-button-1" aria-expanded="false">
-	      <h1> Poems </h1>
-	 <div class="accordion-content">
-         <ul class="texts">
+          <ul class="texts">
   {% for item in site.texts %}
   {% if item.layout contains "poem" %}
     <li class="text-title">
@@ -85,14 +47,18 @@ Ms. Bueckert-Chan, Hazel E., Rebecca F., Jacqueline L., Devan N., Maria P., Robe
   {% endfor %}
   </ul>
 	 </div>
-</div>
-		
-<div class="accordion">
-	<div class="accordion-item">
-      <button id="accordion-button-1" aria-expanded="false">
-	      <h1> Stories </h1>
-	 <div class="accordion-content">
-         <ul class="texts">
+      </div>
+    </div>
+  </li>
+  <li class="accordion-list__item">
+    <div class="accordion-item false">
+      <div class="accordion-item__line">
+        <h2>Stories</h2>
+        <span class="accordion-item__icon"></span>
+      </div>
+      <div class="accordion-item__inner">
+        <div class="accordion-item__content">
+        <ul class="texts">
   {% for item in site.texts %}
   {% if item.layout contains "story" %}
     <li class="text-title">
@@ -102,15 +68,19 @@ Ms. Bueckert-Chan, Hazel E., Rebecca F., Jacqueline L., Devan N., Maria P., Robe
     </li>
   {% endif %}
   {% endfor %}
-  </ul>
-	 </div>
-</div>
-		
-		<div class="accordion">
-	<div class="accordion-item">
-      <button id="accordion-button-1" aria-expanded="false">
-	      <h1> Books We've Read </h1>
-	 <div class="accordion-content">
+  </ul>  
+	</div>
+      </div>
+    </div>
+  </li>
+  <li class="accordion-list__item">
+    <div class="accordion-item false">
+      <div class="accordion-item__line">
+        <h3 class="accordion-item__title">Book's We've Read</h3>
+        <span class="accordion-item__icon"></span>
+      </div>
+      <div class="accordion-item__inner">
+        <div class="accordion-item__content">
          <ul class="texts">
   {% for item in site.texts %}
   {% if item.layout contains "creative" %}
@@ -121,7 +91,10 @@ Ms. Bueckert-Chan, Hazel E., Rebecca F., Jacqueline L., Devan N., Maria P., Robe
     </li>
   {% endif %}
   {% endfor %}
-  </ul>
+  </ul> 
 	 </div>
-</div>
+      </div>
+    </div>
+  </li>
 
+</ul>
