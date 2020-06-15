@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+  
+  <body class="theme-base-{{site.color-scheme}}" id="body">
+
+    <!-- This if statement decides which sidebar to use -->
+    {% if page.toc %}
+    {% include sidebar-toc.html %}
+    {% else %}
+    {% include sidebar.html %}
+    {% endif %}
+
+
+
+    <!--
+      Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS
+      collisions with our real content.
+    -->
+<div class="wrap" {% if page.title == "Search" %} style="height:100vh" {% endif %}>
+	
+	
+  <header class="heading">
+{% if page.title != "Publication" and page.title != "Credits" and page.title != "Search" %}
+	<progress value="0" id="progressBar">
+  <div class="progress-container">
+    <span class="progress-bar"></span>
+  </div>
+</progress>
+{% endif %}
+        <h2>
+            <a href="{{ site.baseurl }}/" title="Home"  class="heading-title {{ page.layout }}-color">{{ site.title }}</a>
+         		<hr id="dashed" class="dashed">
+	  </h2>
+	  
+  </header>
+
+
+
+   <main class="container content” id="main">
+	<div class="retainer">
+        <div class="row">
+       <div class="column" style="text-alight:left;">
+	{%include font-resize.html %}
+       </div>
+  
+	<div class="column" style="text-align:right;">
+						     
+  <label  for="switch" class="switch">
+    <input type="checkbox" id="switch">
+				      <div id="checkBox" style="font-size:1.3rem;"><p id="checkText" style="font-size:1.2rem;">Dark 🌑</p></div>
+  </label>  
+					      
+</div>
+</div>
+ </div>
+
+  {{ content }}
+   </main>  
+															      
+
+<div style="padding-top:3rem;padding-bottom:3rem;"></div>
+ </div>
+    
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  <script>
+current_theme = $("#body").attr('class');
+current_hr = $("#dashed").attr('class');
+$("#switch").on("click", () => {
+  if($("#switch").prop("checked")) {
+      $("#body").addClass("theme-base-dark").removeClass("theme-base-yellow");
+      localStorage.theme = "theme-base-dark";
+      $("#checkText").text("Light ⭐");
+      localStorage.text = "Light ⭐";
+  } else {
+    $("#body").removeClass("theme-base-dark").addClass("theme-base-yellow");
+    localStorage.theme = "theme-base-yellow";
+    $("#checkText").text("Dark 🌑");
+    localStorage.text = "Dark 🌑"; 
+  }
+   
+});
+
+if (typeof localStorage.theme == "string") {
+    $("#body").removeClass(current_theme).addClass(localStorage.theme);
+    $("#checkText").text(localStorage.text);
+}
+
+</script>
+
+		  <script>
+		  $(document).ready(function(){
+    
+    var getMax = function(){
+        return $(document).height() - $(window).height();
+    }
+    
+    var getValue = function(){
+        return $(window).scrollTop();
+    }
+    
+    if('max' in document.createElement('progress')){
+        // Browser supports progress element
+        var progressBar = $('progress');
+        
+        // Set the Max attr for the first time
+        progressBar.attr({ max: getMax() });
+
+        $(document).on('scroll', function(){
+            // On scroll only Value attr needs to be calculated
+            progressBar.attr({ value: getValue() });
+        });
+      
+        $(window).resize(function(){
+            // On resize, both Max/Value attr needs to be calculated
+            progressBar.attr({ max: getMax(), value: getValue() });
+        });   
+    }
+    else {
+        var progressBar = $('.progress-bar'), 
+            max = getMax(), 
+            value, width;
+        
+        var getWidth = function(){
+            // Calculate width in percentage
+            value = getValue();            
+            width = (value/max) * 100;
+            width = width + '%';
+            return width;
+        }
+        
+        var setWidth = function(){
+            progressBar.css({ width: getWidth() });
+        }
+        
+        $(document).on('scroll', setWidth);
+        $(window).on('resize', function(){
+            // Need to reset the Max attr
+            max = getMax();
+            setWidth();
+        });
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+  
+  $('#flat').addClass("active");
+  $('#progressBar').addClass('flat');
+    
+  $('#flat').on('click', function(){
+    $('#progressBar').removeClass().addClass('flat');
+    $('a').removeClass();
+    $(this).addClass('active');
+    $(this).preventDefault();
+  });
+
+  $('#single').on('click', function(){
+    $('#progressBar').removeClass().addClass('single');
+    $('a').removeClass();    
+    $(this).addClass('active');
+    $(this).preventDefault();    
+  });
+
+  $('#multiple').on('click', function(){
+    $('#progressBar').removeClass().addClass('multiple');
+    $('a').removeClass();    
+    $(this).addClass('active');
+    $(this).preventDefault();    
+  });
+
+  $('#semantic').on('click', function(){
+    $('#progressBar').removeClass().addClass('semantic');
+    $('a').removeClass();    
+    $(this).addClass('active');
+    $(this).preventDefault();
+    alert('hello');
+  });
+
+  $(document).on('scroll', function(){
+
+      maxAttr = $('#progressBar').attr('max');
+      valueAttr = $('#progressBar').attr('value');
+      percentage = (valueAttr/maxAttr) * 100;
+      
+      if(percentage<49){
+        document.styleSheets[0].addRule('.semantic', 'color: red');
+        document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: red');
+        document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: red');
+      }
+      else if(percentage<98){
+        document.styleSheets[0].addRule('.semantic', 'color: orange');
+        document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: orange');
+        document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: orange');
+      }
+      else {
+        document.styleSheets[0].addRule('.semantic', 'color: green');
+        document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: green');
+        document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: green');
+      }      
+  });
+  
+});
+			      </script>
+ </body>
+</html>
