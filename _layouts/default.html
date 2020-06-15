@@ -7,7 +7,6 @@
 
     <!-- This if statement decides which sidebar to use -->
 
-    {% include sidebar.html %}
 
 
 
@@ -17,14 +16,8 @@
       collisions with our real content.
     -->
 <div class="wrapper" {% if page.title == "Search" %} style="height:100vh" {% endif %}>
-		<label data-function='swipe' for='swipe'>
-      <div id="toggle">
-        <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
-      </div>
-    </label>
-  </div>
+	{% include sidebar.html %}
+		
 	
   <header class="heading">
 {% if page.title != "Publication" and page.title != "Credits" and page.title != "Search" %}
@@ -44,6 +37,14 @@
 
 
    <main class="container content” id="main">
+					    <label data-function='swipe' for='swipe'>
+      <div id="toggle">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+    </label>
+  </div>
 	<div class="retainer">
         <div class="row">
        <div class="column" style="text-alight:left;">
@@ -68,11 +69,7 @@
 <div style="padding-top:3rem;padding-bottom:3rem;"></div>
  </div>
     
-      <button class="offcanvas-toggle" aria-expanded="false">
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-  </button>
+
   
   <script>
 current_theme = $("#body").attr('class');
