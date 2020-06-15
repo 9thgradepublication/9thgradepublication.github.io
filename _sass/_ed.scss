@@ -1079,5 +1079,5 @@ progress::-webkit-progress-bar {
   font-weight: 300;
   line-height: 1.3;
 }
-.theme-base-dark b{color:#ffffff}
+body.theme-base-dark > b{color:#ffffff ! important;}
 .theme-base-dark .accordion-item__line (color:#242424;}
