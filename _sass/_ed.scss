@@ -998,83 +998,105 @@ progress::-webkit-progress-bar {
 	                  -moz-linear-gradient(left, green, #91ddeb);
 }
 
-details {
-  padding: 45px 70px 45px 45px;
+$bg: #fff;
+$text: #7288a2;
+$gray: #4d5974;
+$lightgray: #e5e5e5;
+$blue: #03b5d2;
+
+
+.container {
   margin: 0 auto;
-  position: relative;
-  font-size: 22px;
-  border: 1px solid rgba(0,0,0,.1);
-  border-radius: 15px;
-  box-sizing: border-box;
-  transition: all .3s;
+  padding: 4rem;
+  width: 48rem;
 }
 
-details + details {
-  margin-top: 20px;
-}
-
-details[open] {
-  min-height: 50px;
-  background-color: #f6f7f8;
-  box-shadow: 2px 2px 20px rgba(0,0,0,.2);
-}
-
-details p {
-  color: #96999d;
-  font-weight: 300;
-}
-
-summary {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-summary:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px #f6f7f8, 0 0 0 5px rebeccapurple;
-}
-
-summary::-webkit-details-marker {
-  display: none
-}
-
-.control-icon {
-  fill: rebeccapurple;
-  transition: .3s ease;
-  pointer-events: none;
-}
-
-.control-icon-close {
-  display: none;
-}
-
-details[open] .control-icon-close {
-  display: initial;
-  transition: .3s ease;
-}
-
-details[open] .control-icon-expand {
-  display: none;
-}
-
-details[open] summary:hover::after {
-  animation: pulse 1s ease;
-}
-
-@keyframes pulse {
-  25% {
-    transform: scale(1.1);
+.accordion {
+  .accordion-item {
+    border-bottom: 1px solid $lightgray;
+    button[aria-expanded='true'] {
+      border-bottom: 1px solid $blue;
+    }
   }
-  50% {
-    transform: scale(1);
+  button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: $text;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+    &:hover, &:focus {
+      cursor: pointer;
+      color: $blue;
+      &::after {
+        cursor: pointer;
+        color: $blue;
+        border: 1px solid $blue;
+      }
+    }
+    .accordion-title {
+      padding: 1em 1.5em 1em 0;
+    }
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 22px;
+      height: 22px;
+      border: 1px solid;
+      border-radius: 22px;
+      &::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+      }
+    }
   }
-  75% {
-    transform: scale(1.1);
+  button[aria-expanded='true'] {
+    color: $blue;
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    + .accordion-content {
+      opacity: 1;
+      max-height: 9em;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+    }
   }
-  100% {
-    transform: scale(1);
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 2em 0;
+    }
   }
 }
