@@ -998,18 +998,11 @@ progress::-webkit-progress-bar {
 	                  -moz-linear-gradient(left, green, #91ddeb);
 }
 
-$bg: #fff;
 $text: #7288a2;
 $gray: #4d5974;
 $lightgray: #e5e5e5;
 $blue: #03b5d2;
 
-
-.container {
-  margin: 0 auto;
-  padding: 4rem;
-  width: 48rem;
-}
 
 .accordion {
   .accordion-item {
@@ -1093,7 +1086,7 @@ $blue: #03b5d2;
     overflow: hidden;
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
-    p {
+    li {
       font-size: 1rem;
       font-weight: 300;
       margin: 2em 0;
