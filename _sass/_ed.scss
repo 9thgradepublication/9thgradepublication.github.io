@@ -259,8 +259,10 @@ tbody tr:nth-child(odd) th {
   history), but this uses `position` for the menu to avoid some potential content reflow issues.
   Source: http://css-tricks.com/off-canvas-menu-with-css-target/#comment-207504
 */
-
 .offcanvas-nav {
+position:absolute;
+  margin-top:0;
+  top:0;
   background-color: #eee;
   transition: .3s;
   overflow: hidden;
