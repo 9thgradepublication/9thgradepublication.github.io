@@ -264,11 +264,14 @@ tbody tr:nth-child(odd) th {
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
-  font-size: 1.2rem;
+  font-size: .9rem;
+  font-weight: bold;
   color: rgba(255,255,255,.6);
   background-color: #202020;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
+  text-transform: uppercase;
+  line-height:1.5;
 }
 
 @media (min-width: 30em) {
@@ -285,6 +288,8 @@ tbody tr:nth-child(odd) th {
 .sidebar a, .sidebar a:hover {
   font-weight: normal;
   color: #ffff;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
 }
 
 .sidebar-item {
