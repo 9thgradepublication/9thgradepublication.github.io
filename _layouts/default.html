@@ -18,7 +18,7 @@
       Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS
       collisions with our real content.
     -->
-<div class="wrap" {% if page.title == "Search" %} style="height:100vh" {% endif %}>
+<div class="offcanvas-wrap" {% if page.title == "Search" %} style="height:100vh" {% endif %}>
 	
 	
   <header class="heading">
@@ -63,7 +63,12 @@
 <div style="padding-top:3rem;padding-bottom:3rem;"></div>
  </div>
     
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+      <button class="offcanvas-toggle" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  
   <script>
 current_theme = $("#body").attr('class');
 current_hr = $("#dashed").attr('class');
@@ -225,6 +230,15 @@ $(".accordion-item__line").click(function () {
 });
 
 		</script>
+					     <script>
+					     $(".offcanvas-toggle").click(function() {
+  $('.offcanvas-wrap').toggleClass('wrap-right');
+  $('.offcanvas-nav').toggleClass('offcanvas-visible');
+  $(this).attr('aria-expanded', function(i ,attr) {
+    return attr == 'true' ? 'false' : 'true';
+  });
+});
+					     </script>
 
  </body>
 </html>
