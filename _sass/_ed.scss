@@ -74,16 +74,16 @@ embed {
 
 // vars
 
-$random_color: rgba(rd(255),rd(255),rd(255),.5);
+$random_color: rgba(255,255,255,.5);
 
 $c: ( // colors
 	t: rgba(0,0,0,0),
 	s: #000,
 	w: #fff,
-	gr: desaturate(rgb(rd(255),rd(255),rd(255)), 100%),
-	r: rgb(rd(255),rd(150),rd(150)),
-	g: rgb(rd(150),rd(255),rd(150)),
-	b: rgb(rd(150),rd(150),rd(255)),
+	gr: desaturate(rgb(255,255,255), 100%),
+	r: rgb(255,150,150),
+	g: rgb(150,255,150),
+	b: rgb(150,150,255),
 	bg: darken($random_color, 35%),
 	cp: ( // color palette
 		1: #41444b,
