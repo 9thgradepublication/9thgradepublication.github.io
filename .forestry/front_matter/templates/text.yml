@@ -17,7 +17,6 @@ fields:
   label: editor
   description: the copy editor
 pages:
-- _texts/My Mother's Rush Hour Subway Ride.md
 - _texts/a-bottle-of-kindness.md
 - _texts/a-frame-change.md
 - _texts/all-the-bright-places.md
