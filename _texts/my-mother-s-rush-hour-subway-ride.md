@@ -6,12 +6,3 @@ editor: Devan N.
 
 ---
 ![](/uploads/not-my-poem-delete.png)
-
-## Keyboard shortcuts
-
-**Quick accessCtrl/FORMATTING**
-
-* **Bold**
-
-  Ctrlb
-* **_Italic_**
