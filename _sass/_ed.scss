@@ -69,21 +69,246 @@ embed {
 	height:50vh;
 }
 /*
-  Wrapper
-  The wrapper is used to position site content when the sidebar is toggled. We use an outter wrap to
-  position the sidebar without interferring with the regular page content.
+  Off canvas menu
 */
 
-.offcanvas-wrap {
-  padding: 15px;
-  overflow: hidden;
-  position: relative;
-  transition: .3s;
+// vars
+
+$random_color: rgba(rd(255),rd(255),rd(255),.5);
+
+$c: ( // colors
+	t: rgba(0,0,0,0),
+	s: #000,
+	w: #fff,
+	gr: desaturate(rgb(rd(255),rd(255),rd(255)), 100%),
+	r: rgb(rd(255),rd(150),rd(150)),
+	g: rgb(rd(150),rd(255),rd(150)),
+	b: rgb(rd(150),rd(150),rd(255)),
+	bg: darken($random_color, 35%),
+	cp: ( // color palette
+		1: #41444b,
+		2: #52575d,
+		3: #cabfab,
+		4: #dfd8c8,
+		5: #5d5d5d,
+		6: #F0AE2C,
+		7: #F9D00F,
+		8: #00adb5
+	),
+);
+
+// settings
+$f: unquote("'Podkova', serif");
+$fb: unquote("'Trebuchet MS', Helvetica, sans-serif");
+$fz: 16px;
+// uncomment for responsive font-size
+// $fz: unquote('calc(1.1vw + 1.1vh - .6vmin)');
+// @media screen and (max-width: 600px) {
+// 	body > * {
+// 		font-size: 1.5em;
+// 	}
+// }
+
+$time: .5s;
+
+$theease: overshot;
+
+
+// ease():
+// default, in-cubic, out-cubic, in-out-cubic, in-circ, out-circ, in-out-circ, in-expo, out-expo, in-out-expo, in-quad, out-quad, in-out-quad, in-quart, out-quart, in-out-quart, in-quint, out-quint, in-out-quint, in-sine, out-sine, in-out-sine, in-back, out-back, in-out-back, liquid", bounce, in-out-bounce, perpetuum, impetus, full-circle, gravity, overshot, downhill, pendulum, wtf, swing
+// --------- defaults ---------
+* {
+	&:focus {
+		outline: 0;
+	}
+	
+	&, &:before, &:after {
+		box-sizing: border-box;
+	}
 }
 
-.wrap-right {
-  transform: translate3d(40%,0,0);
+// touch cursor effect
+@media screen and (max-width: 64em) {
+	*:active {
+		cursor: url(https://i.imgur.com/0vIPd79.png) 16 12, auto;
+	}
 }
+// @include placeholder(){
+// 		font-family: $f;
+// }
+// --------------------
+
+.svgs {
+	display: none;
+}
+
+.main {
+	display: flex;
+	width: 100vw;
+	min-height: 100vh;
+}
+
+.wrap {
+	width: 100%;
+	transition: all $time;
+	background-color: clr(cp, 1);
+	background-image: linear-gradient(
+				to bottom right,
+				clr(t) 0%,
+				rgba(clr(cp, 8), .125) 100%
+	);
+	display: flex;
+	justify-content: space-around;
+	padding: 5em 3em;
+	transform-origin: center 25vh;
+	box-shadow: 0 0 10em 1em rgba(clr(s), .25);
+	
+}
+
+.menu-button {
+	&::-webkit-details-marker {
+		display: none;
+	}
+	list-style: none;
+	color: clr(w);
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	transition: right $time*.5 ease($theease),
+					background $time/3 ease($theease);
+	
+	&:after {
+		content: '';
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: -1;
+		background-color: rgba(clr(s), .5);
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity $time ease($theease);
+	}
+	
+	.icon {
+		border-radius: 0 0 0 0;
+		width: 3em;
+		height: 3em;
+		padding: 0.5em;
+		position: relative;
+		z-index: 1;
+		color: clr(cp, 8);
+		overflow: hidden;
+		// box-shadow: inset 0 0 0 0 clr(cp, 2);
+		background-image: radial-gradient(
+			circle at center,
+			clr(cp, 2),
+			clr(cp, 2) 50%,
+			clr(t) 50.1%,
+			clr(t)
+			);
+		background-repeat: no-repeat;
+		background-size: 0%;
+		background-position: 50% 50%;
+		transition: transform $time ease($theease),
+						 border-radius $time ease($theease),
+						 background-size $time ease($theease);
+			
+		
+		use {
+			transition: opacity $time ease($theease);
+		}
+		[open] {
+			opacity: 0;
+		}
+		[closed] {
+			opacity: 1;
+		}
+	}
+}
+
+
+.menu-list {
+	width: 250px;
+	max-width: 0;
+	height: 100vh;
+	background-color: clr(cp, 2);
+	padding: 1em 2em;
+	overflow: hidden;
+	transition: all $time;
+	box-shadow: -1em 0 2em rgba(clr(s), .25);
+	animation: reveal $time ease($theease) 1 reverse;
+	font-size: 1.25em;
+	
+	.item {
+		white-space: nowrap;
+		line-height: 1.3;
+		
+		&.title {
+			font-size: 1.3em;
+			color: clr(cp, 3);
+			margin-bottom: .5em;
+		}
+	}
+}
+
+.menu {
+	position: fixed;
+	right: 0;
+	z-index: 10;
+	
+	&[open] {
+		
+		+ .sect {
+			transform: translateX(-10%) scale(.75);
+			// width: 75vw;
+			pointer-events: none;
+			user-select: none;
+			
+		}
+		
+		.menu-list {
+			animation: reveal $time ease($theease) 1 forwards;
+		}
+		
+		.menu-button {
+			right: 250px; 
+			transition: right $time*.8,
+							background $time/3 ease($theease);
+			
+		&:after {
+			opacity: 1;
+			pointer-events: all;
+		}
+			
+			.icon {
+				transform: rotate(180deg);
+				// box-shadow: inset 0 0 0 1.5em clr(cp, 2);
+				background-size: 300%;
+				border-radius: 0 1em 0 0;
+				transition: transform $time ease($theease),
+								 border-radius $time ease($theease),
+								 background-size $time/2 $time/2 ease($theease);
+				
+				[open] {
+					opacity: 1;
+				}
+				[closed] {
+					opacity: 0;
+				}
+			}
+		}
+	}
+}
+
+@keyframes reveal {
+	to {
+		max-width: 250px;
+	}
+}
+
 
 
 /*
@@ -259,66 +484,6 @@ tbody tr:nth-child(odd) th {
   history), but this uses `position` for the menu to avoid some potential content reflow issues.
   Source: http://css-tricks.com/off-canvas-menu-with-css-target/#comment-207504
 */
-.offcanvas-nav {
-position: fixed;
-  top:0;
-  bottom: 0;
-  background-color: #eee;
-  transition: .3s;
-  overflow: hidden;
-  height: 100%;
-  transform: translate3d(-100.5%, 0, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40%;
-  font-family: "Open Sans", sans-serif;
-    box-shadow: 0 0 1rem 2rem rgba(15, 72, 179, 0.06),
-    0 20px 30px -10px rgba(15, 72, 179, 0.2);
-}
-
-.offcanvas-nav > nav > ul > li {
-  list-style-type:none;
-  line-height:2;
-  text-transform: uppercase;
-  font-weight: light;
-   text-align: center;
-  
-}
-
-.offcanvas-nav > nav > ul > li > a {
-  text-decoration:none;
-  color: #000000;
- 
-}
-
-.offcanvas-nav > nav > ul > li > a:hover {
-  border-bottom: .2rem solid black;
-  transition: 0.2s ease-out
-}
-.offcanvas-visible {
-		transform: translate3d(0, 0, 0);
-    @media( min-width: 990px ){
-      transform: translate3d(-100%,0,0);
-    }
-}
-
-.offcanvas-toggle {
-  position: absolute;
-  top: .8rem;
-  left: 1rem;
-  display: block;
-  border: 0;
-  background: transparent;
-}
-
-.offcanvas-toggle .icon-bar {
-    display: block;
-    background-color: #111;
-    width: 22px;
-    height: 3px;
-    margin-top: 4px;
-}
 
 
 /*
