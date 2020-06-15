@@ -16,8 +16,15 @@
       Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS
       collisions with our real content.
     -->
-<div id="content" {% if page.title == "Search" %} style="height:100vh" {% endif %}>
-		<div class="menu-trigger"></div>
+<div class="wrapper" {% if page.title == "Search" %} style="height:100vh" {% endif %}>
+		<label data-function='swipe' for='swipe'>
+      <div id="toggle">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+    </label>
+  </div>
 	
   <header class="heading">
 {% if page.title != "Publication" and page.title != "Credits" and page.title != "Search" %}
@@ -229,20 +236,8 @@ $(".accordion-item__line").click(function () {
 
 		</script>
 					     <script>
-					/*
-  Slidemenu
-*/
-(function() {
-	var $body = document.body
-	, $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
-
-	if ( typeof $menu_trigger !== 'undefined' ) {
-		$menu_trigger.addEventListener('click', function() {
-			$body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
-		});
-	}
-
-}).call(this);
+$("#toggle").click(function() {
+  $(this).toggleClass("on");
 });
 					     </script>
 
