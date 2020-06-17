@@ -1,7 +1,7 @@
 ---
 layout: creative
 title: The Woman in Cabin 10 One-Pager
-author: Robert Q.
+author: Roberto Q.
 editor: Roberto Q.
 
 ---
